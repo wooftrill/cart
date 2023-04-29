@@ -1,0 +1,593 @@
+2023-04-23 09:31:19,762 - INFO - Serving on http://0.0.0.0:5003
+2023-04-23 09:33:35,294 - INFO - Serving on http://0.0.0.0:5003
+2023-04-23 10:25:31,110 - INFO - Serving on http://0.0.0.0:5003
+2023-04-23 10:29:07,541 - INFO - Serving on http://0.0.0.0:5003
+2023-04-23 10:40:44,479 - INFO - Serving on http://0.0.0.0:5003
+2023-04-23 10:51:21,561 - INFO - Serving on http://0.0.0.0:5003
+2023-04-23 11:00:27,677 - INFO - Serving on http://0.0.0.0:5003
+2023-04-23 11:32:46,367 - INFO - Serving on http://0.0.0.0:5003
+2023-04-23 11:37:54,840 - INFO - Serving on http://0.0.0.0:5003
+2023-04-23 19:07:15,292 - INFO - Serving on http://0.0.0.0:5003
+2023-04-25 10:39:27,219 - INFO - Serving on http://0.0.0.0:5003
+2023-04-25 10:43:31,942 - INFO - add_to_cart method called
+2023-04-25 10:43:31,942 - INFO - checking if table exist!!...
+2023-04-25 10:43:32,227 - INFO - session closed
+2023-04-25 10:43:32,227 - ERROR - key error list index out of range
+2023-04-25 10:43:32,227 - INFO - item not present in cart 
+2023-04-25 10:43:32,227 - INFO - checking if table exist!!...
+2023-04-25 10:43:32,248 - INFO - session closed
+2023-04-25 10:43:32,248 - INFO - checking if table exist!!...
+2023-04-25 10:43:32,276 - INFO - row inserted!..
+2023-04-25 10:43:32,289 - INFO - session closed
+2023-04-25 10:44:21,696 - INFO - add_to_cart method called
+2023-04-25 10:44:21,697 - INFO - checking if table exist!!...
+2023-04-25 10:44:21,741 - INFO - session closed
+2023-04-25 10:44:21,741 - INFO - item is already present in cart!! updating..
+2023-04-25 10:44:21,741 - INFO - checking if table exist!!...
+2023-04-25 10:44:21,781 - INFO - session closed
+2023-04-25 10:44:21,781 - INFO - checking if table exist!!...
+2023-04-25 10:44:21,799 - INFO - row inserted!..
+2023-04-25 10:44:21,837 - INFO - session closed
+2023-04-25 10:45:09,082 - INFO - add_to_cart method called
+2023-04-25 10:45:09,082 - INFO - checking if table exist!!...
+2023-04-25 10:45:09,097 - INFO - session closed
+2023-04-25 10:45:09,097 - INFO - item is already present in cart!! updating..
+2023-04-25 10:45:09,097 - INFO - checking if table exist!!...
+2023-04-25 10:45:09,107 - INFO - session closed
+2023-04-25 10:45:09,108 - INFO - checking if table exist!!...
+2023-04-25 10:45:09,115 - INFO - row inserted!..
+2023-04-25 10:45:09,138 - INFO - session closed
+2023-04-25 10:46:27,843 - INFO - add_to_cart method called
+2023-04-25 10:46:27,843 - INFO - checking if table exist!!...
+2023-04-25 10:46:27,859 - INFO - session closed
+2023-04-25 10:46:27,859 - ERROR - key error list index out of range
+2023-04-25 10:46:27,859 - INFO - item not present in cart 
+2023-04-25 10:46:27,859 - INFO - checking if table exist!!...
+2023-04-25 10:46:27,886 - INFO - session closed
+2023-04-25 10:46:27,886 - ERROR - An exception occurred:list index out of range
+2023-04-25 10:46:27,886 - ERROR - Exception on /add_to_cart [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\SQLClient.py", line 107, in count
+    return count_list[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\SQLOrmService.py", line 14, in add_to_cart
+    count = self.count(cart_table,cart_model)
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\SQLClient.py", line 119, in count
+    raise Exception( f"Key Error: {ix}")
+Exception: Key Error: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\JWTClient.py", line 28, in decorated_function
+    k= func(user_id, *args, **kwargs)
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\controller\TestController.py", line 40, in test
+    jwt_controller.service.add_to_cart(table_name,inventory_table,cart_model_dict,inventory_dict)
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\SQLOrmService.py", line 24, in add_to_cart
+    if self.is_exist_in_inventory(inventory_table, inventory_model):
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\SQLClient.py", line 81, in is_exist_in_inventory
+    raise ex
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\SQLClient.py", line 71, in is_exist_in_inventory
+    if count_list[0] > __min_available:
+IndexError: list index out of range
+2023-04-25 10:48:44,393 - INFO - Serving on http://0.0.0.0:5003
+2023-04-25 10:49:26,044 - INFO - remove function triggered!...
+2023-04-25 10:49:26,044 - INFO - checking if table exist!!...
+2023-04-25 10:49:26,105 - INFO - row inserted!..
+2023-04-25 10:49:26,147 - INFO - session closed
+2023-04-25 10:50:32,866 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
+    asyncio_safe=can_manipulate_connection,
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
+    dbapi_connection.rollback()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 482, in rollback
+    self._read_ok_packet()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 442, in _read_ok_packet
+    pkt = self._read_packet()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 696, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 753, in _read_bytes
+    CR.CR_SERVER_LOST, "Lost connection to MySQL server during query"
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+2023-04-25 10:50:32,912 - INFO - remove function triggered!...
+2023-04-25 10:50:32,912 - INFO - checking if table exist!!...
+2023-04-25 10:50:32,913 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
+    asyncio_safe=can_manipulate_connection,
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
+    dbapi_connection.rollback()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 482, in rollback
+    self._read_ok_packet()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 442, in _read_ok_packet
+    pkt = self._read_packet()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 696, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 753, in _read_bytes
+    CR.CR_SERVER_LOST, "Lost connection to MySQL server during query"
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+2023-04-25 10:50:36,975 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:50:36,975 - ERROR - Exception on /add_to_cart [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\JWTClient.py", line 28, in decorated_function
+    k= func(user_id, *args, **kwargs)
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\controller\TestController.py", line 40, in test
+    jwt_controller.service.remove_from_cart(table_name,cart_model_dict)
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\SQLOrmService.py", line 38, in remove_from_cart
+    if self.update(cart_table, cart_model):
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\SQLClient.py", line 163, in update
+    session.commit()
+UnboundLocalError: local variable 'session' referenced before assignment
+2023-04-25 10:52:25,647 - INFO - remove function triggered!...
+2023-04-25 10:52:25,647 - INFO - checking if table exist!!...
+2023-04-25 10:52:29,684 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:52:29,685 - ERROR - Exception on /add_to_cart [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\JWTClient.py", line 28, in decorated_function
+    k= func(user_id, *args, **kwargs)
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\controller\TestController.py", line 40, in test
+    jwt_controller.service.remove_from_cart(table_name,cart_model_dict)
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\SQLOrmService.py", line 38, in remove_from_cart
+    if self.update(cart_table, cart_model):
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\SQLClient.py", line 163, in update
+    session.commit()
+UnboundLocalError: local variable 'session' referenced before assignment
+2023-04-25 10:54:22,672 - INFO - Serving on http://0.0.0.0:5003
+2023-04-25 10:54:54,703 - INFO - add_to_cart method called
+2023-04-25 10:54:54,703 - INFO - checking if table exist!!...
+2023-04-25 10:54:58,754 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:55:03,815 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:55:08,913 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:55:09,921 - INFO - item not present in cart 
+2023-04-25 10:55:20,600 - INFO - add_to_cart method called
+2023-04-25 10:55:20,600 - INFO - checking if table exist!!...
+2023-04-25 10:55:24,656 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:55:29,709 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:55:34,768 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:55:35,775 - INFO - item not present in cart 
+2023-04-25 10:56:27,381 - INFO - add_to_cart method called
+2023-04-25 10:56:27,381 - INFO - checking if table exist!!...
+2023-04-25 10:56:31,449 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:56:36,535 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:56:41,597 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:56:42,600 - INFO - item not present in cart 
+2023-04-25 10:57:08,649 - INFO - add_to_cart method called
+2023-04-25 10:57:08,649 - INFO - checking if table exist!!...
+2023-04-25 10:57:12,717 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:57:17,798 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:57:22,847 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:57:23,848 - INFO - item not present in cart 
+2023-04-25 10:57:48,742 - INFO - add_to_cart method called
+2023-04-25 10:57:48,742 - INFO - checking if table exist!!...
+2023-04-25 10:57:52,812 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:57:57,884 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:58:02,940 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-25 10:58:03,941 - INFO - item not present in cart 
+2023-04-26 19:40:15,982 - INFO - add_to_cart method called
+2023-04-26 19:40:15,983 - INFO - checking if table exist!!...
+2023-04-26 19:40:20,049 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-26 19:40:25,135 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-26 19:40:30,227 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-26 19:40:31,243 - INFO - item not present in cart 
+2023-04-26 19:54:26,257 - INFO - Serving on http://0.0.0.0:5003
+2023-04-26 19:54:43,587 - INFO - add_to_cart method called
+2023-04-26 19:54:43,587 - INFO - checking if table exist!!...
+2023-04-26 19:54:47,645 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-26 19:54:52,716 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-26 19:54:57,777 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-26 19:54:58,784 - INFO - item not present in cart 
+2023-04-26 19:56:23,634 - INFO - Serving on http://0.0.0.0:5003
+2023-04-26 19:56:36,695 - INFO - add_to_cart method called
+2023-04-26 19:56:36,695 - INFO - checking if table exist!!...
+2023-04-26 19:56:40,736 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-26 19:56:45,799 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-26 19:56:50,887 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-26 19:56:51,894 - INFO - item not present in cart 
+2023-04-26 19:56:51,895 - ERROR - Exception on /add_to_cart [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'decorated_function' did not return a valid response. The function either returned None or ended without a return statement.
+2023-04-26 19:57:10,772 - INFO - add_to_cart method called
+2023-04-26 19:57:10,772 - INFO - checking if table exist!!...
+2023-04-26 19:57:14,844 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-26 19:57:19,908 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-26 19:57:24,964 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-26 19:57:25,974 - INFO - item not present in cart 
+2023-04-26 19:57:25,974 - ERROR - Exception on /add_to_cart [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'decorated_function' did not return a valid response. The function either returned None or ended without a return statement.
+2023-04-26 20:08:27,957 - INFO - add_to_cart method called
+2023-04-26 20:08:27,957 - INFO - checking if table exist!!...
+2023-04-26 20:08:28,350 - INFO - session closed
+2023-04-26 20:08:28,351 - ERROR - Exception on /add_to_cart [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'decorated_function' did not return a valid response. The function either returned None or ended without a return statement.
+2023-04-26 20:08:36,487 - INFO - add_to_cart method called
+2023-04-26 20:08:36,488 - INFO - checking if table exist!!...
+2023-04-26 20:08:36,552 - INFO - session closed
+2023-04-26 20:08:36,553 - ERROR - Exception on /add_to_cart [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'decorated_function' did not return a valid response. The function either returned None or ended without a return statement.
+2023-04-26 20:10:49,978 - INFO - Serving on http://0.0.0.0:5003
+2023-04-26 20:11:36,478 - INFO - add_to_cart method called
+2023-04-26 20:11:36,478 - INFO - checking if table exist!!...
+2023-04-26 20:11:36,535 - INFO - session closed
+2023-04-26 20:11:36,535 - ERROR - Exception on /add_to_cart [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'decorated_function' did not return a valid response. The function either returned None or ended without a return statement.
+2023-04-26 20:50:52,628 - INFO - Serving on http://0.0.0.0:5003
+2023-04-26 20:51:07,349 - INFO - add_to_cart method called
+2023-04-26 20:51:07,350 - INFO - checking if table exist!!...
+2023-04-26 20:51:07,437 - INFO - session closed
+2023-04-26 20:51:07,437 - INFO - item is already present in cart!! updating..
+2023-04-26 20:51:07,438 - INFO - checking if table exist!!...
+2023-04-26 20:51:07,496 - INFO - session closed
+2023-04-26 20:51:07,497 - INFO - checking if table exist!!...
+2023-04-26 20:51:07,512 - INFO - row inserted!..
+2023-04-26 20:51:07,533 - INFO - session closed
+2023-04-29 00:57:46,131 - INFO - Serving on http://0.0.0.0:5003
+2023-04-29 00:59:17,256 - ERROR - Exception on /add_to_cart [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\JWTClient.py", line 28, in decorated_function
+    k= func(user_id, *args, **kwargs)
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\controller\TestController.py", line 40, in test
+    t=jwt_controller.service.add_to_cart(table_name,inventory_table,cart_model_dict,inventory_dict)
+TypeError: add_to_cart() takes 3 positional arguments but 5 were given
+2023-04-29 01:00:58,285 - INFO - Serving on http://0.0.0.0:5003
+2023-04-29 01:01:09,206 - INFO - add_to_cart method called
+2023-04-29 01:01:09,206 - INFO - checking if table exist!!...
+2023-04-29 01:01:09,659 - INFO - session closed
+2023-04-29 01:01:09,660 - INFO - item is already present in cart!! updating..
+2023-04-29 01:01:09,660 - INFO - checking if table exist!!...
+2023-04-29 01:01:09,738 - INFO - session closed
+2023-04-29 01:01:09,738 - INFO - checking if table exist!!...
+2023-04-29 01:01:09,769 - INFO - row inserted!..
+2023-04-29 01:01:09,790 - INFO - session closed
+2023-04-29 01:01:17,721 - INFO - add_to_cart method called
+2023-04-29 01:01:17,721 - INFO - checking if table exist!!...
+2023-04-29 01:01:17,802 - INFO - session closed
+2023-04-29 01:01:17,802 - INFO - item is already present in cart!! updating..
+2023-04-29 01:01:17,802 - INFO - checking if table exist!!...
+2023-04-29 01:01:17,891 - INFO - session closed
+2023-04-29 01:01:17,892 - INFO - checking if table exist!!...
+2023-04-29 01:01:17,978 - INFO - row inserted!..
+2023-04-29 01:01:18,017 - INFO - session closed
+2023-04-29 01:01:25,771 - INFO - add_to_cart method called
+2023-04-29 01:01:25,772 - INFO - checking if table exist!!...
+2023-04-29 01:01:25,878 - INFO - session closed
+2023-04-29 01:01:25,879 - INFO - item is already present in cart!! updating..
+2023-04-29 01:01:25,879 - INFO - checking if table exist!!...
+2023-04-29 01:01:25,910 - INFO - session closed
+2023-04-29 01:01:25,911 - INFO - checking if table exist!!...
+2023-04-29 01:01:25,940 - INFO - row inserted!..
+2023-04-29 01:01:25,969 - INFO - session closed
+2023-04-29 01:12:01,633 - INFO - Serving on http://0.0.0.0:5003
+2023-04-29 01:13:03,895 - ERROR - Exception on /add_to_cart [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\JWTClient.py", line 21, in decorated_function
+    jwt_token = request.headers.get('Authorization').split(' ')[1]
+IndexError: list index out of range
+2023-04-29 02:02:36,948 - INFO - Serving on http://0.0.0.0:5003
+2023-04-29 02:04:17,777 - ERROR - Exception on /add_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\JWTClient.py", line 21, in decorated_function
+    jwt_token = request.headers.get('Authorization').split(' ')[1]
+IndexError: list index out of range
+2023-04-29 02:06:23,303 - INFO - add_to_cart method called
+2023-04-29 02:06:23,303 - INFO - checking if table exist!!...
+2023-04-29 02:06:33,323 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-29 02:06:44,344 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-29 02:06:55,368 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-29 02:06:56,377 - INFO - item not present in cart 
+2023-04-29 02:06:56,377 - ERROR - No response found. Internal Error.
+2023-04-29 02:06:56,377 - ERROR - Exception on /add_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'decorated_function' did not return a valid response. The function either returned None or ended without a return statement.
+2023-04-29 02:07:40,710 - INFO - add_to_cart method called
+2023-04-29 02:07:40,711 - INFO - checking if table exist!!...
+2023-04-29 02:07:50,719 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-29 02:08:01,739 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-29 02:08:12,753 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-29 02:08:13,759 - INFO - item not present in cart 
+2023-04-29 02:08:13,759 - ERROR - No response found. Internal Error.
+2023-04-29 02:08:13,759 - ERROR - Exception on /add_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'decorated_function' did not return a valid response. The function either returned None or ended without a return statement.
+2023-04-29 02:56:31,422 - INFO - add_to_cart method called
+2023-04-29 02:56:31,422 - INFO - checking if table exist!!...
+2023-04-29 02:56:33,472 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-29 02:56:34,494 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-04-29 02:56:35,669 - INFO - session closed
+2023-04-29 02:56:35,669 - INFO - item is already present in cart!! updating..
+2023-04-29 02:56:35,669 - INFO - checking if table exist!!...
+2023-04-29 02:56:35,696 - INFO - session closed
+2023-04-29 02:56:35,696 - INFO - checking if table exist!!...
+2023-04-29 02:56:35,706 - INFO - row inserted!..
+2023-04-29 02:56:35,712 - INFO - session closed
+2023-04-29 02:56:35,712 - ERROR - Exception on /add_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2174, in make_response
+    "The view function did not return a valid"
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a bool.
+2023-04-29 02:56:48,487 - INFO - add_to_cart method called
+2023-04-29 02:56:48,487 - INFO - checking if table exist!!...
+2023-04-29 02:56:48,495 - INFO - session closed
+2023-04-29 02:56:48,495 - INFO - item is already present in cart!! updating..
+2023-04-29 02:56:48,495 - INFO - checking if table exist!!...
+2023-04-29 02:56:48,503 - INFO - session closed
+2023-04-29 02:56:48,503 - INFO - checking if table exist!!...
+2023-04-29 02:56:48,539 - INFO - row inserted!..
+2023-04-29 02:56:48,550 - INFO - session closed
+2023-04-29 02:56:48,551 - ERROR - Exception on /add_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2174, in make_response
+    "The view function did not return a valid"
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a bool.
+2023-04-29 03:00:16,742 - INFO - Serving on http://0.0.0.0:5003
+2023-04-29 03:00:32,428 - INFO - add_to_cart method called
+2023-04-29 03:00:32,428 - INFO - checking if table exist!!...
+2023-04-29 03:00:32,472 - INFO - session closed
+2023-04-29 03:00:32,472 - INFO - item is already present in cart!! updating..
+2023-04-29 03:00:32,472 - INFO - checking if table exist!!...
+2023-04-29 03:00:32,502 - INFO - session closed
+2023-04-29 03:00:32,502 - INFO - checking if table exist!!...
+2023-04-29 03:00:32,507 - INFO - row inserted!..
+2023-04-29 03:00:32,515 - INFO - session closed
+2023-04-29 03:00:41,285 - INFO - add_to_cart method called
+2023-04-29 03:00:41,285 - INFO - checking if table exist!!...
+2023-04-29 03:00:41,294 - INFO - session closed
+2023-04-29 03:00:41,294 - INFO - item is already present in cart!! updating..
+2023-04-29 03:00:41,294 - INFO - checking if table exist!!...
+2023-04-29 03:00:41,337 - INFO - session closed
+2023-04-29 03:00:41,337 - INFO - checking if table exist!!...
+2023-04-29 03:00:41,366 - INFO - row inserted!..
+2023-04-29 03:00:41,373 - INFO - session closed
+2023-04-29 03:00:56,906 - INFO - add_to_cart method called
+2023-04-29 03:00:56,908 - INFO - checking if table exist!!...
+2023-04-29 03:00:56,921 - INFO - session closed
+2023-04-29 03:00:56,922 - ERROR - key error list index out of range
+2023-04-29 03:00:56,922 - INFO - item not present in cart 
+2023-04-29 03:00:56,922 - INFO - checking if table exist!!...
+2023-04-29 03:00:56,929 - INFO - session closed
+2023-04-29 03:00:56,929 - INFO - checking if table exist!!...
+2023-04-29 03:00:56,935 - INFO - row inserted!..
+2023-04-29 03:00:56,943 - INFO - session closed
+2023-04-29 03:02:01,932 - INFO - add_to_cart method called
+2023-04-29 03:02:01,932 - INFO - checking if table exist!!...
+2023-04-29 03:02:01,941 - INFO - session closed
+2023-04-29 03:02:01,941 - ERROR - key error list index out of range
+2023-04-29 03:02:01,941 - INFO - item not present in cart 
+2023-04-29 03:02:01,942 - INFO - checking if table exist!!...
+2023-04-29 03:02:01,952 - INFO - session closed
+2023-04-29 03:02:01,953 - ERROR - An exception occurred:list index out of range
+2023-04-29 03:02:01,953 - ERROR - list index out of range
+2023-04-29 03:02:01,953 - ERROR - Exception on /add_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'decorated_function' did not return a valid response. The function either returned None or ended without a return statement.
+2023-04-29 03:02:21,841 - INFO - add_to_cart method called
+2023-04-29 03:02:21,842 - INFO - checking if table exist!!...
+2023-04-29 03:02:21,849 - INFO - session closed
+2023-04-29 03:02:21,849 - ERROR - key error list index out of range
+2023-04-29 03:02:21,850 - INFO - item not present in cart 
+2023-04-29 03:02:21,850 - INFO - checking if table exist!!...
+2023-04-29 03:02:21,858 - INFO - session closed
+2023-04-29 03:02:21,858 - ERROR - An exception occurred:list index out of range
+2023-04-29 03:02:21,858 - ERROR - list index out of range
+2023-04-29 03:02:21,858 - ERROR - Exception on /add_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'decorated_function' did not return a valid response. The function either returned None or ended without a return statement.
+2023-04-29 03:03:05,884 - ERROR - Exception on /add_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\JWTClient.py", line 21, in decorated_function
+    jwt_token = request.headers.get('Authorization').split(' ')[1]
+IndexError: list index out of range
+2023-04-29 04:12:14,956 - INFO - Serving on http://0.0.0.0:5003
+2023-04-29 04:19:11,963 - INFO - Serving on http://0.0.0.0:5003
+2023-04-29 04:23:10,571 - INFO - Serving on http://0.0.0.0:5003

@@ -9,6 +9,7 @@ class SQLOrmService(SQLClient):
     def __init__(self):
         super().__init__()
         self.__cart_table=TABLE["cart"]
+        self.__link_table=TABLE["link"]
         self.__inventory_table= TABLE["inventory"]
 
     def add_to_cart(self, data_model: dict, inventory_model: dict):
@@ -45,6 +46,10 @@ class SQLOrmService(SQLClient):
     def show_cart_with_session(self, data_model:dict):
         logging.info("show cart  function triggered!...")
         return self.show_tbl(self.__cart_table, data_model)
+
+    def show_cart_with_login(self, data_model:dict,uid: str):
+        logging.info("show cart  function triggered!...")
+        return self.show_tbl_with_login(self.__cart_table, data_model,self.__link_table, uid)
 
 
 sql_service = SQLOrmService()

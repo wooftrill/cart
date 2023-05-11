@@ -207,6 +207,40 @@ class SQLClient:
             session.close()
             logging.info("session closed")
 
+    def show_tbl_with_login(self, table_name: str, sql_model: dict,link_table: str, uid: str):
+        __min_available = 1
+        max_retries = 3
+        retries = 0
+        logging.info("checking if table exist!!...")
+        while retries < max_retries:
+            try:
+                inspect_db = sa.inspect(self.engine)
+                is_exist = inspect_db.dialect.has_table(self.engine.connect(), table_name, schema="external")
+                if not is_exist:
+                    raise NoSuchTableError
+                else:
+                    curr_session = sessionmaker(bind=self.engine)
+                    session = curr_session()
+                    uid= HelperUtils.generate_hash(uid)
+                    query = SQLUtils.show_cart_with_login(table_name,link_table,uid, sql_model["session_id"])
+                    cart_list = []
+                    response = session.execute(text(query))
+                    session.close()
+                    logging.info("session closed")
+                    for res in response:
+                        cart_list.append(res)
+                    return HelperUtils.tupple_to_dict(cart_list)
+            except OperationalError as e:
+                logging.error("Error: connection issue {}".format(e))
+                retries += 1
+                print("in loop")
+                time.sleep(1)
+            except Exception as ex:
+                logging.error("An exception occurred:{}".format(ex))
+                raise ex
+
+        raise Exception("Could not perform database eration after {} retries".format(max_retries))
+
     def show_tbl(self, table_name: str, sql_model: dict):
         __min_available = 1
         max_retries = 3
@@ -242,8 +276,6 @@ class SQLClient:
 
 
 sql_client = SQLClient()
-
-
 
 
 

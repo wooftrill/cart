@@ -1,8 +1,18 @@
 import os
 import logging
+import hashlib,json
 
 
 class HelperUtils:
+
+    @staticmethod
+    def generate_hash(obj: str):
+        """
+        :param email:
+        :return:
+        """
+        if obj:
+            return hashlib.sha1(obj.encode()).hexdigest()
 
     @staticmethod
     def tupple_to_dict(sql_response_list: list):

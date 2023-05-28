@@ -541,3 +541,12 @@ TypeError: The view function for 'show_from_cart_with_login' did not return a va
 2023-05-10 20:26:42,605 - INFO - session closed
 2023-05-10 20:26:42,606 - INFO - Validation time: 2.063 seconds
 2023-05-10 20:26:42,606 - INFO - Execution time: 2.166 seconds
+2023-05-10 20:33:43,970 - INFO - Serving on http://0.0.0.0:5003
+2023-05-10 20:34:00,072 - INFO - Validation time: 2.059 seconds
+2023-05-10 20:35:41,521 - INFO - Validation time: 0.017 seconds
+2023-05-10 20:35:41,522 - INFO - show cart  function triggered!...
+2023-05-10 20:35:41,522 - INFO - checking if table exist!!...
+2023-05-10 20:35:41,626 - INFO - session closed
+2023-05-10 20:35:41,627 - INFO - Validation time: 0.017 seconds
+2023-05-10 20:35:41,627 - INFO - Execution time: 0.123 seconds
+2023-05-27 08:58:37,614 - INFO - Serving on http://0.0.0.0:5003

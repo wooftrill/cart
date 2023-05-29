@@ -223,13 +223,14 @@ class SQLClient:
                     session = curr_session()
                     uid= HelperUtils.generate_hash(uid)
                     query = SQLUtils.show_cart_with_login(table_name,link_table,uid, sql_model["session_id"])
+                    print(query)
                     cart_list = []
                     response = session.execute(text(query))
                     session.close()
                     logging.info("session closed")
                     for res in response:
                         cart_list.append(res)
-                    return HelperUtils.tupple_to_dict(cart_list)
+                    return HelperUtils.tupple_to_dict(cart_list,["session_id","item_id","count"])
             except OperationalError as e:
                 logging.error("Error: connection issue {}".format(e))
                 retries += 1
@@ -256,18 +257,20 @@ class SQLClient:
                     curr_session = sessionmaker(bind=self.engine)
                     session = curr_session()
                     query = SQLUtils.show_cart_wo_login(table_name, sql_model["session_id"])
+                    logging.info("query %s",query)
                     cart_list = []
                     response = session.execute(text(query))
                     session.close()
                     logging.info("session closed")
                     for res in response:
+                        print(res)
                         cart_list.append(res)
-                    return HelperUtils.tupple_to_dict(cart_list)
+                    return HelperUtils.tupple_to_dict(cart_list,["session_id","cart_id", "item_id", "count","is_active"])
             except OperationalError as e:
                 logging.error("Error: connection issue {}".format(e))
                 retries += 1
                 print("in loop")
-                time.sleep(5)
+                time.sleep(1)
             except Exception as ex:
                 logging.error("An exception occurred:{}".format(ex))
                 raise ex

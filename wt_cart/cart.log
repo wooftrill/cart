@@ -1,342 +1,392 @@
-2023-04-29 04:23:22,902 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 04:24:41,784 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 04:24:53,267 - ERROR - Exception on /add_wo_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
-    return view_function(*req.view_args.values())  # type: ignore
-  File "C:\Users\Admin\PycharmProjects\pythonProject3\wt_cart\application\service\JWTClient.py", line 21, in decorated_function
-    jwt_token = request.headers.get('Authorization').split(' ')[1]
-IndexError: list index out of range
-2023-04-29 04:25:37,314 - INFO - add_to_cart method called
-2023-04-29 04:25:37,314 - INFO - checking if table exist!!...
-2023-04-29 04:25:37,418 - INFO - session closed
-2023-04-29 04:25:37,418 - INFO - item is already present in cart!! updating..
-2023-04-29 04:25:37,418 - INFO - checking if table exist!!...
-2023-04-29 04:25:37,439 - INFO - session closed
-2023-04-29 04:25:37,439 - INFO - checking if table exist!!...
-2023-04-29 04:25:37,495 - INFO - row inserted!..
-2023-04-29 04:25:37,511 - INFO - session closed
-2023-04-29 04:26:30,324 - INFO - update function triggered!...
-2023-04-29 04:26:30,324 - INFO - checking if table exist!!...
-2023-04-29 04:26:30,380 - INFO - session closed
-2023-04-29 04:26:30,380 - INFO - checking if table exist!!...
-2023-04-29 04:26:30,412 - INFO - row inserted!..
-2023-04-29 04:26:30,420 - INFO - session closed
-2023-04-29 04:35:00,894 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 04:39:07,868 - INFO - remove function triggered!...
-2023-04-29 04:39:07,869 - INFO - checking if table exist!!...
-2023-04-29 04:39:07,963 - INFO - row inserted!..
-2023-04-29 04:39:07,981 - INFO - session closed
-2023-04-29 04:39:35,607 - INFO - remove function triggered!...
-2023-04-29 04:39:35,607 - INFO - checking if table exist!!...
-2023-04-29 04:39:35,623 - INFO - row inserted!..
-2023-04-29 04:39:35,630 - INFO - session closed
-2023-04-29 06:43:47,218 - ERROR - Exception during reset or similar
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 760, in _write_bytes
-    self._sock.sendall(data)
-ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
-    asyncio_safe=can_manipulate_connection,
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
-    pool._dialect.do_rollback(self)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
-    dbapi_connection.rollback()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 481, in rollback
-    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 818, in _execute_command
-    self._write_bytes(packet)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 764, in _write_bytes
-    CR.CR_SERVER_GONE_ERROR, "MySQL server has gone away (%r)" % (e,)
-pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))")
-2023-04-29 06:57:38,726 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 06:57:55,051 - INFO - show cart  function triggered!...
-2023-04-29 06:57:55,051 - INFO - checking if table exist!!...
-2023-04-29 06:57:55,138 - INFO - session closed
-2023-04-29 06:57:55,138 - ERROR - Object of type Row is not JSON serializable
-2023-04-29 06:57:55,138 - ERROR - Exception on /show_wo_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-04-29 07:00:32,723 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 07:02:34,338 - INFO - show cart  function triggered!...
-2023-04-29 07:02:34,338 - INFO - checking if table exist!!...
-2023-04-29 07:02:34,387 - INFO - session closed
-2023-04-29 07:02:34,388 - ERROR - Object of type Row is not JSON serializable
-2023-04-29 07:02:34,388 - ERROR - Exception on /show_wo_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-04-29 07:04:19,235 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 07:04:42,589 - INFO - show cart  function triggered!...
-2023-04-29 07:04:42,589 - INFO - checking if table exist!!...
-2023-04-29 07:04:42,685 - INFO - session closed
-2023-04-29 07:04:42,686 - ERROR - Exception on /show_wo_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 457, in make_response
-    rv = jsonify(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\json\__init__.py", line 342, in jsonify
-    return current_app.json.response(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\json\provider.py", line 309, in response
-    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\json\provider.py", line 230, in dumps
-    return json.dumps(obj, **kwargs)
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.7_3.7.2544.0_x64__qbz5n2kfra8p0\lib\json\__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.7_3.7.2544.0_x64__qbz5n2kfra8p0\lib\json\encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.7_3.7.2544.0_x64__qbz5n2kfra8p0\lib\json\encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\json\provider.py", line 122, in _default
-    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
-
-
-2023-04-29 07:55:24,454 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 07:56:27,511 - INFO - show cart  function triggered!...
-2023-04-29 07:56:27,512 - INFO - checking if table exist!!...
-2023-04-29 07:56:27,678 - INFO - session closed
-2023-04-29 07:56:48,538 - INFO - show cart  function triggered!...
-2023-04-29 07:56:48,538 - INFO - checking if table exist!!...
-2023-04-29 07:56:48,565 - INFO - session closed
-2023-04-29 08:20:02,062 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 08:20:16,350 - INFO - show cart  function triggered!...
-2023-04-29 08:20:16,350 - INFO - checking if table exist!!...
-2023-04-29 08:20:16,469 - INFO - session closed
-2023-04-29 08:20:16,470 - ERROR - dictionary update sequence element #0 has length 4; 2 is required
-2023-04-29 08:20:16,470 - ERROR - Exception on /show_wo_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-04-29 08:21:23,371 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 08:21:32,280 - INFO - show cart  function triggered!...
-2023-04-29 08:21:32,280 - INFO - checking if table exist!!...
-2023-04-29 08:21:32,393 - INFO - session closed
-2023-04-29 08:21:32,393 - ERROR - dictionary update sequence element #0 has length 4; 2 is required
-2023-04-29 08:21:32,394 - ERROR - Exception on /show_wo_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-04-29 08:26:45,159 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 08:27:05,855 - INFO - show cart  function triggered!...
-2023-04-29 08:27:05,855 - INFO - checking if table exist!!...
-2023-04-29 08:27:06,014 - INFO - session closed
-2023-04-29 08:27:06,015 - ERROR - Object of type Row is not JSON serializable
-2023-04-29 08:27:06,016 - ERROR - Exception on /show_wo_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-04-29 08:27:53,808 - INFO - show cart  function triggered!...
-2023-04-29 08:27:53,808 - INFO - checking if table exist!!...
-2023-04-29 08:27:53,852 - INFO - session closed
-2023-04-29 08:27:53,852 - ERROR - Object of type Row is not JSON serializable
-2023-04-29 08:27:53,853 - ERROR - Exception on /show_wo_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-04-29 08:28:52,342 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 08:29:05,365 - INFO - show cart  function triggered!...
-2023-04-29 08:29:05,365 - INFO - checking if table exist!!...
-2023-04-29 08:29:05,481 - INFO - session closed
-2023-04-29 08:29:05,481 - ERROR - Object of type Row is not JSON serializable
-2023-04-29 08:29:05,482 - ERROR - Exception on /show_wo_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-04-29 08:43:40,937 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 08:43:54,282 - INFO - show cart  function triggered!...
-2023-04-29 08:43:54,282 - INFO - checking if table exist!!...
-2023-04-29 08:43:54,379 - INFO - session closed
-2023-04-29 08:43:54,380 - ERROR - Object of type Row is not JSON serializable
-2023-04-29 08:43:54,380 - ERROR - Exception on /show_wo_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-04-29 08:44:10,484 - INFO - show cart  function triggered!...
-2023-04-29 08:44:10,484 - INFO - checking if table exist!!...
-2023-04-29 08:44:10,525 - INFO - session closed
-2023-04-29 08:44:10,526 - ERROR - Object of type Row is not JSON serializable
-2023-04-29 08:44:10,526 - ERROR - Exception on /show_wo_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-04-29 08:53:47,852 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 08:53:57,764 - INFO - show cart  function triggered!...
-2023-04-29 08:53:57,765 - INFO - checking if table exist!!...
-2023-04-29 08:53:57,875 - INFO - session closed
-2023-04-29 08:53:57,875 - ERROR - Object of type Row is not JSON serializable
-2023-04-29 08:53:57,876 - ERROR - Exception on /show_wo_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-04-29 09:23:28,436 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 09:24:21,270 - INFO - show cart  function triggered!...
-2023-04-29 09:24:21,270 - INFO - checking if table exist!!...
-2023-04-29 09:24:21,347 - INFO - session closed
-2023-04-29 10:06:49,158 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 10:07:00,801 - INFO - show cart  function triggered!...
-2023-04-29 10:07:00,802 - INFO - checking if table exist!!...
-2023-04-29 10:07:01,190 - INFO - session closed
-2023-04-29 10:07:21,560 - INFO - show cart  function triggered!...
-2023-04-29 10:07:21,560 - INFO - checking if table exist!!...
-2023-04-29 10:07:21,609 - INFO - session closed
-2023-04-29 10:08:32,140 - INFO - show cart  function triggered!...
-2023-04-29 10:08:32,141 - INFO - checking if table exist!!...
-2023-04-29 10:08:32,209 - INFO - session closed
-2023-04-29 10:14:44,625 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 10:14:56,046 - INFO - show cart  function triggered!...
-2023-04-29 10:14:56,047 - INFO - checking if table exist!!...
-2023-04-29 10:14:56,167 - INFO - session closed
-2023-04-29 10:21:46,306 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 10:21:59,127 - INFO - show cart  function triggered!...
-2023-04-29 10:21:59,127 - INFO - checking if table exist!!...
-2023-04-29 10:21:59,179 - INFO - session closed
-2023-04-29 10:29:25,238 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 10:30:05,264 - INFO - show cart  function triggered!...
-2023-04-29 10:30:05,264 - INFO - checking if table exist!!...
-2023-04-29 10:30:05,323 - INFO - session closed
-2023-04-29 10:30:05,323 - ERROR - __init__() got an unexpected keyword argument 'message_id'
-2023-04-29 10:30:05,323 - ERROR - Exception on /show_wo_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-04-29 10:31:05,072 - INFO - Serving on http://0.0.0.0:5003
-2023-04-29 10:31:17,408 - INFO - show cart  function triggered!...
-2023-04-29 10:31:17,408 - INFO - checking if table exist!!...
-2023-04-29 10:31:17,457 - INFO - session closed
-2023-05-08 11:13:30,852 - INFO - Serving on http://0.0.0.0:5003
-2023-05-08 11:13:44,205 - INFO - Validation time: 2.068 seconds
-2023-05-08 11:15:48,075 - INFO - Validation time: 0.014 seconds
-2023-05-08 11:15:48,076 - INFO - add_to_cart method called
-2023-05-08 11:15:48,076 - INFO - checking if table exist!!...
-2023-05-08 11:15:48,201 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'session_id' in 'where clause'")
-[SQL:  SELECT count from cart1 where session_id='wewewerddklkkjdjhgh1213232jhsgkk' and item_id='c121']
+2023-05-28 02:03:35,899 - INFO - add_to_cart method called
+2023-05-28 02:03:35,900 - INFO - checking if table exist!!...
+2023-05-28 02:03:35,921 - INFO - session closed
+2023-05-28 02:03:35,922 - ERROR - key error list index out of range
+2023-05-28 02:03:35,922 - INFO - item not present in cart 
+2023-05-28 02:03:35,922 - INFO - checking if table exist!!...
+2023-05-28 02:03:35,937 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'item_id' in 'where clause'")
+[SQL: SELECT count from item where item_id='c122';]
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
-2023-05-08 11:15:49,279 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'session_id' in 'where clause'")
-[SQL:  SELECT count from cart1 where session_id='wewewerddklkkjdjhgh1213232jhsgkk' and item_id='c121']
+2023-05-28 02:03:36,989 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'item_id' in 'where clause'")
+[SQL: SELECT count from item where item_id='c122';]
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
-2023-05-08 11:15:51,678 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'session_id' in 'where clause'")
-[SQL:  SELECT count from cart1 where session_id='wewewerddklkkjdjhgh1213232jhsgkk' and item_id='c121']
+2023-05-28 02:03:38,054 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'item_id' in 'where clause'")
+[SQL: SELECT count from item where item_id='c122';]
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
-2023-05-08 11:15:52,683 - INFO - item not present in cart 
-2023-05-08 11:15:52,683 - ERROR - No response found. Internal Error.
-2023-05-08 11:15:52,684 - INFO - Validation time: 0.015 seconds
-2023-05-08 11:15:52,684 - INFO - Execution time: 4.623 seconds
-2023-05-08 11:15:52,684 - ERROR - Exception on /add_with_login [POST]
+2023-05-28 02:03:39,056 - ERROR - Could not perform database eration after 3 retries
+2023-05-28 02:03:39,056 - INFO - Validation time: 0.000 seconds
+2023-05-28 02:03:39,056 - INFO - Execution time: 3.156 seconds
+2023-05-28 02:03:39,057 - ERROR - Exception on /add_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'add_to_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-28 02:07:53,700 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 02:08:14,338 - INFO - Validation time: 2.147 seconds
+2023-05-28 02:08:14,339 - INFO - add_to_cart method called
+2023-05-28 02:08:14,339 - INFO - checking if table exist!!...
+2023-05-28 02:08:14,410 - INFO - session closed
+2023-05-28 02:08:14,410 - ERROR - key error list index out of range
+2023-05-28 02:08:14,410 - INFO - item not present in cart 
+2023-05-28 02:08:14,410 - INFO - checking if table exist!!...
+2023-05-28 02:08:14,824 - INFO - session closed
+2023-05-28 02:08:14,825 - INFO - checking if table exist!!...
+2023-05-28 02:08:17,636 - INFO - row inserted!..
+2023-05-28 02:08:17,660 - INFO - session closed
+2023-05-28 02:08:17,660 - INFO - Validation time: 2.148 seconds
+2023-05-28 02:08:17,660 - INFO - Execution time: 5.470 seconds
+2023-05-28 02:09:39,959 - INFO - Validation time: 0.131 seconds
+2023-05-28 02:09:39,970 - INFO - show cart  function triggered!...
+2023-05-28 02:09:39,971 - INFO - checking if table exist!!...
+2023-05-28 02:09:40,061 - INFO - session closed
+2023-05-28 02:09:40,075 - INFO - Validation time: 0.142 seconds
+2023-05-28 02:09:40,075 - INFO - Execution time: 0.253 seconds
+2023-05-28 02:18:01,611 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 02:18:20,658 - INFO - Validation time: 2.226 seconds
+2023-05-28 02:18:20,672 - INFO - add_to_cart method called
+2023-05-28 02:18:20,673 - INFO - checking if table exist!!...
+2023-05-28 02:18:21,325 - INFO - session closed
+2023-05-28 02:18:21,326 - ERROR - key error list index out of range
+2023-05-28 02:18:21,326 - INFO - item not present in cart 
+2023-05-28 02:18:21,327 - INFO - checking if table exist!!...
+2023-05-28 02:18:21,357 - INFO - session closed
+2023-05-28 02:18:21,358 - INFO - checking if table exist!!...
+2023-05-28 02:18:21,412 - INFO - row inserted!..
+2023-05-28 02:18:21,434 - INFO - session closed
+2023-05-28 02:18:21,434 - INFO - Validation time: 2.234 seconds
+2023-05-28 02:18:21,434 - INFO - Execution time: 3.005 seconds
+2023-05-28 02:19:25,194 - INFO - Validation time: 0.226 seconds
+2023-05-28 02:19:25,208 - ERROR - __init__() missing 1 required positional argument: 'is_active'
+2023-05-28 02:19:25,209 - INFO - Validation time: 0.243 seconds
+2023-05-28 02:19:25,209 - INFO - Execution time: 0.248 seconds
+2023-05-28 02:19:25,218 - ERROR - Exception on /show_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-28 02:23:12,683 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 02:23:26,024 - INFO - Validation time: 2.214 seconds
+2023-05-28 02:23:26,025 - ERROR - __init__() missing 1 required positional argument: 'is_active'
+2023-05-28 02:23:26,025 - INFO - Validation time: 2.215 seconds
+2023-05-28 02:23:26,025 - INFO - Execution time: 2.215 seconds
+2023-05-28 02:23:26,026 - ERROR - Exception on /show_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-28 02:27:22,810 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 02:27:40,297 - INFO - Validation time: 6.921 seconds
+2023-05-28 02:28:20,021 - INFO - Validation time: 0.039 seconds
+2023-05-28 02:28:20,043 - INFO - show cart  function triggered!...
+2023-05-28 02:28:20,045 - INFO - checking if table exist!!...
+2023-05-28 02:28:20,167 - INFO - session closed
+2023-05-28 02:28:20,173 - INFO - Validation time: 0.049 seconds
+2023-05-28 02:28:20,173 - INFO - Execution time: 0.194 seconds
+2023-05-28 02:29:25,204 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 02:29:42,758 - INFO - Validation time: 2.160 seconds
+2023-05-28 02:29:42,763 - INFO - show cart  function triggered!...
+2023-05-28 02:29:42,763 - INFO - checking if table exist!!...
+2023-05-28 02:29:42,949 - INFO - session closed
+2023-05-28 02:29:42,950 - INFO - Validation time: 2.164 seconds
+2023-05-28 02:29:42,950 - INFO - Execution time: 2.355 seconds
+2023-05-28 02:30:50,353 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 02:31:02,770 - INFO - Validation time: 2.109 seconds
+2023-05-28 02:31:02,772 - INFO - show cart  function triggered!...
+2023-05-28 02:31:02,772 - INFO - checking if table exist!!...
+2023-05-28 02:31:02,821 - INFO - session closed
+2023-05-28 02:31:02,821 - ERROR - An exception occurred:list index out of range
+2023-05-28 02:31:02,821 - ERROR - list index out of range
+2023-05-28 02:31:02,821 - INFO - Validation time: 2.111 seconds
+2023-05-28 02:31:02,821 - INFO - Execution time: 2.160 seconds
+2023-05-28 02:31:02,822 - ERROR - Exception on /show_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-28 02:34:33,110 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 02:34:46,073 - INFO - Validation time: 2.190 seconds
+2023-05-28 02:34:46,076 - INFO - show cart  function triggered!...
+2023-05-28 02:34:46,076 - INFO - checking if table exist!!...
+2023-05-28 02:34:46,133 - INFO - session closed
+2023-05-28 02:34:46,133 - ERROR - An exception occurred:list index out of range
+2023-05-28 02:34:46,133 - ERROR - list index out of range
+2023-05-28 02:34:46,133 - INFO - Validation time: 2.192 seconds
+2023-05-28 02:34:46,133 - INFO - Execution time: 2.250 seconds
+2023-05-28 02:34:46,134 - ERROR - Exception on /show_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-28 02:41:24,775 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 02:41:40,980 - INFO - Validation time: 2.178 seconds
+2023-05-28 02:41:40,985 - INFO - show cart  function triggered!...
+2023-05-28 02:41:40,986 - INFO - checking if table exist!!...
+2023-05-28 02:41:41,286 - INFO - session closed
+2023-05-28 02:41:41,286 - ERROR - An exception occurred:list index out of range
+2023-05-28 02:41:41,286 - ERROR - list index out of range
+2023-05-28 02:41:41,286 - INFO - Validation time: 2.182 seconds
+2023-05-28 02:41:41,287 - INFO - Execution time: 2.486 seconds
+2023-05-28 02:41:41,287 - ERROR - Exception on /show_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-28 02:44:23,215 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 02:44:37,386 - INFO - Validation time: 2.163 seconds
+2023-05-28 02:44:37,390 - INFO - show cart  function triggered!...
+2023-05-28 02:44:37,390 - INFO - checking if table exist!!...
+2023-05-28 02:44:37,513 - INFO - session closed
+2023-05-28 02:44:37,514 - ERROR - An exception occurred:list index out of range
+2023-05-28 02:44:37,514 - ERROR - list index out of range
+2023-05-28 02:44:37,514 - INFO - Validation time: 2.167 seconds
+2023-05-28 02:44:37,514 - INFO - Execution time: 2.294 seconds
+2023-05-28 02:44:37,515 - ERROR - Exception on /show_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-28 02:49:57,934 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 02:50:21,792 - INFO - Validation time: 2.269 seconds
+2023-05-28 02:50:21,810 - INFO - show cart  function triggered!...
+2023-05-28 02:50:21,811 - INFO - checking if table exist!!...
+2023-05-28 02:50:21,930 - INFO - session closed
+2023-05-28 02:50:21,931 - ERROR - An exception occurred:list index out of range
+2023-05-28 02:50:21,931 - ERROR - list index out of range
+2023-05-28 02:50:21,931 - INFO - Validation time: 2.282 seconds
+2023-05-28 02:50:21,931 - INFO - Execution time: 2.414 seconds
+2023-05-28 02:50:21,935 - ERROR - Exception on /show_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-28 02:51:26,027 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 02:51:46,929 - INFO - Validation time: 2.162 seconds
+2023-05-28 02:51:46,934 - INFO - show cart  function triggered!...
+2023-05-28 02:51:46,935 - INFO - checking if table exist!!...
+2023-05-28 02:51:47,007 - INFO - session closed
+2023-05-28 02:51:47,007 - ERROR - An exception occurred:list index out of range
+2023-05-28 02:51:47,007 - ERROR - list index out of range
+2023-05-28 02:51:47,008 - INFO - Validation time: 2.164 seconds
+2023-05-28 02:51:47,008 - INFO - Execution time: 2.241 seconds
+2023-05-28 02:51:47,008 - ERROR - Exception on /show_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-28 02:55:15,329 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 02:55:25,396 - INFO - Validation time: 2.240 seconds
+2023-05-28 02:55:25,397 - INFO - show cart  function triggered!...
+2023-05-28 02:55:25,397 - INFO - checking if table exist!!...
+2023-05-28 02:55:25,500 - INFO - session closed
+2023-05-28 02:55:25,501 - INFO - Validation time: 2.241 seconds
+2023-05-28 02:55:25,501 - INFO - Execution time: 2.346 seconds
+2023-05-28 02:58:03,423 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 02:58:16,498 - INFO - Validation time: 2.288 seconds
+2023-05-28 02:58:16,507 - INFO - show cart  function triggered!...
+2023-05-28 02:58:16,508 - INFO - checking if table exist!!...
+2023-05-28 02:58:16,660 - INFO - session closed
+2023-05-28 02:58:16,661 - INFO - Validation time: 2.291 seconds
+2023-05-28 02:58:16,661 - INFO - Execution time: 2.451 seconds
+2023-05-28 03:01:55,377 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 03:02:08,251 - INFO - Validation time: 2.270 seconds
+2023-05-28 03:02:08,265 - INFO - show cart  function triggered!...
+2023-05-28 03:02:08,268 - INFO - checking if table exist!!...
+2023-05-28 03:02:08,439 - INFO - session closed
+2023-05-28 03:02:08,441 - INFO - Validation time: 2.279 seconds
+2023-05-28 03:02:08,441 - INFO - Execution time: 2.463 seconds
+2023-05-28 03:07:52,346 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 03:08:15,219 - INFO - Validation time: 2.271 seconds
+2023-05-28 03:08:15,228 - INFO - add_to_cart method called
+2023-05-28 03:08:15,228 - INFO - checking if table exist!!...
+2023-05-28 03:08:15,324 - INFO - session closed
+2023-05-28 03:08:15,325 - ERROR - key error list index out of range
+2023-05-28 03:08:15,325 - INFO - item not present in cart 
+2023-05-28 03:08:15,325 - INFO - checking if table exist!!...
+2023-05-28 03:08:15,359 - INFO - session closed
+2023-05-28 03:08:15,359 - INFO - checking if table exist!!...
+2023-05-28 03:08:15,397 - INFO - row inserted!..
+2023-05-28 03:08:15,411 - INFO - session closed
+2023-05-28 03:08:15,411 - INFO - Validation time: 2.276 seconds
+2023-05-28 03:08:15,411 - INFO - Execution time: 2.465 seconds
+2023-05-28 03:08:28,954 - INFO - add_to_cart method called
+2023-05-28 03:08:28,957 - INFO - checking if table exist!!...
+2023-05-28 03:08:28,999 - INFO - session closed
+2023-05-28 03:08:29,000 - ERROR - key error list index out of range
+2023-05-28 03:08:29,000 - INFO - item not present in cart 
+2023-05-28 03:08:29,000 - INFO - checking if table exist!!...
+2023-05-28 03:08:29,016 - INFO - session closed
+2023-05-28 03:08:29,017 - INFO - checking if table exist!!...
+2023-05-28 03:08:29,030 - INFO - row inserted!..
+2023-05-28 03:08:29,220 - INFO - session closed
+2023-05-28 03:08:29,221 - INFO - Validation time: 0.002 seconds
+2023-05-28 03:08:29,221 - INFO - Execution time: 0.276 seconds
+2023-05-28 03:08:46,654 - INFO - show cart  function triggered!...
+2023-05-28 03:08:46,659 - INFO - checking if table exist!!...
+2023-05-28 03:08:46,777 - INFO - session closed
+2023-05-28 03:08:46,779 - ERROR - An exception occurred:list index out of range
+2023-05-28 03:08:46,779 - ERROR - list index out of range
+2023-05-28 03:08:46,780 - INFO - Validation time: 0.004 seconds
+2023-05-28 03:08:46,780 - INFO - Execution time: 0.135 seconds
+2023-05-28 03:08:46,789 - ERROR - Exception on /show_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-28 03:17:54,697 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 03:18:18,645 - INFO - Validation time: 2.414 seconds
+2023-05-28 03:18:18,667 - INFO - show cart  function triggered!...
+2023-05-28 03:18:18,670 - INFO - checking if table exist!!...
+2023-05-28 03:18:18,811 - INFO - query select * from external.tbl_cart1 where session_id='debyan_dsdsfed' and is_active= 1;
+2023-05-28 03:18:18,853 - INFO - session closed
+2023-05-28 03:18:18,855 - ERROR - An exception occurred:list index out of range
+2023-05-28 03:18:18,855 - ERROR - list index out of range
+2023-05-28 03:18:18,856 - INFO - Validation time: 2.436 seconds
+2023-05-28 03:18:18,856 - INFO - Execution time: 2.636 seconds
+2023-05-28 03:18:18,860 - ERROR - Exception on /show_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-28 03:19:41,010 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 03:19:52,657 - INFO - Validation time: 2.255 seconds
+2023-05-28 03:19:52,661 - INFO - show cart  function triggered!...
+2023-05-28 03:19:52,661 - INFO - checking if table exist!!...
+2023-05-28 03:19:52,712 - INFO - query select * from external.tbl_cart1 where session_id='debyan_dsdsfed' and is_active= 1;
+2023-05-28 03:19:52,736 - INFO - session closed
+2023-05-28 03:19:52,737 - ERROR - An exception occurred:list index out of range
+2023-05-28 03:19:52,737 - ERROR - list index out of range
+2023-05-28 03:19:52,737 - INFO - Validation time: 2.256 seconds
+2023-05-28 03:19:52,737 - INFO - Execution time: 2.335 seconds
+2023-05-28 03:19:52,737 - ERROR - Exception on /show_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'show_from_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-28 03:22:21,662 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 03:23:01,160 - INFO - Validation time: 2.425 seconds
+2023-05-28 03:23:01,197 - INFO - show cart  function triggered!...
+2023-05-28 03:23:01,200 - INFO - checking if table exist!!...
+2023-05-28 03:23:01,364 - INFO - query select * from external.tbl_cart1 where session_id='debyan_dsdsfed' and is_active= 1;
+2023-05-28 03:23:01,420 - INFO - session closed
+2023-05-28 03:23:01,431 - INFO - Validation time: 2.447 seconds
+2023-05-28 03:23:01,431 - INFO - Execution time: 2.707 seconds
+2023-05-28 03:25:44,677 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 03:26:03,973 - INFO - Validation time: 2.146 seconds
+2023-05-28 03:26:03,983 - INFO - show cart  function triggered!...
+2023-05-28 03:26:03,983 - INFO - checking if table exist!!...
+2023-05-28 03:26:04,032 - INFO - query select * from external.tbl_cart where session_id='debyan_dsdsfed' and is_active= true;
+2023-05-28 03:26:04,048 - INFO - session closed
+2023-05-28 03:26:04,051 - INFO - Validation time: 2.152 seconds
+2023-05-28 03:26:04,051 - INFO - Execution time: 2.228 seconds
+2023-05-28 03:29:58,462 - INFO - Validation time: 6.532 seconds
+2023-05-28 03:30:49,084 - INFO - Validation time: 0.098 seconds
+2023-05-28 03:30:49,098 - INFO - show cart  function triggered!...
+2023-05-28 03:30:49,100 - INFO - checking if table exist!!...
+2023-05-28 03:30:49,131 - INFO - query select * from external.tbl_cart where session_id='debyan_dsdsfed' and is_active= true;
+2023-05-28 03:30:49,145 - INFO - session closed
+2023-05-28 03:30:49,149 - INFO - Validation time: 0.109 seconds
+2023-05-28 03:30:49,149 - INFO - Execution time: 0.168 seconds
+2023-05-28 03:35:07,628 - INFO - Validation time: 2.296 seconds
+2023-05-28 03:35:07,644 - ERROR - __init__() missing 1 required positional argument: 'is_active'
+2023-05-28 03:35:07,645 - INFO - Validation time: 2.310 seconds
+2023-05-28 03:35:07,645 - INFO - Execution time: 2.320 seconds
+2023-05-28 03:35:07,649 - ERROR - Exception on /add_with_login [POST]
 Traceback (most recent call last):
   File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
     response = self.full_dispatch_request()
@@ -349,161 +399,134 @@ Traceback (most recent call last):
   File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
     f"The view function for {request.endpoint!r} did not"
 TypeError: The view function for 'add_to_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-05-08 11:17:27,107 - INFO - Validation time: 0.023 seconds
-2023-05-08 11:17:27,108 - INFO - add_to_cart method called
-2023-05-08 11:17:27,108 - INFO - checking if table exist!!...
-2023-05-08 11:17:27,143 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'session_id' in 'where clause'")
-[SQL:  SELECT count from cart1 where session_id='wewewerddklkkjdjhgh1213232jhsgkk' and item_id='c121']
-(Background on this error at: https://sqlalche.me/e/20/e3q8)
-2023-05-08 11:17:28,183 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'session_id' in 'where clause'")
-[SQL:  SELECT count from cart1 where session_id='wewewerddklkkjdjhgh1213232jhsgkk' and item_id='c121']
-(Background on this error at: https://sqlalche.me/e/20/e3q8)
-2023-05-08 11:17:29,241 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'session_id' in 'where clause'")
-[SQL:  SELECT count from cart1 where session_id='wewewerddklkkjdjhgh1213232jhsgkk' and item_id='c121']
-(Background on this error at: https://sqlalche.me/e/20/e3q8)
-2023-05-08 11:17:30,251 - INFO - item not present in cart 
-2023-05-08 11:17:30,252 - ERROR - No response found. Internal Error.
-2023-05-08 11:17:30,252 - INFO - Validation time: 0.024 seconds
-2023-05-08 11:17:30,252 - INFO - Execution time: 3.169 seconds
-2023-05-08 11:17:30,252 - ERROR - Exception on /add_with_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'add_to_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-05-08 11:19:47,535 - INFO - Serving on http://0.0.0.0:5003
-2023-05-08 11:19:55,462 - INFO - Validation time: 2.054 seconds
-2023-05-08 11:19:55,463 - INFO - add_to_cart method called
-2023-05-08 11:19:55,463 - INFO - checking if table exist!!...
-2023-05-08 11:19:55,556 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'session_id' in 'where clause'")
-[SQL:  SELECT count from cart1 where session_id='wewewerddklkkjdjhgh1213232jhsgkk' and item_id='c121']
-(Background on this error at: https://sqlalche.me/e/20/e3q8)
-2023-05-08 11:19:56,605 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'session_id' in 'where clause'")
-[SQL:  SELECT count from cart1 where session_id='wewewerddklkkjdjhgh1213232jhsgkk' and item_id='c121']
-(Background on this error at: https://sqlalche.me/e/20/e3q8)
-2023-05-08 11:19:57,699 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'session_id' in 'where clause'")
-[SQL:  SELECT count from cart1 where session_id='wewewerddklkkjdjhgh1213232jhsgkk' and item_id='c121']
-(Background on this error at: https://sqlalche.me/e/20/e3q8)
-2023-05-08 11:19:58,706 - INFO - item not present in cart 
-2023-05-08 11:19:58,706 - ERROR - No response found. Internal Error.
-2023-05-08 11:19:58,707 - INFO - Validation time: 2.055 seconds
-2023-05-08 11:19:58,707 - INFO - Execution time: 5.299 seconds
-2023-05-08 11:19:58,707 - ERROR - Exception on /add_with_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'add_to_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-05-08 11:21:18,965 - INFO - Validation time: 0.016 seconds
-2023-05-08 11:21:18,966 - INFO - add_to_cart method called
-2023-05-08 11:21:18,966 - INFO - checking if table exist!!...
-2023-05-08 11:21:18,967 - ERROR - Exception during reset or similar
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
-    asyncio_safe=can_manipulate_connection,
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
-    pool._dialect.do_rollback(self)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
-    dbapi_connection.rollback()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 482, in rollback
-    self._read_ok_packet()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 442, in _read_ok_packet
-    pkt = self._read_packet()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 696, in _read_packet
-    packet_header = self._read_bytes(4)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 753, in _read_bytes
-    CR.CR_SERVER_LOST, "Lost connection to MySQL server during query"
-pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
-2023-05-08 11:21:19,091 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
-[SQL: DESCRIBE `external`.`cart1`]
-(Background on this error at: https://sqlalche.me/e/20/e3q8)
-2023-05-08 11:21:20,199 - ERROR - Exception during reset or similar
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
-    asyncio_safe=can_manipulate_connection,
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
-    pool._dialect.do_rollback(self)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
-    dbapi_connection.rollback()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 482, in rollback
-    self._read_ok_packet()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 442, in _read_ok_packet
-    pkt = self._read_packet()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 696, in _read_packet
-    packet_header = self._read_bytes(4)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 753, in _read_bytes
-    CR.CR_SERVER_LOST, "Lost connection to MySQL server during query"
-pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
-2023-05-08 11:21:20,491 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'session_id' in 'where clause'")
-[SQL:  SELECT count from cart1 where session_id='wewewerddklkkjdjhgh1213232jhsgkk' and item_id='c121']
-(Background on this error at: https://sqlalche.me/e/20/e3q8)
-2023-05-08 11:21:21,545 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'session_id' in 'where clause'")
-[SQL:  SELECT count from cart1 where session_id='wewewerddklkkjdjhgh1213232jhsgkk' and item_id='c121']
-(Background on this error at: https://sqlalche.me/e/20/e3q8)
-2023-05-08 11:21:22,553 - INFO - item not present in cart 
-2023-05-08 11:21:22,553 - ERROR - No response found. Internal Error.
-2023-05-08 11:21:22,554 - INFO - Validation time: 0.017 seconds
-2023-05-08 11:21:22,554 - INFO - Execution time: 3.605 seconds
-2023-05-08 11:21:22,554 - ERROR - Exception on /add_with_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'add_to_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-05-08 11:23:08,919 - INFO - Serving on http://0.0.0.0:5003
-2023-05-08 11:23:19,417 - INFO - Validation time: 2.503 seconds
-2023-05-08 11:23:19,418 - INFO - add_to_cart method called
-2023-05-08 11:23:19,418 - INFO - checking if table exist!!...
-2023-05-08 11:23:19,521 - INFO - session closed
-2023-05-08 11:23:19,522 - INFO - item is already present in cart!! updating..
-2023-05-08 11:23:19,522 - INFO - checking if table exist!!...
-2023-05-08 11:23:19,544 - INFO - session closed
-2023-05-08 11:23:19,544 - INFO - checking if table exist!!...
-2023-05-08 11:23:19,590 - INFO - row inserted!..
-2023-05-08 11:23:19,606 - INFO - session closed
-2023-05-08 11:23:19,606 - INFO - Validation time: 2.503 seconds
-2023-05-08 11:23:19,606 - INFO - Execution time: 2.692 seconds
-2023-05-08 20:05:12,247 - INFO - Validation time: 2.080 seconds
-2023-05-10 20:18:38,691 - INFO - Serving on http://0.0.0.0:5003
-2023-05-10 20:20:46,927 - INFO - Validation time: 2.061 seconds
-2023-05-10 20:20:46,927 - INFO - add_to_cart method called
-2023-05-10 20:20:46,928 - INFO - checking if table exist!!...
-2023-05-10 20:20:47,082 - INFO - session closed
-2023-05-10 20:20:47,082 - ERROR - key error list index out of range
-2023-05-10 20:20:47,082 - INFO - item not present in cart 
-2023-05-10 20:20:47,082 - INFO - checking if table exist!!...
-2023-05-10 20:20:47,148 - INFO - session closed
-2023-05-10 20:20:47,149 - INFO - checking if table exist!!...
-2023-05-10 20:20:47,216 - INFO - row inserted!..
-2023-05-10 20:20:47,230 - INFO - session closed
-2023-05-10 20:20:47,231 - INFO - Validation time: 2.061 seconds
-2023-05-10 20:20:47,231 - INFO - Execution time: 2.365 seconds
-2023-05-10 20:22:19,064 - INFO - Validation time: 0.021 seconds
-2023-05-10 20:22:19,065 - ERROR - 'uid'
-2023-05-10 20:22:19,065 - INFO - Validation time: 0.023 seconds
-2023-05-10 20:22:19,065 - INFO - Execution time: 0.023 seconds
-2023-05-10 20:22:19,065 - ERROR - Exception on /show_with_login [POST]
+2023-05-28 03:36:31,444 - INFO - Serving on http://0.0.0.0:5008
+2023-05-28 03:36:47,112 - INFO - Validation time: 2.171 seconds
+2023-05-28 03:36:47,116 - INFO - add_to_cart method called
+2023-05-28 03:36:47,117 - INFO - checking if table exist!!...
+2023-05-28 03:36:47,176 - INFO - session closed
+2023-05-28 03:36:47,176 - ERROR - key error list index out of range
+2023-05-28 03:36:47,176 - INFO - item not present in cart 
+2023-05-28 03:36:47,177 - INFO - checking if table exist!!...
+2023-05-28 03:36:47,192 - INFO - session closed
+2023-05-28 03:36:47,192 - INFO - checking if table exist!!...
+2023-05-28 03:36:47,221 - INFO - row inserted!..
+2023-05-28 03:36:47,229 - INFO - session closed
+2023-05-28 03:36:47,229 - INFO - Validation time: 2.173 seconds
+2023-05-28 03:36:47,230 - INFO - Execution time: 2.288 seconds
+2023-05-28 03:37:42,368 - INFO - add_to_cart method called
+2023-05-28 03:37:42,369 - INFO - checking if table exist!!...
+2023-05-28 03:37:42,387 - INFO - session closed
+2023-05-28 03:37:42,388 - INFO - item is already present in cart!! updating..
+2023-05-28 03:37:42,388 - INFO - checking if table exist!!...
+2023-05-28 03:37:42,398 - INFO - session closed
+2023-05-28 03:37:42,399 - INFO - checking if table exist!!...
+2023-05-28 03:37:42,407 - INFO - row inserted!..
+2023-05-28 03:37:42,417 - INFO - session closed
+2023-05-28 03:37:42,418 - INFO - Validation time: 0.000 seconds
+2023-05-28 03:37:42,418 - INFO - Execution time: 0.052 seconds
+2023-05-28 04:37:15,409 - INFO - Validation time: 2.339 seconds
+2023-05-28 04:37:15,422 - INFO - add_to_cart method called
+2023-05-28 04:37:15,423 - INFO - checking if table exist!!...
+2023-05-28 04:37:15,512 - INFO - session closed
+2023-05-28 04:37:15,512 - INFO - item is already present in cart!! updating..
+2023-05-28 04:37:15,513 - INFO - checking if table exist!!...
+2023-05-28 04:37:15,527 - INFO - session closed
+2023-05-28 04:37:15,528 - INFO - checking if table exist!!...
+2023-05-28 04:37:15,539 - INFO - row inserted!..
+2023-05-28 04:37:15,553 - INFO - session closed
+2023-05-28 04:37:15,553 - INFO - Validation time: 2.351 seconds
+2023-05-28 04:37:15,554 - INFO - Execution time: 2.487 seconds
+2023-05-28 04:37:52,142 - INFO - add_to_cart method called
+2023-05-28 04:37:52,149 - INFO - checking if table exist!!...
+2023-05-28 04:37:52,215 - INFO - session closed
+2023-05-28 04:37:52,215 - INFO - item is already present in cart!! updating..
+2023-05-28 04:37:52,216 - INFO - checking if table exist!!...
+2023-05-28 04:37:52,230 - INFO - session closed
+2023-05-28 04:37:52,230 - INFO - checking if table exist!!...
+2023-05-28 04:37:52,272 - INFO - row inserted!..
+2023-05-28 04:37:52,283 - INFO - session closed
+2023-05-28 04:37:52,285 - INFO - Validation time: 0.008 seconds
+2023-05-28 04:37:52,285 - INFO - Execution time: 0.164 seconds
+2023-05-28 04:38:03,151 - INFO - add_to_cart method called
+2023-05-28 04:38:03,151 - INFO - checking if table exist!!...
+2023-05-28 04:38:03,187 - INFO - session closed
+2023-05-28 04:38:03,188 - INFO - item is already present in cart!! updating..
+2023-05-28 04:38:03,188 - INFO - checking if table exist!!...
+2023-05-28 04:38:03,208 - INFO - session closed
+2023-05-28 04:38:03,208 - INFO - checking if table exist!!...
+2023-05-28 04:38:03,225 - INFO - row inserted!..
+2023-05-28 04:38:03,249 - INFO - session closed
+2023-05-28 04:38:03,249 - INFO - Validation time: 0.000 seconds
+2023-05-28 04:38:03,249 - INFO - Execution time: 0.099 seconds
+2023-05-29 08:55:42,936 - INFO - Serving on http://0.0.0.0:5008
+2023-05-29 08:56:53,371 - INFO - Validation time: 2.455 seconds
+2023-05-29 08:56:53,402 - INFO - add_to_cart method called
+2023-05-29 08:56:53,406 - INFO - checking if table exist!!...
+2023-05-29 08:56:53,840 - INFO - session closed
+2023-05-29 08:56:53,844 - ERROR - key error list index out of range
+2023-05-29 08:56:53,844 - INFO - item not present in cart 
+2023-05-29 08:56:53,845 - INFO - checking if table exist!!...
+2023-05-29 08:56:55,028 - INFO - session closed
+2023-05-29 08:56:55,028 - INFO - checking if table exist!!...
+2023-05-29 08:56:55,090 - INFO - row inserted!..
+2023-05-29 08:56:55,106 - INFO - session closed
+2023-05-29 08:56:55,106 - INFO - Validation time: 2.482 seconds
+2023-05-29 08:56:55,106 - INFO - Execution time: 4.202 seconds
+2023-05-29 08:57:11,756 - INFO - add_to_cart method called
+2023-05-29 08:57:11,760 - INFO - checking if table exist!!...
+2023-05-29 08:57:11,793 - INFO - session closed
+2023-05-29 08:57:11,794 - ERROR - key error list index out of range
+2023-05-29 08:57:11,794 - INFO - item not present in cart 
+2023-05-29 08:57:11,794 - INFO - checking if table exist!!...
+2023-05-29 08:57:11,804 - INFO - session closed
+2023-05-29 08:57:11,804 - INFO - checking if table exist!!...
+2023-05-29 08:57:11,811 - INFO - row inserted!..
+2023-05-29 08:57:11,820 - INFO - session closed
+2023-05-29 08:57:11,820 - INFO - Validation time: 0.004 seconds
+2023-05-29 08:57:11,820 - INFO - Execution time: 0.077 seconds
+2023-05-29 08:59:06,142 - INFO - Validation time: 0.327 seconds
+2023-05-29 08:59:06,153 - INFO - add_to_cart method called
+2023-05-29 08:59:06,155 - INFO - checking if table exist!!...
+2023-05-29 08:59:06,234 - INFO - session closed
+2023-05-29 08:59:06,235 - ERROR - key error list index out of range
+2023-05-29 08:59:06,235 - INFO - item not present in cart 
+2023-05-29 08:59:06,235 - INFO - checking if table exist!!...
+2023-05-29 08:59:06,251 - INFO - session closed
+2023-05-29 08:59:06,252 - INFO - checking if table exist!!...
+2023-05-29 08:59:06,261 - INFO - row inserted!..
+2023-05-29 08:59:06,273 - INFO - session closed
+2023-05-29 08:59:06,273 - INFO - Validation time: 0.341 seconds
+2023-05-29 08:59:06,273 - INFO - Execution time: 0.464 seconds
+2023-05-29 08:59:40,759 - INFO - show cart  function triggered!...
+2023-05-29 08:59:40,768 - INFO - checking if table exist!!...
+2023-05-29 08:59:40,841 - INFO - session closed
+2023-05-29 08:59:40,868 - INFO - Validation time: 0.003 seconds
+2023-05-29 08:59:40,868 - INFO - Execution time: 0.125 seconds
+2023-05-29 09:06:41,489 - INFO - Serving on http://0.0.0.0:5008
+2023-05-29 09:06:58,397 - INFO - Validation time: 2.383 seconds
+2023-05-29 09:06:58,421 - INFO - show cart  function triggered!...
+2023-05-29 09:06:58,422 - INFO - checking if table exist!!...
+2023-05-29 09:06:58,753 - INFO - session closed
+2023-05-29 09:06:58,759 - INFO - Validation time: 2.401 seconds
+2023-05-29 09:06:58,759 - INFO - Execution time: 2.753 seconds
+2023-05-29 09:09:29,548 - INFO - Serving on http://0.0.0.0:5008
+2023-05-29 09:09:41,824 - INFO - Validation time: 2.283 seconds
+2023-05-29 09:11:16,413 - INFO - Validation time: 0.165 seconds
+2023-05-29 09:11:16,443 - INFO - show cart  function triggered!...
+2023-05-29 09:11:16,445 - INFO - checking if table exist!!...
+2023-05-29 09:11:16,685 - INFO - session closed
+2023-05-29 09:11:16,697 - INFO - Validation time: 0.178 seconds
+2023-05-29 09:11:16,698 - INFO - Execution time: 0.452 seconds
+2023-05-29 09:15:36,235 - INFO - Serving on http://0.0.0.0:5008
+2023-05-29 09:15:47,817 - INFO - Validation time: 2.319 seconds
+2023-05-29 09:15:47,831 - INFO - show cart  function triggered!...
+2023-05-29 09:15:47,831 - INFO - checking if table exist!!...
+2023-05-29 09:15:47,933 - INFO - session closed
+2023-05-29 09:15:47,933 - ERROR - An exception occurred:list index out of range
+2023-05-29 09:15:47,933 - ERROR - list index out of range
+2023-05-29 09:15:47,934 - INFO - Validation time: 2.327 seconds
+2023-05-29 09:15:47,934 - INFO - Execution time: 2.437 seconds
+2023-05-29 09:15:47,937 - ERROR - Exception on /show_with_login [POST]
 Traceback (most recent call last):
   File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
     response = self.full_dispatch_request()
@@ -516,37 +539,11 @@ Traceback (most recent call last):
   File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
     f"The view function for {request.endpoint!r} did not"
 TypeError: The view function for 'show_from_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-05-10 20:25:40,958 - INFO - Serving on http://0.0.0.0:5003
-2023-05-10 20:26:02,501 - INFO - Validation time: 2.071 seconds
-2023-05-10 20:26:02,502 - ERROR - 'uid'
-2023-05-10 20:26:02,502 - INFO - Validation time: 2.072 seconds
-2023-05-10 20:26:02,502 - INFO - Execution time: 2.072 seconds
-2023-05-10 20:26:02,503 - ERROR - Exception on /show_with_login [POST]
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
-    response = self.make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
-    return super().make_response(rv)
-  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
-    f"The view function for {request.endpoint!r} did not"
-TypeError: The view function for 'show_from_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
-2023-05-10 20:26:35,222 - INFO - Serving on http://0.0.0.0:5003
-2023-05-10 20:26:42,502 - INFO - Validation time: 2.062 seconds
-2023-05-10 20:26:42,503 - INFO - show cart  function triggered!...
-2023-05-10 20:26:42,503 - INFO - checking if table exist!!...
-2023-05-10 20:26:42,605 - INFO - session closed
-2023-05-10 20:26:42,606 - INFO - Validation time: 2.063 seconds
-2023-05-10 20:26:42,606 - INFO - Execution time: 2.166 seconds
-2023-05-10 20:33:43,970 - INFO - Serving on http://0.0.0.0:5003
-2023-05-10 20:34:00,072 - INFO - Validation time: 2.059 seconds
-2023-05-10 20:35:41,521 - INFO - Validation time: 0.017 seconds
-2023-05-10 20:35:41,522 - INFO - show cart  function triggered!...
-2023-05-10 20:35:41,522 - INFO - checking if table exist!!...
-2023-05-10 20:35:41,626 - INFO - session closed
-2023-05-10 20:35:41,627 - INFO - Validation time: 0.017 seconds
-2023-05-10 20:35:41,627 - INFO - Execution time: 0.123 seconds
-2023-05-27 08:58:37,614 - INFO - Serving on http://0.0.0.0:5003
+2023-05-29 09:22:25,179 - INFO - Serving on http://0.0.0.0:5008
+2023-05-29 09:22:44,001 - INFO - Validation time: 2.307 seconds
+2023-05-29 09:26:37,662 - INFO - Validation time: 2.281 seconds
+2023-05-29 09:26:37,685 - INFO - show cart  function triggered!...
+2023-05-29 09:26:37,687 - INFO - checking if table exist!!...
+2023-05-29 09:26:37,856 - INFO - session closed
+2023-05-29 09:26:37,860 - INFO - Validation time: 2.289 seconds
+2023-05-29 09:26:37,860 - INFO - Execution time: 2.482 seconds

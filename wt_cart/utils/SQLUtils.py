@@ -29,9 +29,9 @@ class SQLUtils:
 
     @staticmethod
     def show_cart_wo_login(table_name: str, session: str):
-        return f"select * from external.{table_name} where session_id='{session}' and is_active='1';"
+        return f"select * from external.{table_name} where session_id='{session}' and is_active= true;"
 
     @staticmethod
     def show_cart_with_login(table_name : str, link_table: str, uid:str,session_id: str):
-        return f"SELECT DISTINCT {table_name}.session_id, {table_name}.item_id, {table_name}.count FROM external.{table_name}  INNER JOIN external.{link_table}  ON {table_name}.session_id = {link_table}.cart  WHERE {link_table}.uid = '{uid}' AND curr_session = '{session_id}' AND {link_table}.is_sold = 1  AND {table_name}.is_active = 0;"
+        return f"SELECT DISTINCT {table_name}.session_id, {table_name}.item_id, {table_name}.count FROM external.{table_name}  INNER JOIN external.{link_table}  ON {table_name}.session_id = {link_table}.cart  WHERE {link_table}.uid = '{uid}' AND curr_session = '{session_id}' AND {link_table}.is_sold = false  AND {table_name}.is_active = 1;"
 

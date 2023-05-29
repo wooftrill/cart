@@ -21,7 +21,7 @@ class CartController:
 cart_controller = CartController(sql_service)
 
 
-@app.post('/')
+@app.get('/')
 def welcome():
     return "Welcome to service"
 
@@ -37,7 +37,7 @@ def add_to_cart_wo_login(session_id):
             item_id = request.json['item_id']
             count = request.json['count']
             is_active = request.json['is_active']
-            cart_model = asdict(SqlModel(session_id, item_id, count, is_active))
+            cart_model = asdict(SqlModel(session_id, session_id, item_id, count, is_active))
             inventory_model=asdict(InventoryModel(item_id))
             response=cart_controller.service.add_to_cart(cart_model,inventory_model)
             if response:
@@ -60,7 +60,7 @@ def add_to_cart_with_login(response):
             item_id = request.json['item_id']
             count = request.json['count']
             is_active = request.json['is_active']
-            cart_model = asdict(SqlModel(response['session_id'], item_id, count, is_active))
+            cart_model = asdict(SqlModel(response['session_id'],response['session_id'], item_id, count, is_active))
             inventory_model=asdict(InventoryModel(item_id))
             response=cart_controller.service.add_to_cart(cart_model,inventory_model)
             if response:
@@ -125,7 +125,8 @@ def show_from_cart_wo_login(session_id):
             item_id = request.json['item_id']
             count = request.json['count']
             is_active = request.json['is_active']
-            cart_model = asdict(SqlModel(session_id, item_id, count, is_active))
+            cart_model = asdict(SqlModel(session_id,session_id, item_id, count, is_active))
+            print("ggggg",cart_model)
             response=cart_controller.service.show_cart_with_session(cart_model)
             if len(response) > 0:
                 return jsonify(response,200)
@@ -148,7 +149,7 @@ def show_from_cart_with_login(response):
             item_id = request.json['item_id']
             count = request.json['count']
             is_active = request.json['is_active']
-            cart_model = asdict(SqlModel(response['session_id'], item_id, count, is_active))
+            cart_model = asdict(SqlModel(response['session_id'],response['session_id'], item_id, count, is_active))
             response=cart_controller.service.show_cart_with_login(cart_model,response['user_id'])
             if len(response) > 0:
                 return jsonify(response,200)

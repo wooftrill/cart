@@ -1,0 +1,211 @@
+2023-05-29 17:34:54,866 - INFO - Serving on http://0.0.0.0:5008
+2023-05-29 17:54:57,566 - INFO - Validation time: 0.008 seconds
+2023-05-29 17:54:57,566 - INFO - add_to_cart method called
+2023-05-29 17:54:57,566 - INFO - checking if table exist!!...
+2023-05-29 17:54:57,599 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1045, "Access denied for user 'WTrw'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-05-29 17:54:58,607 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1045, "Access denied for user 'WTrw'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-05-29 17:54:59,614 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1045, "Access denied for user 'WTrw'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-05-29 17:55:00,615 - INFO - item not present in cart 
+2023-05-29 17:55:00,615 - ERROR - No response found. Internal Error.
+2023-05-29 17:55:00,615 - INFO - Validation time: 0.008 seconds
+2023-05-29 17:55:00,616 - INFO - Execution time: 3.058 seconds
+2023-05-29 17:55:00,616 - ERROR - Exception on /add_with_login [POST]
+Traceback (most recent call last):
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/apiflask/app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 2138, in make_response
+    raise TypeError(
+TypeError: The view function for 'add_to_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-29 18:00:30,076 - INFO - Serving on http://0.0.0.0:5008
+2023-05-29 18:00:56,799 - INFO - Validation time: 0.007 seconds
+2023-05-29 18:12:38,927 - INFO - Serving on http://0.0.0.0:5008
+2023-05-29 18:13:03,910 - INFO - Serving on http://0.0.0.0:5008
+2023-05-29 18:13:32,480 - INFO - Validation time: 0.008 seconds
+2023-05-29 18:13:32,480 - INFO - add_to_cart method called
+2023-05-29 18:13:32,480 - INFO - checking if table exist!!...
+2023-05-29 18:13:32,482 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '12@localhost' ([Errno -2] Name or service not known)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-05-29 18:13:33,483 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '12@localhost' ([Errno -2] Name or service not known)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-05-29 18:13:34,485 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '12@localhost' ([Errno -2] Name or service not known)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-05-29 18:13:35,486 - INFO - item not present in cart 
+2023-05-29 18:13:35,487 - ERROR - No response found. Internal Error.
+2023-05-29 18:13:35,487 - INFO - Validation time: 0.008 seconds
+2023-05-29 18:13:35,487 - INFO - Execution time: 3.015 seconds
+2023-05-29 18:13:35,487 - ERROR - Exception on /add_with_login [POST]
+Traceback (most recent call last):
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/apiflask/app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 2138, in make_response
+    raise TypeError(
+TypeError: The view function for 'add_to_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-29 18:20:29,244 - INFO - Serving on http://0.0.0.0:5008
+2023-05-29 18:20:43,466 - INFO - Validation time: 0.008 seconds
+2023-05-29 18:22:37,509 - INFO - Validation time: 0.008 seconds
+2023-05-29 18:22:37,509 - INFO - add_to_cart method called
+2023-05-29 18:22:37,509 - INFO - checking if table exist!!...
+2023-05-29 18:22:37,517 - INFO - session closed
+2023-05-29 18:22:37,517 - ERROR - key error list index out of range
+2023-05-29 18:22:37,518 - INFO - item not present in cart 
+2023-05-29 18:22:37,518 - INFO - checking if table exist!!...
+2023-05-29 18:22:37,521 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'item_id' in 'where clause'")
+[SQL: SELECT count from item where item_id='201816_0_1';]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-05-29 18:22:38,526 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'item_id' in 'where clause'")
+[SQL: SELECT count from item where item_id='201816_0_1';]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-05-29 18:22:39,534 - ERROR - Error: connection issue (pymysql.err.OperationalError) (1054, "Unknown column 'item_id' in 'where clause'")
+[SQL: SELECT count from item where item_id='201816_0_1';]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-05-29 18:22:40,535 - ERROR - Could not perform database eration after 3 retries
+2023-05-29 18:22:40,535 - INFO - Validation time: 0.008 seconds
+2023-05-29 18:22:40,535 - INFO - Execution time: 3.035 seconds
+2023-05-29 18:22:40,536 - ERROR - Exception on /add_with_login [POST]
+Traceback (most recent call last):
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/apiflask/app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 2138, in make_response
+    raise TypeError(
+TypeError: The view function for 'add_to_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-05-29 18:27:29,365 - INFO - Serving on http://0.0.0.0:5008
+2023-05-29 18:27:46,695 - INFO - Validation time: 0.007 seconds
+2023-05-29 18:27:46,695 - INFO - add_to_cart method called
+2023-05-29 18:27:46,695 - INFO - checking if table exist!!...
+2023-05-29 18:27:46,703 - INFO - session closed
+2023-05-29 18:27:46,703 - ERROR - key error list index out of range
+2023-05-29 18:27:46,703 - INFO - item not present in cart 
+2023-05-29 18:27:46,703 - INFO - checking if table exist!!...
+2023-05-29 18:27:46,706 - INFO - session closed
+2023-05-29 18:27:46,707 - INFO - checking if table exist!!...
+2023-05-29 18:27:46,709 - INFO - row inserted!..
+2023-05-29 18:27:46,720 - INFO - session closed
+2023-05-29 18:27:46,720 - INFO - Validation time: 0.007 seconds
+2023-05-29 18:27:46,720 - INFO - Execution time: 0.032 seconds
+2023-05-29 18:28:41,878 - INFO - show cart  function triggered!...
+2023-05-29 18:28:41,879 - INFO - checking if table exist!!...
+2023-05-29 18:28:41,883 - INFO - session closed
+2023-05-29 18:28:41,883 - INFO - Validation time: 0.000 seconds
+2023-05-29 18:28:41,883 - INFO - Execution time: 0.005 seconds
+2023-05-29 18:30:26,582 - INFO - Validation time: 0.006 seconds
+2023-05-29 18:30:26,583 - INFO - add_to_cart method called
+2023-05-29 18:30:26,583 - INFO - checking if table exist!!...
+2023-05-29 18:30:26,587 - INFO - session closed
+2023-05-29 18:30:26,587 - INFO - item is already present in cart!! updating..
+2023-05-29 18:30:26,587 - INFO - checking if table exist!!...
+2023-05-29 18:30:26,591 - INFO - session closed
+2023-05-29 18:30:26,591 - INFO - checking if table exist!!...
+2023-05-29 18:30:26,594 - INFO - row inserted!..
+2023-05-29 18:30:26,605 - INFO - session closed
+2023-05-29 18:30:26,605 - INFO - Validation time: 0.006 seconds
+2023-05-29 18:30:26,605 - INFO - Execution time: 0.029 seconds
+2023-05-29 18:30:42,591 - INFO - show cart  function triggered!...
+2023-05-29 18:30:42,592 - INFO - checking if table exist!!...
+2023-05-29 18:30:42,594 - INFO - query select * from external.tbl_cart where session_id='debu_dsdsfed' and is_active= true;
+2023-05-29 18:30:42,596 - INFO - session closed
+2023-05-29 18:30:42,596 - INFO - Validation time: 0.000 seconds
+2023-05-29 18:30:42,596 - INFO - Execution time: 0.005 seconds
+2023-05-30 18:39:44,855 - INFO - Serving on http://0.0.0.0:5008
+2023-05-30 18:41:04,619 - INFO - Validation time: 4.244 seconds
+2023-05-30 18:42:43,441 - INFO - Validation time: 4.144 seconds
+2023-05-30 18:45:17,996 - INFO - Validation time: 4.081 seconds
+2023-05-30 18:49:08,407 - INFO - Validation time: 0.006 seconds
+2023-05-30 18:49:08,408 - INFO - show cart  function triggered!...
+2023-05-30 18:49:08,408 - INFO - checking if table exist!!...
+2023-05-30 18:49:08,419 - INFO - session closed
+2023-05-30 18:49:08,419 - INFO - Validation time: 0.006 seconds
+2023-05-30 18:49:08,419 - INFO - Execution time: 0.018 seconds
+2023-05-30 18:50:18,546 - INFO - Validation time: 0.006 seconds
+2023-05-30 18:50:18,546 - INFO - show cart  function triggered!...
+2023-05-30 18:50:18,546 - INFO - checking if table exist!!...
+2023-05-30 18:50:18,548 - INFO - query select * from external.tbl_cart where session_id='debu_d' and is_active= true;
+2023-05-30 18:50:18,550 - INFO - session closed
+2023-05-30 18:50:18,550 - INFO - Validation time: 0.006 seconds
+2023-05-30 18:50:18,550 - INFO - Execution time: 0.010 seconds
+2023-05-30 18:53:33,727 - INFO - Validation time: 0.005 seconds
+2023-05-30 18:53:33,727 - INFO - add_to_cart method called
+2023-05-30 18:53:33,728 - INFO - checking if table exist!!...
+2023-05-30 18:53:33,732 - INFO - session closed
+2023-05-30 18:53:33,733 - ERROR - key error list index out of range
+2023-05-30 18:53:33,733 - INFO - item not present in cart 
+2023-05-30 18:53:33,733 - INFO - checking if table exist!!...
+2023-05-30 18:53:33,737 - INFO - session closed
+2023-05-30 18:53:33,737 - INFO - checking if table exist!!...
+2023-05-30 18:53:33,740 - INFO - row inserted!..
+2023-05-30 18:53:33,751 - INFO - session closed
+2023-05-30 18:53:33,751 - INFO - Validation time: 0.006 seconds
+2023-05-30 18:53:33,751 - INFO - Execution time: 0.029 seconds
+2023-05-30 18:55:23,270 - INFO - Validation time: 0.006 seconds
+2023-05-30 18:55:23,270 - INFO - show cart  function triggered!...
+2023-05-30 18:55:23,270 - INFO - checking if table exist!!...
+2023-05-30 18:55:23,274 - INFO - session closed
+2023-05-30 18:55:23,274 - INFO - Validation time: 0.006 seconds
+2023-05-30 18:55:23,274 - INFO - Execution time: 0.010 seconds
+2023-05-31 03:39:22,225 - INFO - Serving on http://0.0.0.0:5008
+2023-05-31 04:09:37,264 - INFO - Serving on http://0.0.0.0:5008
+2023-05-31 04:13:32,025 - INFO - Validation time: 4.299 seconds
+2023-05-31 04:13:52,332 - INFO - Validation time: 0.007 seconds
+2023-05-31 04:13:52,333 - INFO - add_to_cart method called
+2023-05-31 04:13:52,333 - INFO - checking if table exist!!...
+2023-05-31 04:13:52,344 - INFO - session closed
+2023-05-31 04:13:52,344 - ERROR - key error list index out of range
+2023-05-31 04:13:52,344 - INFO - item not present in cart 
+2023-05-31 04:13:52,344 - INFO - checking if table exist!!...
+2023-05-31 04:13:52,348 - INFO - session closed
+2023-05-31 04:13:52,348 - INFO - checking if table exist!!...
+2023-05-31 04:13:52,350 - INFO - row inserted!..
+2023-05-31 04:13:52,375 - INFO - session closed
+2023-05-31 04:13:52,375 - INFO - Validation time: 0.007 seconds
+2023-05-31 04:13:52,375 - INFO - Execution time: 0.050 seconds
+2023-05-31 04:16:08,369 - ERROR - Exception on /update_wo_login [POST]
+Traceback (most recent call last):
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wtvmandtrill/.local/lib/python3.8/site-packages/apiflask/app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+TypeError: update_to_cart_wo_login() missing 1 required positional argument: 'session_id'
+2023-05-31 04:31:36,042 - INFO - Serving on http://0.0.0.0:5008
+2023-05-31 04:32:04,743 - INFO - update function triggered!...
+2023-05-31 04:32:04,743 - INFO - checking if table exist!!...
+2023-05-31 04:32:04,752 - INFO - session closed
+2023-05-31 04:32:04,752 - INFO - checking if table exist!!...
+2023-05-31 04:32:04,756 - INFO - row inserted!..
+2023-05-31 04:32:04,770 - INFO - session closed
+2023-05-31 04:34:51,943 - INFO - Serving on http://0.0.0.0:5008
+2023-05-31 04:35:37,580 - INFO - update function triggered!...
+2023-05-31 04:35:37,580 - INFO - checking if table exist!!...
+2023-05-31 04:35:37,588 - INFO - session closed
+2023-05-31 04:35:37,588 - INFO - checking if table exist!!...
+2023-05-31 04:35:37,592 - INFO - row inserted!..
+2023-05-31 04:35:37,601 - INFO - session closed
+2023-05-31 04:35:47,004 - INFO - update function triggered!...
+2023-05-31 04:35:47,004 - INFO - checking if table exist!!...
+2023-05-31 04:35:47,008 - INFO - session closed
+2023-05-31 04:35:47,008 - INFO - checking if table exist!!...
+2023-05-31 04:35:47,010 - INFO - row inserted!..
+2023-05-31 04:35:47,061 - INFO - session closed

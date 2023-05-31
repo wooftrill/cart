@@ -21,7 +21,7 @@ class SQLUtils:
 
     @staticmethod
     def is_product_exist(table_name: str,item_id: str):
-        return f"SELECT count from {table_name} where item_id='{item_id}';"
+        return f"SELECT count from {table_name} where items_id='{item_id}';"
 
     @staticmethod
     def update_product(table_name: str, count: int, item_id: str, session: str, is_active: str):

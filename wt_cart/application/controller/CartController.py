@@ -73,24 +73,21 @@ def add_to_cart_with_login(response):
 
 @app.post('/update_wo_login',endpoint='update_to_cart_wo_login')
 #@jwt_client.jwt_required
-def update_to_cart_wo_login(session_id):
-    if not session_id:
-        logging.error("Could not generate session_id")
-        return HTTPStatus.BAD_REQUEST, 401
-    else:
-        try:
-            item_id = request.json['item_id']
-            count = request.json['count']
-            is_active = request.json['is_active']
-            cart_model = asdict(SqlModel(session_id, item_id, count, is_active))
-            inventory_model=asdict(InventoryModel(item_id))
-            response=cart_controller.service.update_to_cart(cart_model,inventory_model)
-            if response:
-                return f"Response received.{response}"
-            else:
-                logging.error("No response found. Internal Error.")
-        except Exception as ex:
-            logging.error(ex)
+def update_to_cart_wo_login():
+    try:
+        session_id = request.json['session_id']
+        item_id = request.json['item_id']
+        count = request.json['count']
+        is_active = request.json['is_active']
+        cart_model = asdict(SqlModel(session_id, session_id, item_id, count, is_active))
+        inventory_model=asdict(InventoryModel(item_id))
+        response=cart_controller.service.update_to_cart(cart_model,inventory_model)
+        if response:
+            return f"Response received.{response}"
+        else:
+            logging.error("No response found. Internal Error.")
+    except Exception as ex:
+        logging.error(ex)
 
 
 @app.post('/remove_wo_login',endpoint='remove_from_cart_wo_login')

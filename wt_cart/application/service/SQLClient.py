@@ -16,7 +16,7 @@ from sqlalchemy import create_engine, Column, Integer,Table,String,MetaData
 class SQLClient:
 
     def __init__(self) ->None:
-        self.sql_conn = f"mysql+pymysql://{MYSQL['user']}:mypassword@localhost:3306/external"
+        self.sql_conn = "mysql+pymysql://WTrw:WoofandTrill%4012@localhost:3306/external"
         self.engine = create_engine(self.sql_conn)
 
         pass

@@ -209,3 +209,5 @@ TypeError: update_to_cart_wo_login() missing 1 required positional argument: 'se
 2023-05-31 04:35:47,008 - INFO - checking if table exist!!...
 2023-05-31 04:35:47,010 - INFO - row inserted!..
 2023-05-31 04:35:47,061 - INFO - session closed
+2023-06-08 16:09:35,810 - INFO - Serving on http://0.0.0.0:5008
+2023-06-08 16:29:11,721 - INFO - Serving on http://0.0.0.0:5008

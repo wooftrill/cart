@@ -92,23 +92,21 @@ def update_to_cart_wo_login():
 
 @app.post('/remove_wo_login',endpoint='remove_from_cart_wo_login')
 #@jwt_client.jwt_required
-def remove_from_cart_wo_login(session_id):
-    if not session_id:
-        logging.error("Could not generate session_id")
-        return HTTPStatus.BAD_REQUEST, 401
-    else:
-        try:
-            item_id = request.json['item_id']
-            count = request.json['count']
-            is_active = request.json['is_active']
-            cart_model = asdict(SqlModel(session_id, item_id, count, is_active))
-            response=cart_controller.service.remove_from_cart(cart_model)
-            if response:
-                return f"Response received.{response}"
-            else:
-                logging.error("No response found. Internal Error.")
-        except Exception as ex:
-            logging.error(ex)
+def remove_from_cart_wo_login():
+    try:
+        session_id = request.json['session_id']
+        item_id = request.json['item_id']
+        count = request.json['count']
+        is_active = request.json['is_active']
+        cart_model = asdict(SqlModel(session_id,session_id, item_id, count, is_active))
+        logging.info("jjjjj",cart_model)
+        response = cart_controller.service.remove_from_cart(cart_model)
+        if response:
+            return f"Response received.{response}"
+        else:
+            logging.error("No response found. Internal Error.")
+    except Exception as ex:
+        logging.error(ex)
 
 
 @app.post('/show_wo_login',endpoint='show_from_cart_wo_login')
@@ -142,12 +140,13 @@ def show_from_cart_with_login(response):
         return HTTPStatus.BAD_REQUEST, 401
     else:
         try:
-            print(response)
+            logging.info(response)
             item_id = request.json['item_id']
             count = request.json['count']
             is_active = request.json['is_active']
             cart_model = asdict(SqlModel(response['session_id'],response['session_id'], item_id, count, is_active))
             response=cart_controller.service.show_cart_with_login(cart_model,response['user_id'])
+            logging.info(response)
             if len(response) > 0:
                 return jsonify(response,200)
             else:

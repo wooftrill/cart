@@ -21,7 +21,7 @@ class SQLClient:
 
         pass
 
-    def insert(self, table_name: str, sql_model: dict):
+    def insert(self, table_name: str, sql_model: dict,cost: tuple):
         try:
             logging.info("checking if table exist!!...")
             inspect_db = sa.inspect(self.engine)
@@ -31,7 +31,8 @@ class SQLClient:
             else:
                 curr_session = sessionmaker(bind=self.engine)
                 session = curr_session()
-                query = SQLUtils.insert_query(table_name, tuple(sql_model.values()))
+                values = tuple(sql_model.values())+cost
+                query = SQLUtils.insert_query(table_name, values)
                 response = session.execute(text(query))
                 if response.__dict__['rowcount'] > 0:
                     logging.info("row inserted!..")
@@ -68,9 +69,9 @@ class SQLClient:
                     session.close()
                     logging.info("session closed")
                     for res in response:
-                        count_list.append(res[0])
-                    if count_list[0] > __min_available:
-                        return True
+                        count_list.append(res)
+                    if count_list[0][0] > __min_available:
+                        return True,count_list[0][1]
                     return False
             except OperationalError as e:
                 logging.error("Error: connection issue {}".format(e))
@@ -125,7 +126,7 @@ class SQLClient:
 
         raise Exception("Network error :Could not perform database eration after {} retries".format(max_retries))
 
-    def update(self,table_name, sql_model):
+    def update(self,table_name, sql_model, cost:float):
         """
 
         :param table_name:
@@ -143,7 +144,7 @@ class SQLClient:
                 curr_session = sessionmaker(bind=self.engine)
                 session = curr_session()
                 query = SQLUtils.update_product(table_name,count=sql_model["count"],is_active=sql_model["is_active"],
-                                                item_id=sql_model["item_id"], session= sql_model["session_id"])
+                                                item_id=sql_model["item_id"], session= sql_model["session_id"],cost=cost)
                 print(query)
                 response = session.execute(text(query))
                 if response.__dict__['rowcount'] > 0:
@@ -165,7 +166,46 @@ class SQLClient:
             session.close()
             logging.info("session closed")
 
-    def update_if_exist(self, table_name: str, sql_cart_model:dict,count:int):
+    def simple_update(self,table_name, sql_model):
+        """
+
+        :param table_name:
+        :param sql_model:
+        :return:
+        :purpose: updating from cart section
+        """
+        try:
+            logging.info("checking if table exist!!...")
+            inspect_db = sa.inspect(self.engine)
+            is_exist = inspect_db.dialect.has_table(self.engine.connect(), table_name, schema="external")
+            if not is_exist:
+                raise NoSuchTableError
+            else:
+                curr_session = sessionmaker(bind=self.engine)
+                session = curr_session()
+                query = SQLUtils.simple_update_status(table_name,item_id=sql_model["item_id"], session= sql_model["session_id"])
+                print(query)
+                response = session.execute(text(query))
+                if response.__dict__['rowcount'] > 0:
+                    logging.info("row inserted!..")
+                    return True
+                raise SQLAlchemyError("Error!...no row affected")
+
+        except OperationalError as e:
+            logging.error("Error: connection issue {}".format(e))
+
+        except DataError as e:
+            session.rollback()
+            logging.error(f"Insert failed: {e}")
+        except Exception as ex:
+            session.rollback()
+            logging.error(f"issue with query:{ex}")
+        finally:
+            session.commit()
+            session.close()
+            logging.info("session closed")
+
+    def update_if_exist(self, table_name: str, sql_cart_model:dict,count:int,cost: float):
         """
 
         :param sql_cart_model:
@@ -185,7 +225,7 @@ class SQLClient:
                 curr_session = sessionmaker(bind=self.engine)
                 session = curr_session()
                 query = SQLUtils.update_product(table_name, count=count, is_active=sql_cart_model["is_active"],
-                                                item_id=sql_cart_model["item_id"], session=sql_cart_model["session_id"])
+                                                item_id=sql_cart_model["item_id"], session=sql_cart_model["session_id"],cost=cost)
 
                 response = session.execute(text(query))
                 if response.__dict__['rowcount'] > 0:
@@ -230,7 +270,8 @@ class SQLClient:
                     logging.info("session closed")
                     for res in response:
                         cart_list.append(res)
-                    return HelperUtils.tupple_to_dict(cart_list,["session_id","item_id","count"])
+                    print(cart_list)
+                    return HelperUtils.tupple_to_dict(cart_list,["session_id","item_id","count","cost","net_cost","cart_id"])
             except OperationalError as e:
                 logging.error("Error: connection issue {}".format(e))
                 retries += 1
@@ -265,7 +306,7 @@ class SQLClient:
                     for res in response:
                         print(res)
                         cart_list.append(res)
-                    return HelperUtils.tupple_to_dict(cart_list,["session_id","cart_id", "item_id", "count","is_active"])
+                    return HelperUtils.tupple_to_dict(cart_list,["session_id","cart_id", "item_id", "count","is_active","cost","net_cost"])
             except OperationalError as e:
                 logging.error("Error: connection issue {}".format(e))
                 retries += 1
@@ -280,5 +321,5 @@ class SQLClient:
 
 sql_client = SQLClient()
 
-
+#print(sql_client.is_exist_in_inventory('item',{'item_id':'201816_03_0'}))
 

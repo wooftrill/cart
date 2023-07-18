@@ -19,27 +19,30 @@ class SQLOrmService(SQLClient):
             if count >= 0:
                 logging.info("item is already present in cart!! updating..")
                 count = count+1
-                if self.is_exist_in_inventory(self.__inventory_table,inventory_model):
-                    if self.update_if_exist(self.__cart_table, data_model, count):
+                inventory_status = self.is_exist_in_inventory(self.__inventory_table,inventory_model)
+                if inventory_status[0]:
+                    if self.update_if_exist(self.__cart_table, data_model, count,inventory_status[1]):
                         return True
         except Exception as ex:
             logging.info("item not present in cart ")
             if "Key Error" in str(ex):
-                if self.is_exist_in_inventory(self.__inventory_table, inventory_model):
-                    if self.insert(self.__cart_table, data_model):
+                inventory_status = self.is_exist_in_inventory(self.__inventory_table, inventory_model)
+                if inventory_status[0]:
+                    if self.insert(self.__cart_table, data_model, (inventory_status[1], inventory_status[1])):
                         return True
 
     def update_to_cart(self, data_model: dict, inventory_model: dict):
         logging.info("update function triggered!...")
-        if self.is_exist_in_inventory(self.__inventory_table, inventory_model):
-            if self.update(self.__cart_table, data_model):
+        inventory_status = self.is_exist_in_inventory(self.__inventory_table, inventory_model)
+        if inventory_status[0]:
+            if self.update(self.__cart_table, data_model, inventory_status[1]):
                 return True
             raise SQLAlchemyError("Could not update the cart.")
         raise IntegrityError("Item not present in directory!..")
 
     def remove_from_cart(self, data_model: dict):
         logging.info("remove function triggered!...")
-        if self.update(self.__cart_table, data_model):
+        if self.simple_update(self.__cart_table, data_model):
             return True
         raise SQLAlchemyError("Could not update the cart.")
 
@@ -65,8 +68,8 @@ sql_service = SQLOrmService()
 #cart_model={"session_id":"wewewerdd","item_id":"c121","is_active":1,"count":4}
 #inventory_model={"item_id":"c121"}
 #cart_update_model={"session_id":"sess127","item_id":"c1219","is_active":1}
-
-#print(SQLOrmService().show_cart_with_session(cart_model))
+#datamodel={"session_id":"debtest56mou78012testl","cart_id":"debtest56mou78012testl","item_id":"","count":1,"is_active":1}
+#print(SQLOrmService().show_cart_with_login(datamodel,"u5AP2SioTfQaAWeKake8zOl2fdd2"))
 
 
 

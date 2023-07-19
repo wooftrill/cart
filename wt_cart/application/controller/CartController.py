@@ -156,6 +156,31 @@ def show_from_cart_with_login(response):
         except Exception as ex:
             logging.error(ex)
 
+@app.post('/checkout_with_login',endpoint='checkout_from_cart_with_login')
+@firebase_jwt_client.jwt_required
+def checkout_from_cart_with_login(response):
+    if not response:
+        logging.error("Could not generate session_id")
+        return HTTPStatus.BAD_REQUEST, 401
+    else:
+        try:
+            logging.info(response)
+            item_id = request.json['item_id']
+            count = request.json['count']
+            is_active = request.json['is_active']
+            cart_model = asdict(SqlModel(response['session_id'],response['session_id'], item_id, count, is_active))
+            response=cart_controller.service.check_out_with_login(cart_model,response['user_id'])
+            logging.info(response)
+            if not response:
+                return jsonify("no cart item found")
+            if len(response) > 0:
+                return jsonify(response,200)
+            else:
+                error = Error(message="no item present", type=404, message_id=HTTPStatus.BAD_REQUEST)
+                return make_response(jsonify(error, HTTPStatus.BAD_REQUEST))
+
+        except Exception as ex:
+            logging.error(ex)
 
 
 

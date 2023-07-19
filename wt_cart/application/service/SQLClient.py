@@ -71,7 +71,7 @@ class SQLClient:
                     for res in response:
                         count_list.append(res)
                     if count_list[0][0] > __min_available:
-                        return True,count_list[0][1]
+                        return True,count_list[0][1],count_list[0][0]
                     return False
             except OperationalError as e:
                 logging.error("Error: connection issue {}".format(e))

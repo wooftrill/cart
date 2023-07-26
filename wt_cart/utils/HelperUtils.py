@@ -1,6 +1,7 @@
 import os
 import logging
 import hashlib,json
+import time,uuid
 
 
 class HelperUtils:
@@ -25,6 +26,14 @@ class HelperUtils:
                 json_dict[keys[i]] = tpl[i]
             json_list.append(json_dict)
         return json_list
+
+    @staticmethod
+    def create_uuid():
+        curr_time= time.time_ns()
+        print(curr_time)
+        sufix= uuid.uuid4().int & ((1 << 16) - 1)
+        uuid_from_timestamp = uuid.UUID(int=curr_time*2 + sufix)
+        return str(uuid_from_timestamp)
 
 
 

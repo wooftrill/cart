@@ -84,6 +84,47 @@ class SQLClient:
 
         raise Exception("Could not perform database eration after {} retries".format(max_retries))
 
+    def checkout_count(self, table_name: str, checkout_model: dict):
+        max_retries = 3
+        retries = 0
+        logging.info("checking if table exist!!...")
+        while retries < max_retries:
+            try:
+                inspect_db = sa.inspect(self.engine)
+                is_exist = inspect_db.dialect.has_table(self.engine.connect(), table_name, schema="external")
+                if not is_exist:
+                    raise NoSuchTableError
+                else:
+                    curr_session = sessionmaker(bind=self.engine)
+                    session = curr_session()
+                    query = SQLUtils.if_exist_checkout(table_name, checkout_model["uid"], checkout_model["session_id"])
+                    count_list = []
+                    response = session.execute(text(query))
+                    session.close()
+                    logging.info("session closed")
+                    for res in response:
+                        count_list.append(res[0])
+                    #print(response)
+                    return count_list[0]
+
+            except OperationalError as e:
+                logging.error("Error: connection issue {}".format(e))
+                retries += 1
+                print("in loop")
+                time.sleep(1)
+            except IntegrityError as ix:
+                logging.error("key error {}".format(ix))
+                raise ix
+            except IndexError as ix:
+                logging.error("key error {}".format(ix))
+                raise Exception( f"Key Error: {ix}")
+
+            except Exception as ex:
+                logging.error("An exception occurred:{}".format(ex))
+                raise ex
+
+        raise Exception("Network error :Could not perform database eration after {} retries".format(max_retries))
+
     def count(self, table_name: str, sql_model: dict):
         __min_available = 1
         max_retries = 3
@@ -165,6 +206,48 @@ class SQLClient:
             session.commit()
             session.close()
             logging.info("session closed")
+
+    def update_checkout(self,table_name, checkout_model):
+        """
+
+        :param table_name:
+        :param sql_model:
+        :return:
+        :purpose: updating from cart section
+        """
+        try:
+            logging.info("checking if table exist!!...")
+            inspect_db = sa.inspect(self.engine)
+            is_exist = inspect_db.dialect.has_table(self.engine.connect(), table_name, schema="external")
+            if not is_exist:
+                raise NoSuchTableError
+            else:
+                curr_session = sessionmaker(bind=self.engine)
+                session = curr_session()
+                query = SQLUtils.update_checkout(table_name, uid= checkout_model["uid"], checkout_details= checkout_model["checkout_value"],
+                                                session= checkout_model["session_id"])
+                print(query)
+                response = session.execute(text(query))
+                if response.__dict__['rowcount'] > 0:
+                    logging.info("row inserted!..")
+                    return True
+                raise SQLAlchemyError("Error!...no row affected")
+
+        except OperationalError as e:
+            logging.error("Error: connection issue {}".format(e))
+
+        except DataError as e:
+            session.rollback()
+            logging.error(f"Insert failed: {e}")
+        except Exception as ex:
+            session.rollback()
+            logging.error(f"issue with query:{ex}")
+        finally:
+            session.commit()
+            session.close()
+            logging.info("session closed")
+
+
 
     def simple_update(self,table_name, sql_model):
         """
@@ -321,5 +404,7 @@ class SQLClient:
 
 sql_client = SQLClient()
 
-#print(sql_client.is_exist_in_inventory('item',{'item_id':'201816_03_0'}))
+#
+#
+#print(sql_client.checkout_count('tbl_checkout','c88b46f5be0eee347e50a72b0daa371b4cc8a857',{'session_id':'debtest56mou78012testl'}))
 

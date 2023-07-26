@@ -39,6 +39,12 @@ class SQLUtils:
     def show_cart_with_login(table_name : str, link_table: str, uid:str,session_id: str):
         return f"SELECT DISTINCT {table_name}.session_id, {table_name}.item_id, {table_name}.count, {table_name}.cost,{table_name}.net_cost,{table_name}.cart_id FROM external.{table_name}  INNER JOIN external.{link_table}  ON {table_name}.session_id = {link_table}.cart  WHERE {link_table}.uid = '{uid}' AND curr_session = '{session_id}' AND {link_table}.is_sold = false  AND {table_name}.is_active = 1;"
 
+    @staticmethod
+    def if_exist_checkout(table_name: str, uid: str, session_id: str):
+        return f" SELECT count(*) from {table_name} where uid='{uid}' and session_id='{session_id}'"
 
-
-print(SQLUtils.show_cart_with_login('tbl_cart', 'tbl_user_session_cart','c88b46f5be0eee347e50a72b0daa371b4cc8a857','debtest56mou78012testl'))
+    @staticmethod
+    def update_checkout(table_name: str, checkout_details: str, uid: str, session: str):
+        return f"Update external.{table_name} SET checkout_details='{checkout_details}' where uid='{uid}'and session_id='{session}';"
+#
+#print(SQLUtils.if_exist_checkout('tbl_checkout','c88b46f5be0eee347e50a72b0daa371b4cc8a857','debtest56mou78012testl'))

@@ -1118,3 +1118,236 @@ TypeError: The view function for 'add_to_cart_with_login' did not return a valid
 2023-07-26 09:04:29,358 - INFO - {'available_order_no': '00000000-0000-0000-2eea-ece493b5864a-00', 'non_available_order_no': '00000000-0000-0000-2eea-ece493b5864a-01', 'order_id': '00000000-0000-0000-2eea-ece493b5864a', 'available': [{'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'item_id': '201816_03_01', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'debtes899997jkjghg-jhhjghvbv86'}, {'session_id': 'debtest56mou78012testl34ll', 'item_id': '201816_03_02', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'debtest56mou78012testl34ll'}], 'net_total': 8330.0, 'unavailable': [{'session_id': 'debtest56mou78012testl34ll', 'item_id': '201816_03_01', 'count': 12, 'cost': 595.0, 'net_cost': 7140.0, 'cart_id': 'debtest56mou78012testl34ll'}]}
 2023-07-26 09:04:29,365 - INFO - Validation time: 0.007 seconds
 2023-07-26 09:04:29,365 - INFO - Execution time: 1.126 seconds
+2023-07-26 09:07:03,145 - INFO - Validation time: 2.241 seconds
+2023-07-26 09:07:03,153 - INFO - {'exp': 1690387848, 'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'user_id': 'u5AP2SioTfQaAWeKake8zOl2fdd2'}
+2023-07-26 09:07:03,162 - INFO - checkout function triggered!...
+2023-07-26 09:07:03,164 - INFO - checking if table exist!!...
+2023-07-26 09:07:03,282 - INFO - session closed
+2023-07-26 09:07:03,286 - INFO - found cart items
+2023-07-26 09:07:03,289 - INFO - checking if table exist!!...
+2023-07-26 09:07:03,307 - INFO - session closed
+2023-07-26 09:07:03,307 - INFO - checking if table exist!!...
+2023-07-26 09:07:03,321 - INFO - session closed
+2023-07-26 09:07:03,322 - INFO - checking if table exist!!...
+2023-07-26 09:07:03,334 - INFO - session closed
+2023-07-26 09:07:03,337 - INFO - checking if table exist!!...
+2023-07-26 09:07:03,364 - INFO - session closed
+2023-07-26 09:07:03,365 - INFO - checking if table exist!!...
+2023-07-26 09:07:03,379 - INFO - session closed
+2023-07-26 09:07:03,379 - INFO - checkout table updated..
+2023-07-26 09:07:03,380 - INFO - checking if table exist!!...
+2023-07-26 09:07:03,402 - INFO - row inserted!..
+2023-07-26 09:07:03,418 - INFO - session closed
+2023-07-26 09:07:03,418 - INFO - {'available_order_no': '00000000-0000-0000-2eea-ed2cb5788b74-00', 'non_available_order_no': '00000000-0000-0000-2eea-ed2cb5788b74-01', 'order_id': '00000000-0000-0000-2eea-ed2cb5788b74', 'available': [{'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'item_id': '201816_03_01', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'debtes899997jkjghg-jhhjghvbv86'}, {'session_id': 'debtest56mou78012testl34ll', 'item_id': '201816_03_02', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'debtest56mou78012testl34ll'}], 'net_total': 8330.0, 'unavailable': [{'session_id': 'debtest56mou78012testl34ll', 'item_id': '201816_03_01', 'count': 12, 'cost': 595.0, 'net_cost': 7140.0, 'cart_id': 'debtest56mou78012testl34ll'}]}
+2023-07-26 09:07:03,424 - INFO - Validation time: 2.250 seconds
+2023-07-26 09:07:03,424 - INFO - Execution time: 2.522 seconds
+2023-07-26 09:07:25,505 - INFO - {'exp': 1690387848, 'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'user_id': 'u5AP2SioTfQaAWeKake8zOl2fdd2'}
+2023-07-26 09:07:25,511 - INFO - checkout function triggered!...
+2023-07-26 09:07:25,512 - INFO - checking if table exist!!...
+2023-07-26 09:07:25,549 - INFO - session closed
+2023-07-26 09:07:25,550 - INFO - found cart items
+2023-07-26 09:07:25,551 - INFO - checking if table exist!!...
+2023-07-26 09:07:25,569 - INFO - session closed
+2023-07-26 09:07:25,569 - INFO - checking if table exist!!...
+2023-07-26 09:07:25,634 - INFO - session closed
+2023-07-26 09:07:25,635 - INFO - checking if table exist!!...
+2023-07-26 09:07:25,688 - INFO - session closed
+2023-07-26 09:07:25,690 - INFO - checking if table exist!!...
+2023-07-26 09:07:25,707 - INFO - session closed
+2023-07-26 09:07:25,708 - INFO - checking if table exist!!...
+2023-07-26 09:07:25,724 - INFO - session closed
+2023-07-26 09:07:25,724 - INFO - checkout table updated..
+2023-07-26 09:07:25,725 - INFO - checking if table exist!!...
+2023-07-26 09:07:25,738 - INFO - row inserted!..
+2023-07-26 09:07:25,758 - INFO - session closed
+2023-07-26 09:07:25,758 - INFO - {'available_order_no': '00000000-0000-0000-2eea-ed371380e536-00', 'non_available_order_no': '00000000-0000-0000-2eea-ed371380e536-01', 'order_id': '00000000-0000-0000-2eea-ed371380e536', 'available': [{'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'item_id': '201816_03_01', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'debtes899997jkjghg-jhhjghvbv86'}, {'session_id': 'debtest56mou78012testl34ll', 'item_id': '201816_03_02', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'debtest56mou78012testl34ll'}], 'net_total': 8330.0, 'unavailable': [{'session_id': 'debtest56mou78012testl34ll', 'item_id': '201816_03_01', 'count': 12, 'cost': 595.0, 'net_cost': 7140.0, 'cart_id': 'debtest56mou78012testl34ll'}]}
+2023-07-26 09:07:25,760 - INFO - Validation time: 0.000 seconds
+2023-07-26 09:07:25,761 - INFO - Execution time: 0.256 seconds
+2023-07-26 09:10:23,775 - INFO - Validation time: 2.238 seconds
+2023-07-26 09:10:23,785 - INFO - {'exp': 1690387848, 'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'user_id': 'u5AP2SioTfQaAWeKake8zOl2fdd2'}
+2023-07-26 09:10:23,793 - INFO - checkout function triggered!...
+2023-07-26 09:10:23,794 - INFO - checking if table exist!!...
+2023-07-26 09:10:23,888 - INFO - session closed
+2023-07-26 09:10:23,890 - INFO - found cart items
+2023-07-26 09:10:23,892 - INFO - checking if table exist!!...
+2023-07-26 09:10:23,925 - INFO - session closed
+2023-07-26 09:10:23,926 - INFO - checking if table exist!!...
+2023-07-26 09:10:23,949 - INFO - session closed
+2023-07-26 09:10:23,950 - INFO - checking if table exist!!...
+2023-07-26 09:10:23,962 - INFO - session closed
+2023-07-26 09:10:23,965 - INFO - checking if table exist!!...
+2023-07-26 09:10:23,980 - INFO - session closed
+2023-07-26 09:10:23,980 - INFO - checking if table exist!!...
+2023-07-26 09:10:23,994 - INFO - session closed
+2023-07-26 09:10:23,995 - INFO - checkout table updated..
+2023-07-26 09:10:23,995 - INFO - checking if table exist!!...
+2023-07-26 09:10:24,009 - INFO - row inserted!..
+2023-07-26 09:10:24,024 - INFO - session closed
+2023-07-26 09:10:24,024 - INFO - {'available_order_no': '00000000-0000-0000-2eea-ed8a1f400c48-00', 'non_available_order_no': '00000000-0000-0000-2eea-ed8a1f400c48-01', 'order_id': '00000000-0000-0000-2eea-ed8a1f400c48', 'available': [{'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'item_id': '201816_03_01', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'debtes899997jkjghg-jhhjghvbv86'}, {'session_id': 'debtest56mou78012testl34ll', 'item_id': '201816_03_02', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'debtest56mou78012testl34ll'}], 'net_total': 8330.0, 'unavailable': [{'session_id': 'debtest56mou78012testl34ll', 'item_id': '201816_03_01', 'count': 12, 'cost': 595.0, 'net_cost': 7140.0, 'cart_id': 'debtest56mou78012testl34ll'}]}
+2023-07-26 09:10:24,029 - INFO - Validation time: 2.252 seconds
+2023-07-26 09:10:24,029 - INFO - Execution time: 2.496 seconds
+2023-07-26 09:10:36,753 - INFO - add_to_cart method called
+2023-07-26 09:10:36,757 - INFO - checking if table exist!!...
+2023-07-26 09:10:36,829 - INFO - session closed
+2023-07-26 09:10:36,830 - INFO - item is already present in cart!! updating..
+2023-07-26 09:10:36,831 - INFO - checking if table exist!!...
+2023-07-26 09:10:36,884 - INFO - session closed
+2023-07-26 09:10:36,886 - INFO - checking if table exist!!...
+2023-07-26 09:10:38,409 - INFO - row inserted!..
+2023-07-26 09:10:38,422 - INFO - session closed
+2023-07-26 09:10:38,422 - INFO - Validation time: 0.001 seconds
+2023-07-26 09:10:38,422 - INFO - Execution time: 1.675 seconds
+2023-07-26 09:10:45,696 - INFO - add_to_cart method called
+2023-07-26 09:10:45,696 - INFO - checking if table exist!!...
+2023-07-26 09:10:45,706 - INFO - session closed
+2023-07-26 09:10:45,706 - INFO - item is already present in cart!! updating..
+2023-07-26 09:10:45,707 - INFO - checking if table exist!!...
+2023-07-26 09:10:45,716 - INFO - session closed
+2023-07-26 09:10:45,716 - INFO - checking if table exist!!...
+2023-07-26 09:10:45,724 - INFO - row inserted!..
+2023-07-26 09:10:45,738 - INFO - session closed
+2023-07-26 09:10:45,738 - INFO - Validation time: 0.000 seconds
+2023-07-26 09:10:45,738 - INFO - Execution time: 0.042 seconds
+2023-07-26 09:10:51,577 - INFO - add_to_cart method called
+2023-07-26 09:10:51,577 - INFO - checking if table exist!!...
+2023-07-26 09:10:51,620 - INFO - session closed
+2023-07-26 09:10:51,621 - INFO - item is already present in cart!! updating..
+2023-07-26 09:10:51,621 - INFO - checking if table exist!!...
+2023-07-26 09:10:51,662 - INFO - session closed
+2023-07-26 09:10:51,662 - INFO - checking if table exist!!...
+2023-07-26 09:10:51,670 - INFO - row inserted!..
+2023-07-26 09:10:51,677 - INFO - session closed
+2023-07-26 09:10:51,677 - INFO - Validation time: 0.000 seconds
+2023-07-26 09:10:51,677 - INFO - Execution time: 0.100 seconds
+2023-07-26 09:10:57,300 - INFO - add_to_cart method called
+2023-07-26 09:10:57,300 - INFO - checking if table exist!!...
+2023-07-26 09:10:57,311 - INFO - session closed
+2023-07-26 09:10:57,312 - INFO - item is already present in cart!! updating..
+2023-07-26 09:10:57,312 - INFO - checking if table exist!!...
+2023-07-26 09:10:57,322 - INFO - session closed
+2023-07-26 09:10:57,322 - INFO - checking if table exist!!...
+2023-07-26 09:10:57,329 - INFO - row inserted!..
+2023-07-26 09:10:57,338 - INFO - session closed
+2023-07-26 09:10:57,338 - INFO - Validation time: 0.000 seconds
+2023-07-26 09:10:57,338 - INFO - Execution time: 0.039 seconds
+2023-07-26 09:11:09,259 - INFO - {'exp': 1690387848, 'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'user_id': 'u5AP2SioTfQaAWeKake8zOl2fdd2'}
+2023-07-26 09:11:09,263 - INFO - checkout function triggered!...
+2023-07-26 09:11:09,264 - INFO - checking if table exist!!...
+2023-07-26 09:11:09,315 - INFO - session closed
+2023-07-26 09:11:09,319 - INFO - found cart items
+2023-07-26 09:11:09,322 - INFO - checking if table exist!!...
+2023-07-26 09:11:09,347 - INFO - session closed
+2023-07-26 09:11:09,347 - INFO - checking if table exist!!...
+2023-07-26 09:11:09,356 - INFO - session closed
+2023-07-26 09:11:09,356 - INFO - checking if table exist!!...
+2023-07-26 09:11:09,363 - INFO - session closed
+2023-07-26 09:11:09,366 - INFO - checking if table exist!!...
+2023-07-26 09:11:09,374 - INFO - session closed
+2023-07-26 09:11:09,375 - INFO - checking if table exist!!...
+2023-07-26 09:11:09,382 - INFO - session closed
+2023-07-26 09:11:09,382 - INFO - checkout table updated..
+2023-07-26 09:11:09,383 - INFO - checking if table exist!!...
+2023-07-26 09:11:09,406 - INFO - row inserted!..
+2023-07-26 09:11:09,413 - INFO - session closed
+2023-07-26 09:11:09,413 - INFO - {'available_order_no': '00000000-0000-0000-2eea-ed9f46d03ad4-00', 'non_available_order_no': '00000000-0000-0000-2eea-ed9f46d03ad4-01', 'order_id': '00000000-0000-0000-2eea-ed9f46d03ad4', 'available': [{'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'item_id': '201816_03_01', 'count': 5, 'cost': 595.0, 'net_cost': 2975.0, 'cart_id': 'debtes899997jkjghg-jhhjghvbv86'}, {'session_id': 'debtest56mou78012testl34ll', 'item_id': '201816_03_02', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'debtest56mou78012testl34ll'}], 'net_total': 10710.0, 'unavailable': [{'session_id': 'debtest56mou78012testl34ll', 'item_id': '201816_03_01', 'count': 12, 'cost': 595.0, 'net_cost': 7140.0, 'cart_id': 'debtest56mou78012testl34ll'}]}
+2023-07-26 09:11:09,419 - INFO - Validation time: 0.000 seconds
+2023-07-26 09:11:09,419 - INFO - Execution time: 0.161 seconds
+2023-07-26 09:12:45,373 - INFO - Validation time: 0.234 seconds
+2023-07-26 09:19:46,719 - INFO - Validation time: 2.431 seconds
+2023-07-26 09:20:57,833 - INFO - Validation time: 0.308 seconds
+2023-07-26 09:20:57,844 - INFO - {'exp': 1690389013, 'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'user_id': 'u5AP2SioTfQaAWeKake8zOl2fdd2'}
+2023-07-26 09:20:57,857 - INFO - show cart  function triggered!...
+2023-07-26 09:20:57,859 - INFO - checking if table exist!!...
+2023-07-26 09:20:57,943 - INFO - session closed
+2023-07-26 09:20:57,947 - INFO - [{'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'item_id': '201816_03_01', 'count': 5, 'cost': 595.0, 'net_cost': 2975.0, 'cart_id': 'debtes899997jkjghg-jhhjghvbv86'}, {'session_id': 'debtest56mou78012testl34ll', 'item_id': '201816_03_01', 'count': 12, 'cost': 595.0, 'net_cost': 7140.0, 'cart_id': 'debtest56mou78012testl34ll'}, {'session_id': 'debtest56mou78012testl34ll', 'item_id': '201816_03_02', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'debtest56mou78012testl34ll'}]
+2023-07-26 09:20:57,953 - INFO - Validation time: 0.325 seconds
+2023-07-26 09:20:57,954 - INFO - Execution time: 0.435 seconds
+2023-07-26 09:25:44,459 - INFO - Validation time: 2.306 seconds
+2023-07-26 09:25:44,476 - INFO - add_to_cart method called
+2023-07-26 09:25:44,478 - INFO - checking if table exist!!...
+2023-07-26 09:25:44,573 - INFO - session closed
+2023-07-26 09:25:44,574 - ERROR - key error list index out of range
+2023-07-26 09:25:44,575 - INFO - item not present in cart 
+2023-07-26 09:25:44,576 - INFO - checking if table exist!!...
+2023-07-26 09:25:44,593 - INFO - session closed
+2023-07-26 09:25:44,594 - ERROR - 'bool' object is not subscriptable
+2023-07-26 09:25:44,594 - INFO - Validation time: 2.321 seconds
+2023-07-26 09:25:44,594 - INFO - Execution time: 2.449 seconds
+2023-07-26 09:25:44,598 - ERROR - Exception on /add_with_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'add_to_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-07-27 00:13:34,668 - INFO - Serving on http://0.0.0.0:5008
+2023-07-27 00:16:23,005 - INFO - Validation time: 2.300 seconds
+2023-07-27 00:16:23,029 - INFO - add_to_cart method called
+2023-07-27 00:16:23,031 - INFO - checking if table exist!!...
+2023-07-27 00:16:26,860 - INFO - session closed
+2023-07-27 00:16:26,861 - ERROR - key error list index out of range
+2023-07-27 00:16:26,861 - INFO - item not present in cart 
+2023-07-27 00:16:26,861 - INFO - checking if table exist!!...
+2023-07-27 00:16:27,174 - INFO - session closed
+2023-07-27 00:16:27,175 - ERROR - 'bool' object is not subscriptable
+2023-07-27 00:16:27,175 - INFO - Validation time: 2.315 seconds
+2023-07-27 00:16:27,175 - INFO - Execution time: 6.475 seconds
+2023-07-27 00:16:27,178 - ERROR - Exception on /add_with_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'add_to_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-07-27 00:16:43,392 - INFO - add_to_cart method called
+2023-07-27 00:16:43,393 - INFO - checking if table exist!!...
+2023-07-27 00:16:45,135 - INFO - session closed
+2023-07-27 00:16:45,135 - ERROR - key error list index out of range
+2023-07-27 00:16:45,135 - INFO - item not present in cart 
+2023-07-27 00:16:45,135 - INFO - checking if table exist!!...
+2023-07-27 00:16:45,660 - INFO - session closed
+2023-07-27 00:16:45,661 - INFO - checking if table exist!!...
+2023-07-27 00:16:47,813 - INFO - row inserted!..
+2023-07-27 00:16:48,743 - INFO - session closed
+2023-07-27 00:16:48,744 - INFO - Validation time: 0.003 seconds
+2023-07-27 00:16:48,744 - INFO - Execution time: 5.360 seconds
+2023-07-27 00:17:01,476 - INFO - {'exp': 1690442702, 'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'user_id': 'u5AP2SioTfQaAWeKake8zOl2fdd2'}
+2023-07-27 00:17:01,489 - INFO - show cart  function triggered!...
+2023-07-27 00:17:01,491 - INFO - checking if table exist!!...
+2023-07-27 00:17:01,655 - INFO - session closed
+2023-07-27 00:17:01,663 - INFO - [{'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'item_id': '201816_03_01', 'count': 5, 'cost': 595.0, 'net_cost': 2975.0, 'cart_id': 'debtes899997jkjghg-jhhjghvbv86'}, {'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'item_id': '201816_03_02', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'debtes899997jkjghg-jhhjghvbv86'}, {'session_id': 'debtest56mou78012testl34ll', 'item_id': '201816_03_01', 'count': 12, 'cost': 595.0, 'net_cost': 7140.0, 'cart_id': 'debtest56mou78012testl34ll'}, {'session_id': 'debtest56mou78012testl34ll', 'item_id': '201816_03_02', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'debtest56mou78012testl34ll'}]
+2023-07-27 00:17:01,674 - INFO - Validation time: 0.003 seconds
+2023-07-27 00:17:01,674 - INFO - Execution time: 0.203 seconds
+2023-07-27 00:17:55,233 - INFO - Validation time: 0.167 seconds
+2023-07-27 00:17:55,241 - INFO - {'exp': 1690442702, 'session_id': 'debtes899997jkjghg-jhhjghvbv86', 'user_id': 'u5AP2SioTfQaAWeKake8zOl2fdd2'}
+2023-07-27 00:17:55,248 - INFO - checkout function triggered!...
+2023-07-27 00:17:55,250 - INFO - checking if table exist!!...
+2023-07-27 00:17:55,365 - INFO - session closed
+2023-07-27 00:17:55,370 - INFO - found cart items
+2023-07-27 00:17:55,376 - INFO - checking if table exist!!...
+2023-07-27 00:17:55,401 - INFO - session closed
+2023-07-27 00:17:55,402 - INFO - checking if table exist!!...
+2023-07-27 00:17:55,412 - INFO - session closed
+2023-07-27 00:17:55,413 - INFO - checking if table exist!!...
+2023-07-27 00:17:55,700 - INFO - session closed
+2023-07-27 00:17:55,701 - INFO - checking if table exist!!...
+2023-07-27 00:17:55,708 - INFO - session closed
+2023-07-27 00:17:55,708 - INFO - checkout table updated..
+2023-07-27 00:17:55,709 - INFO - checking if table exist!!...
+2023-07-27 00:17:55,735 - INFO - row inserted!..
+2023-07-27 00:17:55,745 - INFO - session closed
+2023-07-27 00:17:55,745 - INFO - {'available_order_no': '00000000-0000-0000-2eeb-5096118165ea-00', 'non_available_order_no': '00000000-0000-0000-2eeb-5096118165ea-01', 'order_id': '00000000-0000-0000-2eeb-5096118165ea', 'available': [{'item_id': '201816_03_01', 'count': 7, 'cost': 595, 'net_cost': 4165}, {'item_id': '201816_03_02', 'count': 2, 'cost': '595', 'net_cost': 1190}], 'net_total': 11305, 'unavailable': [{'item_id': '201816_03_01', 'count': 10, 'cost': 595, 'net_cost': 5950}], 'session_id': 'debtes899997jkjghg-jhhjghvbv86'}
+2023-07-27 00:17:55,746 - INFO - Validation time: 0.179 seconds
+2023-07-27 00:17:55,746 - INFO - Execution time: 0.685 seconds

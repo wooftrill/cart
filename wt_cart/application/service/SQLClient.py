@@ -406,5 +406,5 @@ sql_client = SQLClient()
 
 #
 #
-#print(sql_client.checkout_count('tbl_checkout','c88b46f5be0eee347e50a72b0daa371b4cc8a857',{'session_id':'debtest56mou78012testl'}))
+#print(sql_client.is_exist_in_inventory('item',{'item_id':'201816_03_01'}))
 

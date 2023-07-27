@@ -35,5 +35,19 @@ class HelperUtils:
         uuid_from_timestamp = uuid.UUID(int=curr_time*2 + sufix)
         return str(uuid_from_timestamp)
 
+    @staticmethod
+    def create_combine_list(list_name):
+        count_dict = {}
+
+        for data in list_name:
+            item = data["item_id"]
+            count = data["count"]
+            count_dict[item] = count_dict.get(item, 0) + count
+
+        result_list = [{"item_id": item, "count": count} for item, count in count_dict.items()]
+
+        return result_list
+
+
 
 

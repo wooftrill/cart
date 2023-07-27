@@ -78,19 +78,21 @@ class SQLOrmService(SQLClient):
             for item in cart:
                 inventory_model = asdict(InventoryModel(item["item_id"]))
                 inventory_status = self.is_exist_in_inventory(self.__inventory_table, inventory_model)
-                if inventory_status[2] > item["count"]:
+                available_item= inventory_status[2] - TABLE["HardLimit"]
+
+                if available_item > item["count"]:
                     item["cost"]= inventory_status[1]
                     item["net_cost"] = int(item["cost"])*item["count"]
                     available_list.append(item)
 
                 else:
-                    if inventory_status[2] > 0:
+                    if available_item > 0:
                         dict_av["item_id"] = item["item_id"]
-                        dict_av["count"] = inventory_status[2]
+                        dict_av["count"] = available_item
                         dict_av["cost"] = int(inventory_status[1])
                         dict_av["net_cost"] = dict_av["cost"] * dict_av["count"]
                         available_list.append(dict_av)
-                    item["count"] = item["count"] - inventory_status[2]
+                    item["count"] = item["count"] - available_item
                     item["cost"] = int(inventory_status[1])
                     item["net_cost"] = item["cost"] * item["count"]
                     non_available_list.append(item)
@@ -137,8 +139,9 @@ sql_service = SQLOrmService()
 #cart_model={"session_id":"wewewerdd","item_id":"c121","is_active":1,"count":4}
 #inventory_model={"item_id":"c121"}
 #cart_update_model={"session_id":"sess127","item_id":"c1219","is_active":1}
-#datamodel={"session_id":"debtes899997jkjghg-jhhjghvbv86","cart_id":"debtes899997jkjghg-jhhjghvbv86","item_id":"","count":1,"is_active":1}
-#print(SQLOrmService().check_out_with_login(datamodel,"u5AP2SioTfQaAWeKake8zOl2fdd2"))
+datamodel={"session_id":"debtes899997jkjghg-jhhjghvbv86","cart_id":"debtes899997jkjghg-jhhjghvbv86","item_id":"","count":1,"is_active":1}
+
+print(SQLOrmService().check_out_with_login(datamodel,"u5AP2SioTfQaAWeKake8zOl2fdd2"))
 
 
 

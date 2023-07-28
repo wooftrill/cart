@@ -113,7 +113,7 @@ class SQLOrmService(SQLClient):
             final_output["unavailable"] = non_available_list
             final_output["session_id"] = data_model["session_id"]
 
-            check_model={"uid": uid,"session_id": data_model["session_id"],"checkout_value": json.dumps(final_output)}
+            check_model={"uid": uid,"session_id": data_model["session_id"],"checkout_value": json.dumps(final_output),"full_order":json.dumps(cart)}
             print(self.checkout_count(self.__checkout_table, check_model))
             if self.checkout_count(self.__checkout_table,check_model)> 0:
                 logging.info("checkout table updated..")
@@ -139,9 +139,9 @@ sql_service = SQLOrmService()
 #cart_model={"session_id":"wewewerdd","item_id":"c121","is_active":1,"count":4}
 #inventory_model={"item_id":"c121"}
 #cart_update_model={"session_id":"sess127","item_id":"c1219","is_active":1}
-#datamodel={"session_id":"debtes899997jkjghg-jhhjghvbv86","cart_id":"debtes899997jkjghg-jhhjghvbv86","item_id":"","count":1,"is_active":1}
+datamodel={"session_id":"debtes899997jkjghg-jhhjghvbv86","cart_id":"debtes899997jkjghg-jhhjghvbv86","item_id":"","count":1,"is_active":1}
 
-#print(SQLOrmService().check_out_with_login(datamodel,"u5AP2SioTfQaAWeKake8zOl2fdd2"))
+print(SQLOrmService().check_out_with_login(datamodel,"u5AP2SioTfQaAWeKake8zOl2fdd2"))
 
 
 

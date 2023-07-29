@@ -44,7 +44,7 @@ class SQLUtils:
         return f" SELECT count(*) from {table_name} where uid='{uid}' and session_id='{session_id}'"
 
     @staticmethod
-    def update_checkout(table_name: str, checkout_details: str, full_order: str, uid: str, session: str):
-        return f"Update external.{table_name} SET checkout_details='{checkout_details}', full_order='{full_order}' where uid='{uid}'and session_id='{session}';"
+    def update_checkout(table_name: str, checkout_details: str, full_order: str, uid: str, session: str, ldts: int):
+        return f"Update external.{table_name} SET checkout_details='{checkout_details}', ldts='{ldts}', full_order='{full_order}' where uid='{uid}'and session_id='{session}';"
 #
 #print(SQLUtils.if_exist_checkout('tbl_checkout','c88b46f5be0eee347e50a72b0daa371b4cc8a857','debtest56mou78012testl'))

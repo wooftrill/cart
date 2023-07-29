@@ -113,7 +113,8 @@ class SQLOrmService(SQLClient):
             final_output["unavailable"] = non_available_list
             final_output["session_id"] = data_model["session_id"]
 
-            check_model={"uid": uid,"session_id": data_model["session_id"],"checkout_value": json.dumps(final_output),"full_order":json.dumps(cart)}
+            check_model= {"uid": uid,"session_id": data_model["session_id"],"checkout_value": json.dumps(final_output),
+                         "full_order":json.dumps(cart),"time": HelperUtils.get_timestamp()}
             print(self.checkout_count(self.__checkout_table, check_model))
             if self.checkout_count(self.__checkout_table,check_model)> 0:
                 logging.info("checkout table updated..")

@@ -225,7 +225,7 @@ class SQLClient:
                 curr_session = sessionmaker(bind=self.engine)
                 session = curr_session()
                 query = SQLUtils.update_checkout(table_name, uid= checkout_model["uid"], checkout_details= checkout_model["checkout_value"],
-                                                 full_order= checkout_model["full_order"],session= checkout_model["session_id"])
+                                                 full_order= checkout_model["full_order"],session= checkout_model["session_id"], ldts=checkout_model["time"])
                 print(query)
                 response = session.execute(text(query))
                 if response.__dict__['rowcount'] > 0:

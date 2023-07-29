@@ -16,6 +16,11 @@ class HelperUtils:
             return hashlib.sha1(obj.encode()).hexdigest()
 
     @staticmethod
+    def get_timestamp():
+        time_stamp = int(time.time_ns())
+        return time_stamp
+
+    @staticmethod
     def tupple_to_dict(sql_response_list: list,keys: list):
         #keys = ["session_id","cart_id", "item_id", "count","is_active"]
         json_list = []

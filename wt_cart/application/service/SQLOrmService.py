@@ -62,8 +62,8 @@ class SQLOrmService(SQLClient):
     def check_out_with_login(self, data_model: dict, uid: str):
         logging.info("checkout function triggered!...")
         cart_total = self.show_tbl_with_login(self.__cart_table, data_model, self.__link_table, uid)
-
         cart = HelperUtils.create_combine_list(cart_total)
+        uid = HelperUtils.generate_hash(uid)
         print(cart)
         if len(cart) == 0:
             return False

@@ -247,11 +247,8 @@ class SQLClient:
             session.close()
             logging.info("session closed")
 
-
-
     def simple_update(self,table_name, sql_model):
         """
-
         :param table_name:
         :param sql_model:
         :return:

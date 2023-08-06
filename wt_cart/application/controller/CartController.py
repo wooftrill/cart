@@ -25,6 +25,24 @@ cart_controller = CartController(sql_service)
 def welcome():
     return "Welcome to service"
 
+def cors_preflight():
+    # Respond to the OPTIONS preflight request with the necessary CORS headers
+    response = make_response()
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type, Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'POST')
+
+    return response
+
+# Handle the OPTIONS request for /sign_in/ separately
+app.add_url_rule('/add_wo_login', view_func=cors_preflight, methods=['OPTIONS'])
+app.add_url_rule('/add_with_login', view_func=cors_preflight, methods=['OPTIONS'])
+app.add_url_rule('/update_wo_login', view_func=cors_preflight, methods=['OPTIONS'])
+app.add_url_rule('/remove_wo_login', view_func=cors_preflight, methods=['OPTIONS'])
+app.add_url_rule('/show_wo_login', view_func=cors_preflight, methods=['OPTIONS'])
+app.add_url_rule('/show_with_login', view_func=cors_preflight, methods=['OPTIONS'])
+app.add_url_rule('/checkout_with_login', view_func=cors_preflight, methods=['OPTIONS'])
+
 
 @app.post('/add_wo_login',endpoint='add_to_cart_wo_login')
 @jwt_client.jwt_required

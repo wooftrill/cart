@@ -1461,3 +1461,495 @@ Traceback (most recent call last):
   File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 764, in _write_bytes
     CR.CR_SERVER_GONE_ERROR, "MySQL server has gone away (%r)" % (e,)
 pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))")
+2023-08-05 09:57:18,257 - INFO - Serving on http://0.0.0.0:5008
+2023-08-05 20:47:08,952 - INFO - Serving on http://0.0.0.0:5008
+2023-08-05 20:51:32,126 - INFO - Validation time: 2.335 seconds
+2023-08-05 20:51:32,131 - INFO - {'exp': 1691294402, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 20:51:32,135 - INFO - checkout function triggered!...
+2023-08-05 20:51:32,140 - INFO - checking if table exist!!...
+2023-08-05 20:51:34,525 - INFO - session closed
+2023-08-05 20:51:34,527 - INFO - found cart items
+2023-08-05 20:51:34,530 - INFO - checking if table exist!!...
+2023-08-05 20:51:35,075 - INFO - session closed
+2023-08-05 20:51:35,076 - INFO - checking if table exist!!...
+2023-08-05 20:51:36,173 - INFO - session closed
+2023-08-05 20:51:36,187 - INFO - checking if table exist!!...
+2023-08-05 20:51:36,579 - INFO - session closed
+2023-08-05 20:51:36,580 - INFO - checking if table exist!!...
+2023-08-05 20:51:36,625 - INFO - session closed
+2023-08-05 20:51:36,625 - INFO - no record found with same uid & sessionid . Inserting...
+2023-08-05 20:51:36,625 - INFO - checking if table exist!!...
+2023-08-05 20:51:36,636 - INFO - row inserted!..
+2023-08-05 20:51:36,652 - INFO - session closed
+2023-08-05 20:51:36,652 - INFO - {'available_order_no': '00000000-0000-0000-2ef1-5dac2434061c-00', 'order_id': '00000000-0000-0000-2ef1-5dac2434061c', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}, {'item_id': '201816_03_02', 'count': 2, 'cost': '595', 'net_cost': 1190}], 'net_total': 1785, 'unavailable': [], 'session_id': 'debtes899997jkjghg-jhhjghvbv'}
+2023-08-05 20:51:36,658 - INFO - Validation time: 2.342 seconds
+2023-08-05 20:51:36,658 - INFO - Execution time: 6.869 seconds
+2023-08-05 20:52:30,425 - INFO - {'exp': 1691294402, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 20:52:30,433 - INFO - show cart  function triggered!...
+2023-08-05 20:52:30,435 - INFO - checking if table exist!!...
+2023-08-05 20:52:30,483 - INFO - session closed
+2023-08-05 20:52:30,485 - INFO - [{'session_id': 'yohonesuinb#44523', 'item_id': '201816_03_01', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'yohonesuinb#44523'}, {'session_id': 'yohonesuinb#44523', 'item_id': '201816_03_02', 'count': 2, 'cost': 595.0, 'net_cost': 1190.0, 'cart_id': 'yohonesuinb#44523'}]
+2023-08-05 20:52:30,489 - INFO - Validation time: 0.002 seconds
+2023-08-05 20:52:30,489 - INFO - Execution time: 0.067 seconds
+2023-08-05 20:57:20,021 - INFO - Validation time: 2.229 seconds
+2023-08-05 20:57:20,023 - INFO - {'exp': 1691294402, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 20:57:20,025 - INFO - checkout function triggered!...
+2023-08-05 20:57:20,025 - INFO - checking if table exist!!...
+2023-08-05 20:57:20,071 - INFO - session closed
+2023-08-05 20:57:20,072 - INFO - found cart items
+2023-08-05 20:57:20,073 - INFO - checking if table exist!!...
+2023-08-05 20:57:20,086 - INFO - session closed
+2023-08-05 20:57:20,086 - INFO - checking if table exist!!...
+2023-08-05 20:57:20,098 - INFO - session closed
+2023-08-05 20:57:20,098 - INFO - checking if table exist!!...
+2023-08-05 20:57:20,110 - INFO - session closed
+2023-08-05 20:57:20,111 - INFO - checking if table exist!!...
+2023-08-05 20:57:20,122 - INFO - session closed
+2023-08-05 20:57:20,123 - INFO - checkout table updated..
+2023-08-05 20:57:20,124 - INFO - checking if table exist!!...
+2023-08-05 20:57:20,131 - ERROR - issue with query:update_checkout() missing 1 required positional argument: 'status'
+2023-08-05 20:57:20,134 - INFO - session closed
+2023-08-05 20:57:20,134 - INFO - None
+2023-08-05 20:57:20,135 - INFO - Validation time: 2.235 seconds
+2023-08-05 20:57:20,135 - INFO - Execution time: 2.347 seconds
+2023-08-05 20:58:19,205 - INFO - {'exp': 1691294402, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 20:58:19,206 - INFO - show cart  function triggered!...
+2023-08-05 20:58:19,206 - INFO - checking if table exist!!...
+2023-08-05 20:58:19,885 - INFO - session closed
+2023-08-05 20:58:19,885 - INFO - [{'session_id': 'yohonesuinb#44523', 'item_id': '201816_03_01', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'yohonesuinb#44523'}, {'session_id': 'yohonesuinb#44523', 'item_id': '201816_03_02', 'count': 2, 'cost': 595.0, 'net_cost': 1190.0, 'cart_id': 'yohonesuinb#44523'}]
+2023-08-05 20:58:19,886 - INFO - Validation time: 0.000 seconds
+2023-08-05 20:58:19,886 - INFO - Execution time: 0.682 seconds
+2023-08-05 20:58:44,176 - INFO - Validation time: 0.031 seconds
+2023-08-05 20:58:44,177 - INFO - {'exp': 1691294402, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 20:58:44,177 - INFO - checkout function triggered!...
+2023-08-05 20:58:44,177 - INFO - checking if table exist!!...
+2023-08-05 20:58:44,216 - INFO - session closed
+2023-08-05 20:58:44,216 - INFO - found cart items
+2023-08-05 20:58:44,217 - INFO - checking if table exist!!...
+2023-08-05 20:58:44,232 - INFO - session closed
+2023-08-05 20:58:44,232 - INFO - checking if table exist!!...
+2023-08-05 20:58:44,248 - INFO - session closed
+2023-08-05 20:58:44,248 - INFO - checking if table exist!!...
+2023-08-05 20:58:44,263 - INFO - session closed
+2023-08-05 20:58:44,263 - INFO - checking if table exist!!...
+2023-08-05 20:58:44,930 - INFO - session closed
+2023-08-05 20:58:44,930 - INFO - checkout table updated..
+2023-08-05 20:58:44,930 - INFO - checking if table exist!!...
+2023-08-05 20:58:44,945 - ERROR - issue with query:update_checkout() missing 1 required positional argument: 'status'
+2023-08-05 20:58:44,958 - INFO - session closed
+2023-08-05 20:58:44,958 - INFO - None
+2023-08-05 20:58:44,959 - INFO - Validation time: 0.032 seconds
+2023-08-05 20:58:44,959 - INFO - Execution time: 0.813 seconds
+2023-08-05 21:06:38,256 - INFO - Serving on http://0.0.0.0:5008
+2023-08-05 21:06:45,575 - INFO - Validation time: 2.215 seconds
+2023-08-05 21:07:52,665 - INFO - Validation time: 0.293 seconds
+2023-08-05 21:07:52,673 - INFO - {'exp': 1691295423, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 21:07:52,694 - INFO - checkout function triggered!...
+2023-08-05 21:07:52,698 - INFO - checking if table exist!!...
+2023-08-05 21:07:53,356 - INFO - session closed
+2023-08-05 21:07:53,359 - INFO - found cart items
+2023-08-05 21:07:53,362 - INFO - checking if table exist!!...
+2023-08-05 21:07:53,403 - INFO - session closed
+2023-08-05 21:07:53,403 - INFO - checking if table exist!!...
+2023-08-05 21:07:53,450 - INFO - session closed
+2023-08-05 21:07:53,451 - INFO - checking if table exist!!...
+2023-08-05 21:07:53,487 - INFO - session closed
+2023-08-05 21:07:53,487 - INFO - checking if table exist!!...
+2023-08-05 21:07:53,499 - INFO - session closed
+2023-08-05 21:07:53,499 - INFO - no record found with same uid & sessionid . Inserting...
+2023-08-05 21:07:53,499 - INFO - checking if table exist!!...
+2023-08-05 21:07:53,517 - ERROR - issue with query:(pymysql.err.IntegrityError) (1062, "Duplicate entry '36141bb3a7ccccb7c733e7bff6b697abe84da8c6-debtes899997jkjghg-jhhj' for key 'tbl_checkout.PRIMARY'")
+[SQL: INSERT INTO external.
+
+ VALUES ('36141bb3a7ccccb7c733e7bff6b697abe84da8c6', 'debtes899997jkjghg-jhhjghvbv', '{"available_order_no": "00000000-0000-0000-2ef1-5f73f223f40c-00", "order_id": "00000000-0000-0000-2ef1-5f73f223f40c", "available": [{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}, {"item_id": "201816_03_02", "count": 2, "cost": "595", "net_cost": 1190}], "net_total": 1785, "unavailable": [], "session_id": "debtes899997jkjghg-jhhjghvbv"}', '[{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}, {"item_id": "201816_03_02", "count": 2, "cost": "595", "net_cost": 1190}]', 1691294873451540200, 0);]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-08-05 21:07:53,518 - INFO - session closed
+2023-08-05 21:07:53,518 - INFO - None
+2023-08-05 21:07:53,521 - INFO - Validation time: 0.300 seconds
+2023-08-05 21:07:53,522 - INFO - Execution time: 1.149 seconds
+2023-08-05 21:08:14,726 - INFO - {'exp': 1691295423, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 21:08:14,749 - INFO - show cart  function triggered!...
+2023-08-05 21:08:14,752 - INFO - checking if table exist!!...
+2023-08-05 21:08:14,825 - INFO - session closed
+2023-08-05 21:08:14,827 - INFO - [{'session_id': 'yohonesuinb#44523', 'item_id': '201816_03_01', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'yohonesuinb#44523'}, {'session_id': 'yohonesuinb#44523', 'item_id': '201816_03_02', 'count': 2, 'cost': 595.0, 'net_cost': 1190.0, 'cart_id': 'yohonesuinb#44523'}]
+2023-08-05 21:08:14,835 - INFO - Validation time: 0.006 seconds
+2023-08-05 21:08:14,836 - INFO - Execution time: 0.123 seconds
+2023-08-05 21:19:54,813 - INFO - Serving on http://0.0.0.0:5008
+2023-08-05 21:20:15,056 - INFO - Validation time: 2.350 seconds
+2023-08-05 21:22:26,970 - INFO - Validation time: 2.343 seconds
+2023-08-05 21:22:26,985 - INFO - {'exp': 1691296232, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 21:22:27,011 - INFO - checkout function triggered!...
+2023-08-05 21:22:27,015 - INFO - checking if table exist!!...
+2023-08-05 21:22:27,953 - INFO - session closed
+2023-08-05 21:22:27,955 - INFO - found cart items
+2023-08-05 21:22:27,962 - INFO - checking if table exist!!...
+2023-08-05 21:22:28,013 - INFO - session closed
+2023-08-05 21:22:28,013 - INFO - checking if table exist!!...
+2023-08-05 21:22:28,063 - INFO - session closed
+2023-08-05 21:22:28,068 - INFO - checking if table exist!!...
+2023-08-05 21:22:28,095 - INFO - session closed
+2023-08-05 21:22:28,096 - INFO - here it comes
+2023-08-05 21:22:28,096 - INFO - checking if table exist!!...
+2023-08-05 21:22:28,111 - INFO - session closed
+2023-08-05 21:22:28,111 - INFO - no record found with same uid & sessionid . Inserting...
+2023-08-05 21:22:28,112 - INFO - checking if table exist!!...
+2023-08-05 21:22:28,140 - ERROR - issue with query:(pymysql.err.IntegrityError) (1062, "Duplicate entry '36141bb3a7ccccb7c733e7bff6b697abe84da8c6-debtes899997jkjghg-jhhj' for key 'tbl_checkout.PRIMARY'")
+[SQL: INSERT INTO external.tbl_checkout VALUES ('36141bb3a7ccccb7c733e7bff6b697abe84da8c6', 'debtes899997jkjghg-jhhjghvbv', '{"available_order_no": "00000000-0000-0000-2ef1-610b36101e1f-00", "order_id": "00000000-0000-0000-2ef1-610b36101e1f", "available": [{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}, {"item_id": "201816_03_02", "count": 2, "cost": "595", "net_cost": 1190}], "net_total": 1785, "unavailable": [], "session_id": "debtes899997jkjghg-jhhjghvbv"}', '[{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}, {"item_id": "201816_03_02", "count": 2, "cost": "595", "net_cost": 1190}]', 1691295748067553100, 0);]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-08-05 21:22:28,142 - INFO - session closed
+2023-08-05 21:22:28,142 - INFO - None
+2023-08-05 21:22:28,147 - INFO - Validation time: 2.363 seconds
+2023-08-05 21:22:28,147 - INFO - Execution time: 3.526 seconds
+2023-08-05 21:35:11,525 - INFO - Validation time: 2.340 seconds
+2023-08-05 21:37:26,274 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 760, in _write_bytes
+    self._sock.sendall(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
+    asyncio_safe=can_manipulate_connection,
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
+    dbapi_connection.rollback()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 481, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 818, in _execute_command
+    self._write_bytes(packet)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 764, in _write_bytes
+    CR.CR_SERVER_GONE_ERROR, "MySQL server has gone away (%r)" % (e,)
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))")
+2023-08-05 21:37:26,328 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 760, in _write_bytes
+    self._sock.sendall(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
+    asyncio_safe=can_manipulate_connection,
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
+    dbapi_connection.rollback()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 481, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 818, in _execute_command
+    self._write_bytes(packet)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 764, in _write_bytes
+    CR.CR_SERVER_GONE_ERROR, "MySQL server has gone away (%r)" % (e,)
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))")
+2023-08-05 21:37:28,597 - INFO - Validation time: 2.373 seconds
+2023-08-05 21:37:28,604 - INFO - {'exp': 1691297183, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 21:37:28,618 - INFO - checkout function triggered!...
+2023-08-05 21:37:28,618 - INFO - checking if table exist!!...
+2023-08-05 21:37:28,626 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 760, in _write_bytes
+    self._sock.sendall(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
+    asyncio_safe=can_manipulate_connection,
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
+    dbapi_connection.rollback()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 481, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 818, in _execute_command
+    self._write_bytes(packet)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 764, in _write_bytes
+    CR.CR_SERVER_GONE_ERROR, "MySQL server has gone away (%r)" % (e,)
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))")
+2023-08-05 21:37:28,645 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2006, "MySQL server has gone away (ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))")
+[SQL: DESCRIBE `external`.`tbl_cart`]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-08-05 21:37:29,764 - INFO - session closed
+2023-08-05 21:37:29,765 - INFO - found cart items
+2023-08-05 21:37:29,769 - INFO - checking if table exist!!...
+2023-08-05 21:37:29,819 - INFO - session closed
+2023-08-05 21:37:29,819 - INFO - checking if table exist!!...
+2023-08-05 21:37:29,838 - INFO - session closed
+2023-08-05 21:37:29,839 - INFO - checking if table exist!!...
+2023-08-05 21:37:29,939 - INFO - session closed
+2023-08-05 21:37:29,939 - INFO - here it comes
+2023-08-05 21:37:29,939 - INFO - checking if table exist!!...
+2023-08-05 21:37:29,958 - INFO - session closed
+2023-08-05 21:37:29,958 - INFO - no record found with same uid & sessionid . Inserting...
+2023-08-05 21:37:29,958 - INFO - checking if table exist!!...
+2023-08-05 21:37:29,977 - INFO - row inserted!..
+2023-08-05 21:37:29,992 - INFO - session closed
+2023-08-05 21:37:29,993 - INFO - {'available_order_no': '00000000-0000-0000-2ef1-62af264be724-00', 'order_id': '00000000-0000-0000-2ef1-62af264be724', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}, {'item_id': '201816_03_02', 'count': 2, 'cost': '595', 'net_cost': 1190}], 'net_total': 1785, 'unavailable': [], 'session_id': 'debtes899997jkjghg-jhhjghvbv'}
+2023-08-05 21:37:29,995 - INFO - Validation time: 2.382 seconds
+2023-08-05 21:37:29,995 - INFO - Execution time: 3.774 seconds
+2023-08-05 21:40:53,072 - INFO - Validation time: 2.223 seconds
+2023-08-05 21:40:53,076 - INFO - {'exp': 1691297183, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 21:40:53,078 - INFO - checkout function triggered!...
+2023-08-05 21:40:53,079 - INFO - checking if table exist!!...
+2023-08-05 21:40:53,131 - INFO - session closed
+2023-08-05 21:40:53,133 - INFO - found cart items
+2023-08-05 21:40:53,136 - INFO - checking if table exist!!...
+2023-08-05 21:40:53,152 - INFO - session closed
+2023-08-05 21:40:53,153 - INFO - checking if table exist!!...
+2023-08-05 21:40:53,527 - INFO - session closed
+2023-08-05 21:40:53,528 - INFO - checking if table exist!!...
+2023-08-05 21:40:53,559 - INFO - session closed
+2023-08-05 21:40:53,559 - INFO - here it comes
+2023-08-05 21:40:53,559 - INFO - checking if table exist!!...
+2023-08-05 21:40:53,572 - INFO - session closed
+2023-08-05 21:40:53,572 - INFO - no record found with same uid & sessionid . Inserting...
+2023-08-05 21:40:53,572 - INFO - checking if table exist!!...
+2023-08-05 21:40:53,584 - INFO - row inserted!..
+2023-08-05 21:40:53,598 - INFO - session closed
+2023-08-05 21:40:53,598 - INFO - {'available_order_no': '00000000-0000-0000-2ef1-630dd993ac1d-00', 'order_id': '00000000-0000-0000-2ef1-630dd993ac1d', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}, {'item_id': '201816_03_02', 'count': 2, 'cost': '595', 'net_cost': 1190}], 'net_total': 1785, 'unavailable': [], 'session_id': 'debtes899997jkjghg-jhhjghvbv'}
+2023-08-05 21:40:53,599 - INFO - Validation time: 2.232 seconds
+2023-08-05 21:40:53,599 - INFO - Execution time: 2.754 seconds
+2023-08-05 21:41:26,843 - INFO - {'exp': 1691297183, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 21:41:26,865 - INFO - checkout function triggered!...
+2023-08-05 21:41:26,866 - INFO - checking if table exist!!...
+2023-08-05 21:41:26,938 - INFO - session closed
+2023-08-05 21:41:26,940 - INFO - found cart items
+2023-08-05 21:41:26,943 - INFO - checking if table exist!!...
+2023-08-05 21:41:26,965 - INFO - session closed
+2023-08-05 21:41:26,965 - INFO - checking if table exist!!...
+2023-08-05 21:41:27,021 - INFO - session closed
+2023-08-05 21:41:27,022 - INFO - checking if table exist!!...
+2023-08-05 21:41:27,073 - INFO - session closed
+2023-08-05 21:41:27,073 - INFO - here it comes
+2023-08-05 21:41:27,074 - INFO - checking if table exist!!...
+2023-08-05 21:41:27,093 - INFO - session closed
+2023-08-05 21:41:27,093 - INFO - no record found with same uid & sessionid . Inserting...
+2023-08-05 21:41:27,094 - INFO - checking if table exist!!...
+2023-08-05 21:41:27,110 - INFO - row inserted!..
+2023-08-05 21:41:27,135 - INFO - session closed
+2023-08-05 21:41:27,136 - INFO - {'available_order_no': '00000000-0000-0000-2ef1-631d97aa55d2-00', 'order_id': '00000000-0000-0000-2ef1-631d97aa55d2', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}, {'item_id': '201816_03_02', 'count': 2, 'cost': '595', 'net_cost': 1190}], 'net_total': 1785, 'unavailable': [], 'session_id': 'debtes899997jkjghg-jhhjghvbv'}
+2023-08-05 21:41:27,140 - INFO - Validation time: 0.004 seconds
+2023-08-05 21:41:27,140 - INFO - Execution time: 0.305 seconds
+2023-08-05 21:50:45,535 - INFO - Serving on http://0.0.0.0:5008
+2023-08-05 21:50:54,244 - INFO - Validation time: 3.029 seconds
+2023-08-05 21:52:20,711 - INFO - Validation time: 0.253 seconds
+2023-08-05 21:52:20,719 - INFO - {'exp': 1691298077, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 21:52:20,742 - INFO - checkout function triggered!...
+2023-08-05 21:52:20,746 - INFO - checking if table exist!!...
+2023-08-05 21:52:20,990 - INFO - session closed
+2023-08-05 21:52:20,992 - INFO - found cart items
+2023-08-05 21:52:20,994 - INFO - checking if table exist!!...
+2023-08-05 21:52:21,036 - INFO - session closed
+2023-08-05 21:52:21,036 - INFO - checking if table exist!!...
+2023-08-05 21:52:21,091 - INFO - session closed
+2023-08-05 21:52:21,095 - INFO - checking if table exist!!...
+2023-08-05 21:52:21,146 - INFO - session closed
+2023-08-05 21:52:21,146 - INFO - here it comes
+2023-08-05 21:52:21,147 - INFO - checking if table exist!!...
+2023-08-05 21:52:21,163 - INFO - session closed
+2023-08-05 21:52:21,164 - INFO - checkout table updated..
+2023-08-05 21:52:21,164 - INFO - checking if table exist!!...
+2023-08-05 21:52:21,184 - ERROR - issue with query:Error!...no row affected
+2023-08-05 21:52:21,185 - INFO - session closed
+2023-08-05 21:52:21,186 - INFO - None
+2023-08-05 21:52:21,189 - INFO - Validation time: 0.263 seconds
+2023-08-05 21:52:21,189 - INFO - Execution time: 0.734 seconds
+2023-08-05 21:57:15,780 - INFO - Serving on http://0.0.0.0:5008
+2023-08-05 21:57:23,253 - INFO - Validation time: 2.272 seconds
+2023-08-05 21:57:23,254 - INFO - {'exp': 1691298077, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 21:57:23,255 - INFO - checkout function triggered!...
+2023-08-05 21:57:23,255 - INFO - checking if table exist!!...
+2023-08-05 21:57:23,364 - INFO - session closed
+2023-08-05 21:57:23,365 - INFO - found cart items
+2023-08-05 21:57:23,366 - INFO - checking if table exist!!...
+2023-08-05 21:57:23,387 - INFO - session closed
+2023-08-05 21:57:23,387 - INFO - checking if table exist!!...
+2023-08-05 21:57:23,423 - INFO - session closed
+2023-08-05 21:57:23,424 - INFO - checking if table exist!!...
+2023-08-05 21:57:23,455 - INFO - session closed
+2023-08-05 21:57:23,455 - INFO - here it comes
+2023-08-05 21:57:23,456 - INFO - checking if table exist!!...
+2023-08-05 21:57:23,500 - INFO - session closed
+2023-08-05 21:57:23,500 - INFO - checkout table updated..
+2023-08-05 21:57:23,500 - INFO - checking if table exist!!...
+2023-08-05 21:57:23,508 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2ef1-64daf65661dc-00", "order_id": "00000000-0000-0000-2ef1-64daf65661dc", "available": [{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}, {"item_id": "201816_03_02", "count": 2, "cost": "595", "net_cost": 1190}], "net_total": 1785, "unavailable": [], "session_id": "debtes899997jkjghg-jhhjghvbv"}', ldts='1691297843424457100', full_order='[{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}, {"item_id": "201816_03_02", "count": 2, "cost": "595", "net_cost": 1190}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='debtes899997jkjghg-jhhjghvbv and status=0';
+2023-08-05 21:57:23,518 - ERROR - issue with query:Error!...no row affected
+2023-08-05 21:57:23,518 - INFO - session closed
+2023-08-05 21:57:23,518 - INFO - None
+2023-08-05 21:57:23,519 - INFO - Validation time: 2.273 seconds
+2023-08-05 21:57:23,519 - INFO - Execution time: 2.539 seconds
+2023-08-05 21:58:22,161 - INFO - Serving on http://0.0.0.0:5008
+2023-08-05 21:58:29,769 - INFO - Validation time: 2.217 seconds
+2023-08-05 21:58:29,770 - INFO - {'exp': 1691298077, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 21:58:29,770 - INFO - checkout function triggered!...
+2023-08-05 21:58:29,770 - INFO - checking if table exist!!...
+2023-08-05 21:58:29,856 - INFO - session closed
+2023-08-05 21:58:29,856 - INFO - found cart items
+2023-08-05 21:58:29,857 - INFO - checking if table exist!!...
+2023-08-05 21:58:29,875 - INFO - session closed
+2023-08-05 21:58:29,876 - INFO - checking if table exist!!...
+2023-08-05 21:58:29,915 - INFO - session closed
+2023-08-05 21:58:29,916 - INFO - checking if table exist!!...
+2023-08-05 21:58:29,965 - INFO - session closed
+2023-08-05 21:58:29,966 - INFO - here it comes
+2023-08-05 21:58:29,966 - INFO - checking if table exist!!...
+2023-08-05 21:58:30,029 - INFO - session closed
+2023-08-05 21:58:30,029 - INFO - checkout table updated..
+2023-08-05 21:58:30,029 - INFO - checking if table exist!!...
+2023-08-05 21:58:30,039 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2ef1-64f9ecc5bea1-00", "order_id": "00000000-0000-0000-2ef1-64f9ecc5bea1", "available": [{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}, {"item_id": "201816_03_02", "count": 2, "cost": "595", "net_cost": 1190}], "net_total": 1785, "unavailable": [], "session_id": "debtes899997jkjghg-jhhjghvbv"}', ldts='1691297909916971200', full_order='[{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}, {"item_id": "201816_03_02", "count": 2, "cost": "595", "net_cost": 1190}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='debtes899997jkjghg-jhhjghvbv' and status=0;
+2023-08-05 21:58:30,060 - ERROR - issue with query:(pymysql.err.IntegrityError) (1062, "Duplicate entry '36141bb3a7ccccb7c733e7bff6b697abe84da8c6-debtes899997jkjghg-jhhj' for key 'tbl_checkout.PRIMARY'")
+[SQL: Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2ef1-64f9ecc5bea1-00", "order_id": "00000000-0000-0000-2ef1-64f9ecc5bea1", "available": [{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}, {"item_id": "201816_03_02", "count": 2, "cost": "595", "net_cost": 1190}], "net_total": 1785, "unavailable": [], "session_id": "debtes899997jkjghg-jhhjghvbv"}', ldts='1691297909916971200', full_order='[{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}, {"item_id": "201816_03_02", "count": 2, "cost": "595", "net_cost": 1190}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='debtes899997jkjghg-jhhjghvbv' and status=0;]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-08-05 21:58:30,060 - INFO - session closed
+2023-08-05 21:58:30,061 - INFO - None
+2023-08-05 21:58:30,061 - INFO - Validation time: 2.218 seconds
+2023-08-05 21:58:30,061 - INFO - Execution time: 2.509 seconds
+2023-08-05 22:22:17,083 - INFO - Validation time: 2.223 seconds
+2023-08-05 22:22:17,088 - INFO - {'exp': 1691299876, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 22:22:17,092 - INFO - checkout function triggered!...
+2023-08-05 22:22:17,092 - INFO - checking if table exist!!...
+2023-08-05 22:22:17,105 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 760, in _write_bytes
+    self._sock.sendall(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
+    asyncio_safe=can_manipulate_connection,
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
+    dbapi_connection.rollback()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 481, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 818, in _execute_command
+    self._write_bytes(packet)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 764, in _write_bytes
+    CR.CR_SERVER_GONE_ERROR, "MySQL server has gone away (%r)" % (e,)
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))")
+2023-08-05 22:22:17,277 - ERROR - Error: connection issue (pymysql.err.OperationalError) (2006, "MySQL server has gone away (ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))")
+[SQL: DESCRIBE `external`.`tbl_cart`]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-08-05 22:22:18,440 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\event\base.py", line 147, in __init__
+    self._empty_listeners = self._empty_listener_reg[instance_cls]
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.7_3.7.2544.0_x64__qbz5n2kfra8p0\lib\weakref.py", line 396, in __getitem__
+    return self.data[ref(key)]
+KeyError: <weakref at 0x000001C0DED1E1D8; to 'type' at 0x000001C0DEA550F8 (Session)>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 760, in _write_bytes
+    self._sock.sendall(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
+    asyncio_safe=can_manipulate_connection,
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
+    dbapi_connection.rollback()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 481, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 818, in _execute_command
+    self._write_bytes(packet)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 764, in _write_bytes
+    CR.CR_SERVER_GONE_ERROR, "MySQL server has gone away (%r)" % (e,)
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))")
+2023-08-05 22:22:18,493 - INFO - session closed
+2023-08-05 22:22:18,493 - INFO - found cart items
+2023-08-05 22:22:18,496 - INFO - checking if table exist!!...
+2023-08-05 22:22:18,554 - INFO - session closed
+2023-08-05 22:22:18,554 - INFO - checking if table exist!!...
+2023-08-05 22:22:18,563 - INFO - session closed
+2023-08-05 22:22:18,563 - INFO - checking if table exist!!...
+2023-08-05 22:22:18,573 - INFO - session closed
+2023-08-05 22:22:18,574 - INFO - here it comes
+2023-08-05 22:22:18,574 - INFO - checking if table exist!!...
+2023-08-05 22:22:18,583 - INFO - session closed
+2023-08-05 22:22:18,584 - INFO - no record found with same uid & sessionid . Inserting...
+2023-08-05 22:22:18,584 - INFO - checking if table exist!!...
+2023-08-05 22:22:18,600 - INFO - row inserted!..
+2023-08-05 22:22:18,609 - INFO - session closed
+2023-08-05 22:22:18,609 - INFO - {'available_order_no': '00000000-0000-0000-2ef1-67932f82feb3-00', 'order_id': '00000000-0000-0000-2ef1-67932f82feb3', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}, {'item_id': '201816_03_02', 'count': 2, 'cost': '595', 'net_cost': 1190}], 'net_total': 1785, 'unavailable': [], 'session_id': 'debtes899997jkjghg-jhhjghvbv'}
+2023-08-05 22:22:18,610 - INFO - Validation time: 2.233 seconds
+2023-08-05 22:22:18,610 - INFO - Execution time: 3.755 seconds
+2023-08-05 22:25:18,714 - INFO - Validation time: 2.325 seconds
+2023-08-05 22:25:18,715 - INFO - {'exp': 1691299876, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 22:25:18,717 - INFO - checkout function triggered!...
+2023-08-05 22:25:18,717 - INFO - checking if table exist!!...
+2023-08-05 22:25:18,739 - INFO - session closed
+2023-08-05 22:25:18,740 - INFO - found cart items
+2023-08-05 22:25:18,741 - INFO - checking if table exist!!...
+2023-08-05 22:25:18,748 - INFO - session closed
+2023-08-05 22:25:18,748 - INFO - checking if table exist!!...
+2023-08-05 22:25:18,755 - INFO - session closed
+2023-08-05 22:25:18,756 - INFO - checking if table exist!!...
+2023-08-05 22:25:18,763 - INFO - session closed
+2023-08-05 22:25:18,763 - INFO - here it comes
+2023-08-05 22:25:18,763 - INFO - checking if table exist!!...
+2023-08-05 22:25:18,787 - INFO - session closed
+2023-08-05 22:25:18,787 - INFO - no record found with same uid & sessionid . Inserting...
+2023-08-05 22:25:18,787 - INFO - checking if table exist!!...
+2023-08-05 22:25:18,828 - INFO - row inserted!..
+2023-08-05 22:25:18,839 - INFO - session closed
+2023-08-05 22:25:18,839 - INFO - {'available_order_no': '00000000-0000-0000-2ef1-67e71e9dbb4b-00', 'order_id': '00000000-0000-0000-2ef1-67e71e9dbb4b', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}, {'item_id': '201816_03_02', 'count': 2, 'cost': '595', 'net_cost': 1190}], 'net_total': 1785, 'unavailable': [], 'session_id': 'debtes899997jkjghg-jhhjghvbv'}
+2023-08-05 22:25:18,841 - INFO - Validation time: 2.335 seconds
+2023-08-05 22:25:18,841 - INFO - Execution time: 2.461 seconds
+2023-08-05 22:25:29,567 - INFO - {'exp': 1691299876, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 22:25:29,567 - INFO - checkout function triggered!...
+2023-08-05 22:25:29,567 - INFO - checking if table exist!!...
+2023-08-05 22:25:29,576 - INFO - session closed
+2023-08-05 22:25:29,576 - INFO - found cart items
+2023-08-05 22:25:29,576 - INFO - checking if table exist!!...
+2023-08-05 22:25:29,584 - INFO - session closed
+2023-08-05 22:25:29,584 - INFO - checking if table exist!!...
+2023-08-05 22:25:29,591 - INFO - session closed
+2023-08-05 22:25:29,591 - INFO - checking if table exist!!...
+2023-08-05 22:25:29,598 - INFO - session closed
+2023-08-05 22:25:29,598 - INFO - here it comes
+2023-08-05 22:25:29,598 - INFO - checking if table exist!!...
+2023-08-05 22:25:29,632 - INFO - session closed
+2023-08-05 22:25:29,632 - INFO - checkout table updated..
+2023-08-05 22:25:29,632 - INFO - checking if table exist!!...
+2023-08-05 22:25:29,636 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2ef1-67ec2a549664-00", "order_id": "00000000-0000-0000-2ef1-67ec2a549664", "available": [{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}, {"item_id": "201816_03_02", "count": 2, "cost": "595", "net_cost": 1190}], "net_total": 1785, "unavailable": [], "session_id": "debtes899997jkjghg-jhhjghvbv"}', ldts='1691299529591036800', full_order='[{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}, {"item_id": "201816_03_02", "count": 2, "cost": "595", "net_cost": 1190}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='debtes899997jkjghg-jhhjghvbv' and status=0;
+2023-08-05 22:25:29,646 - INFO - row inserted!..
+2023-08-05 22:25:29,653 - INFO - session closed
+2023-08-05 22:25:29,654 - INFO - {'available_order_no': '00000000-0000-0000-2ef1-67ec2a549664-00', 'order_id': '00000000-0000-0000-2ef1-67ec2a549664', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}, {'item_id': '201816_03_02', 'count': 2, 'cost': '595', 'net_cost': 1190}], 'net_total': 1785, 'unavailable': [], 'session_id': 'debtes899997jkjghg-jhhjghvbv'}
+2023-08-05 22:25:29,654 - INFO - Validation time: 0.000 seconds
+2023-08-05 22:25:29,654 - INFO - Execution time: 0.088 seconds
+2023-08-05 22:25:42,160 - INFO - {'exp': 1691299876, 'session_id': 'debtes899997jkjghg-jhhjghvbv', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-05 22:25:42,160 - INFO - checkout function triggered!...
+2023-08-05 22:25:42,160 - INFO - checking if table exist!!...
+2023-08-05 22:25:42,171 - INFO - session closed
+2023-08-05 22:25:42,172 - INFO - found cart items
+2023-08-05 22:25:42,172 - INFO - checking if table exist!!...
+2023-08-05 22:25:42,181 - INFO - session closed
+2023-08-05 22:25:42,182 - INFO - checking if table exist!!...
+2023-08-05 22:25:42,192 - INFO - session closed
+2023-08-05 22:25:42,192 - INFO - checking if table exist!!...
+2023-08-05 22:25:42,203 - INFO - session closed
+2023-08-05 22:25:42,203 - INFO - here it comes
+2023-08-05 22:25:42,203 - INFO - checking if table exist!!...
+2023-08-05 22:25:42,245 - INFO - session closed
+2023-08-05 22:25:42,245 - INFO - checkout table updated..
+2023-08-05 22:25:42,245 - INFO - checking if table exist!!...
+2023-08-05 22:25:42,250 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2ef1-67f207f31b3a-00", "order_id": "00000000-0000-0000-2ef1-67f207f31b3a", "available": [{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}, {"item_id": "201816_03_02", "count": 2, "cost": "595", "net_cost": 1190}], "net_total": 1785, "unavailable": [], "session_id": "debtes899997jkjghg-jhhjghvbv"}', ldts='1691299542192529700', full_order='[{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}, {"item_id": "201816_03_02", "count": 2, "cost": "595", "net_cost": 1190}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='debtes899997jkjghg-jhhjghvbv' and status=0;
+2023-08-05 22:25:42,272 - INFO - row inserted!..
+2023-08-05 22:25:42,279 - INFO - session closed
+2023-08-05 22:25:42,280 - INFO - {'available_order_no': '00000000-0000-0000-2ef1-67f207f31b3a-00', 'order_id': '00000000-0000-0000-2ef1-67f207f31b3a', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}, {'item_id': '201816_03_02', 'count': 2, 'cost': '595', 'net_cost': 1190}], 'net_total': 1785, 'unavailable': [], 'session_id': 'debtes899997jkjghg-jhhjghvbv'}
+2023-08-05 22:25:42,280 - INFO - Validation time: 0.001 seconds
+2023-08-05 22:25:42,280 - INFO - Execution time: 0.121 seconds

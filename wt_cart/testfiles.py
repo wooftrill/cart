@@ -5,7 +5,7 @@ session.maxsize = 100
 start_time = time.time()
 url = 'http://localhost:5008/checkout_with_login'
 
-jwt_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoieWNtZGVmbWU5cWc4QlNSTVNQcVYxcEtaZkg5MyIsInNlc3Npb25faWQiOiJnaGZoZ2Rmc3R1a2ZkdGRoaGZnc2QiLCJleHAiOjE2OTA2MzMwNTl9.17fBR728u4QeqvGITA89cKQE6lNGK34e4EDqSzBWHqM'
+jwt_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoieWNtZGVmbWU5cWc4QlNSTVNQcVYxcEtaZkg5MyIsInNlc3Npb25faWQiOiJkZWJ0ZXM4OTk5OTdqa2pnaGctamhoamdodmJ2IiwiZXhwIjoxNjkxMjk5ODc2fQ.-V6yMq70eawamabAjyqOG6FECEoUN-8uHoLigXxcK1w'
 item_id = '201816_03_02'
 
 

@@ -398,10 +398,45 @@ class SQLClient:
 
         raise Exception("Could not perform database eration after {} retries".format(max_retries))
 
+    def show_discount(self, table_name: str, discount_id: str):
+        __min_available = 1
+        max_retries = 3
+        retries = 0
+        logging.info("checking if table exist!!...")
+        while retries < max_retries:
+            try:
+                inspect_db = sa.inspect(self.engine)
+                is_exist = inspect_db.dialect.has_table(self.engine.connect(), table_name, schema="external")
+                if not is_exist:
+                    raise NoSuchTableError
+                else:
+                    curr_session = sessionmaker(bind=self.engine)
+                    session = curr_session()
+                    query = SQLUtils.show_discount_details(table_name, discount_id)
+                    logging.info("query %s",query)
+                    cart_list = []
+                    response = session.execute(text(query))
+                    session.close()
+                    logging.info("session closed")
+                    for res in response:
+                        print(res)
+                        cart_list.append(res)
+                    return HelperUtils.tupple_to_dict(cart_list,["discount_id","total_discount_in_prcnt","valid_from", "valid_upto"])
+            except OperationalError as e:
+                logging.error("Error: connection issue {}".format(e))
+                retries += 1
+                print("in loop")
+                time.sleep(1)
+            except Exception as ex:
+                logging.error("An exception occurred:{}".format(ex))
+                raise ex
+
+        raise Exception("Could not perform database eration after {} retries".format(max_retries))
+
 
 sql_client = SQLClient()
 
 #
 #
-#print(sql_client.is_exist_in_inventory('item',{'item_id':'201816_03_01'}))
+#print(sql_client.show_discount('tbl_discount','DISCOUNT008'))
 

@@ -1953,3 +1953,335 @@ pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionAbor
 2023-08-05 22:25:42,280 - INFO - {'available_order_no': '00000000-0000-0000-2ef1-67f207f31b3a-00', 'order_id': '00000000-0000-0000-2ef1-67f207f31b3a', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}, {'item_id': '201816_03_02', 'count': 2, 'cost': '595', 'net_cost': 1190}], 'net_total': 1785, 'unavailable': [], 'session_id': 'debtes899997jkjghg-jhhjghvbv'}
 2023-08-05 22:25:42,280 - INFO - Validation time: 0.001 seconds
 2023-08-05 22:25:42,280 - INFO - Execution time: 0.121 seconds
+2023-08-31 05:05:05,572 - INFO - Serving on http://0.0.0.0:5008
+2023-08-31 05:05:14,085 - INFO - Validation time: 2.275 seconds
+2023-08-31 05:06:02,146 - INFO - Validation time: 0.081 seconds
+2023-08-31 05:07:48,097 - INFO - Validation time: 0.102 seconds
+2023-08-31 05:07:48,105 - INFO - {'exp': 1693484237, 'session_id': 'ghsgdhsh7873673hwgikk', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-31 05:07:48,124 - INFO - checkout function triggered!...
+2023-08-31 05:07:48,127 - INFO - checking if table exist!!...
+2023-08-31 05:07:48,307 - INFO - session closed
+2023-08-31 05:07:48,308 - INFO - False
+2023-08-31 05:07:48,310 - INFO - Validation time: 0.110 seconds
+2023-08-31 05:07:48,310 - INFO - Execution time: 0.316 seconds
+2023-08-31 05:08:15,473 - INFO - add_to_cart method called
+2023-08-31 05:08:15,474 - INFO - checking if table exist!!...
+2023-08-31 05:08:15,488 - INFO - session closed
+2023-08-31 05:08:15,489 - ERROR - key error list index out of range
+2023-08-31 05:08:15,489 - INFO - item not present in cart 
+2023-08-31 05:08:15,490 - INFO - checking if table exist!!...
+2023-08-31 05:08:15,680 - INFO - session closed
+2023-08-31 05:08:15,680 - ERROR - 'bool' object is not subscriptable
+2023-08-31 05:08:15,680 - INFO - Validation time: 0.001 seconds
+2023-08-31 05:08:15,680 - INFO - Execution time: 0.213 seconds
+2023-08-31 05:08:15,685 - ERROR - Exception on /add_with_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'add_to_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-08-31 05:08:34,958 - INFO - add_to_cart method called
+2023-08-31 05:08:34,960 - INFO - checking if table exist!!...
+2023-08-31 05:08:34,997 - INFO - session closed
+2023-08-31 05:08:34,998 - ERROR - key error list index out of range
+2023-08-31 05:08:34,998 - INFO - item not present in cart 
+2023-08-31 05:08:34,998 - INFO - checking if table exist!!...
+2023-08-31 05:08:35,011 - INFO - session closed
+2023-08-31 05:08:35,011 - ERROR - 'bool' object is not subscriptable
+2023-08-31 05:08:35,012 - INFO - Validation time: 0.000 seconds
+2023-08-31 05:08:35,012 - INFO - Execution time: 0.057 seconds
+2023-08-31 05:08:35,012 - ERROR - Exception on /add_with_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'add_to_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-08-31 05:19:44,702 - INFO - Validation time: 2.268 seconds
+2023-08-31 05:21:11,389 - INFO - Validation time: 0.209 seconds
+2023-08-31 05:21:11,404 - INFO - add_to_cart method called
+2023-08-31 05:21:11,405 - INFO - checking if table exist!!...
+2023-08-31 05:21:11,478 - INFO - session closed
+2023-08-31 05:21:11,479 - ERROR - key error list index out of range
+2023-08-31 05:21:11,479 - INFO - item not present in cart 
+2023-08-31 05:21:11,479 - INFO - checking if table exist!!...
+2023-08-31 05:21:11,487 - INFO - session closed
+2023-08-31 05:21:11,487 - INFO - checking if table exist!!...
+2023-08-31 05:21:11,544 - INFO - row inserted!..
+2023-08-31 05:21:11,556 - INFO - session closed
+2023-08-31 05:21:11,556 - INFO - Validation time: 0.219 seconds
+2023-08-31 05:21:11,556 - INFO - Execution time: 0.380 seconds
+2023-08-31 05:21:49,316 - INFO - {'exp': 1693485028, 'session_id': 'ghsgdhsh7873673hwgikk', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-31 05:21:49,329 - INFO - show cart  function triggered!...
+2023-08-31 05:21:49,331 - INFO - checking if table exist!!...
+2023-08-31 05:21:49,372 - INFO - session closed
+2023-08-31 05:21:49,376 - INFO - [{'session_id': 'ghsgdhsh7873673hwgikk', 'item_id': '201816_03_01', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'ghsgdhsh7873673hwgikk'}]
+2023-08-31 05:21:49,383 - INFO - Validation time: 0.002 seconds
+2023-08-31 05:21:49,383 - INFO - Execution time: 0.071 seconds
+2023-08-31 05:22:39,454 - INFO - Validation time: 0.207 seconds
+2023-08-31 05:22:39,460 - INFO - {'exp': 1693485028, 'session_id': 'ghsgdhsh7873673hwgikk', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-31 05:22:39,462 - ERROR - 'discount_code'
+2023-08-31 05:22:39,462 - INFO - Validation time: 0.219 seconds
+2023-08-31 05:22:39,462 - INFO - Execution time: 0.222 seconds
+2023-08-31 05:22:39,465 - ERROR - Exception on /checkout_with_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'checkout_from_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-08-31 05:23:29,250 - INFO - {'exp': 1693485028, 'session_id': 'ghsgdhsh7873673hwgikk', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-31 05:23:29,268 - INFO - checkout function triggered!...
+2023-08-31 05:23:29,270 - INFO - checking if table exist!!...
+2023-08-31 05:23:29,340 - INFO - session closed
+2023-08-31 05:23:29,341 - INFO - found cart items
+2023-08-31 05:23:29,353 - INFO - checking if table exist!!...
+2023-08-31 05:23:29,361 - INFO - session closed
+2023-08-31 05:23:29,362 - INFO - checking if table exist!!...
+2023-08-31 05:23:29,365 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='None' or is_active=1 and valid_upto>0;
+2023-08-31 05:23:29,406 - INFO - session closed
+2023-08-31 05:23:29,406 - ERROR - 'valid_form'
+2023-08-31 05:23:29,406 - INFO - Validation time: 0.004 seconds
+2023-08-31 05:23:29,406 - INFO - Execution time: 0.163 seconds
+2023-08-31 05:23:29,407 - ERROR - Exception on /checkout_with_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'checkout_from_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-08-31 05:24:20,062 - INFO - Validation time: 0.135 seconds
+2023-08-31 05:24:20,066 - INFO - {'exp': 1693485028, 'session_id': 'ghsgdhsh7873673hwgikk', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-31 05:24:20,072 - INFO - checkout function triggered!...
+2023-08-31 05:24:20,072 - INFO - checking if table exist!!...
+2023-08-31 05:24:20,115 - INFO - session closed
+2023-08-31 05:24:20,117 - INFO - found cart items
+2023-08-31 05:24:20,118 - INFO - checking if table exist!!...
+2023-08-31 05:24:20,126 - INFO - session closed
+2023-08-31 05:24:20,126 - INFO - checking if table exist!!...
+2023-08-31 05:24:20,130 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-08-31 05:24:20,137 - INFO - session closed
+2023-08-31 05:24:20,138 - ERROR - 'valid_form'
+2023-08-31 05:24:20,138 - INFO - Validation time: 0.145 seconds
+2023-08-31 05:24:20,138 - INFO - Execution time: 0.217 seconds
+2023-08-31 05:24:20,140 - ERROR - Exception on /checkout_with_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'checkout_from_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-08-31 05:38:13,359 - INFO - Serving on http://0.0.0.0:5008
+2023-08-31 05:38:29,287 - INFO - Validation time: 2.207 seconds
+2023-08-31 05:39:17,648 - INFO - Validation time: 0.221 seconds
+2023-08-31 05:39:17,655 - INFO - {'exp': 1693486124, 'session_id': 'ghsgdhsh7873673hwgikk', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-31 05:39:17,670 - INFO - checkout function triggered!...
+2023-08-31 05:39:17,672 - INFO - checking if table exist!!...
+2023-08-31 05:39:17,843 - INFO - session closed
+2023-08-31 05:39:17,844 - INFO - found cart items
+2023-08-31 05:39:17,849 - INFO - checking if table exist!!...
+2023-08-31 05:39:17,859 - INFO - session closed
+2023-08-31 05:39:17,860 - INFO - checking if table exist!!...
+2023-08-31 05:39:17,863 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-08-31 05:39:17,868 - INFO - session closed
+2023-08-31 05:39:17,870 - INFO - checking if table exist!!...
+2023-08-31 05:39:17,892 - INFO - session closed
+2023-08-31 05:39:17,892 - INFO - here it comes
+2023-08-31 05:39:17,892 - INFO - checking if table exist!!...
+2023-08-31 05:39:17,905 - INFO - session closed
+2023-08-31 05:39:17,905 - INFO - no record found with same uid & sessionid . Inserting...
+2023-08-31 05:39:17,905 - INFO - checking if table exist!!...
+2023-08-31 05:39:17,915 - INFO - row inserted!..
+2023-08-31 05:39:17,925 - INFO - session closed
+2023-08-31 05:39:17,925 - INFO - {'available_order_no': '00000000-0000-0000-2f00-f048e7267fa7-00', 'order_id': '00000000-0000-0000-2f00-f048e7267fa7', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}], 'net_total': 595, 'unavailable': [], 'session_id': 'ghsgdhsh7873673hwgikk', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75}
+2023-08-31 05:39:17,930 - INFO - Validation time: 0.230 seconds
+2023-08-31 05:39:17,930 - INFO - Execution time: 0.504 seconds
+2023-08-31 05:41:27,880 - INFO - Validation time: 0.141 seconds
+2023-08-31 05:41:27,885 - INFO - {'exp': 1693486124, 'session_id': 'ghsgdhsh7873673hwgikk', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-31 05:41:27,887 - INFO - checkout function triggered!...
+2023-08-31 05:41:27,888 - INFO - checking if table exist!!...
+2023-08-31 05:41:27,919 - INFO - session closed
+2023-08-31 05:41:27,919 - INFO - found cart items
+2023-08-31 05:41:27,920 - INFO - checking if table exist!!...
+2023-08-31 05:41:27,928 - INFO - session closed
+2023-08-31 05:41:27,929 - INFO - checking if table exist!!...
+2023-08-31 05:41:27,934 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='DISCOUNT006' or is_active=1 and valid_upto>0;
+2023-08-31 05:41:27,940 - INFO - session closed
+2023-08-31 05:41:27,940 - INFO - checking if table exist!!...
+2023-08-31 05:41:27,986 - INFO - session closed
+2023-08-31 05:41:27,986 - INFO - here it comes
+2023-08-31 05:41:27,986 - INFO - checking if table exist!!...
+2023-08-31 05:41:28,032 - INFO - session closed
+2023-08-31 05:41:28,032 - INFO - checkout table updated..
+2023-08-31 05:41:28,033 - INFO - checking if table exist!!...
+2023-08-31 05:41:28,036 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2f00-f08579565a2d-00", "order_id": "00000000-0000-0000-2f00-f08579565a2d", "available": [{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}], "net_total": 595, "unavailable": [], "session_id": "ghsgdhsh7873673hwgikk", "wt_discount_id": "DISCOUNT001", "wt_discount_prtn": 15, "net_cost": 595.0, "total": 505.75}', ldts='1693485687940777900', full_order='[{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='ghsgdhsh7873673hwgikk' and status=0;
+2023-08-31 05:41:28,038 - INFO - row inserted!..
+2023-08-31 05:41:28,045 - INFO - session closed
+2023-08-31 05:41:28,045 - INFO - {'available_order_no': '00000000-0000-0000-2f00-f08579565a2d-00', 'order_id': '00000000-0000-0000-2f00-f08579565a2d', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}], 'net_total': 595, 'unavailable': [], 'session_id': 'ghsgdhsh7873673hwgikk', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75}
+2023-08-31 05:41:28,047 - INFO - Validation time: 0.148 seconds
+2023-08-31 05:41:28,047 - INFO - Execution time: 0.311 seconds
+2023-08-31 05:47:28,616 - INFO - Serving on http://0.0.0.0:5008
+2023-08-31 05:47:41,523 - INFO - Validation time: 2.218 seconds
+2023-08-31 05:47:41,526 - INFO - {'exp': 1693486124, 'session_id': 'ghsgdhsh7873673hwgikk', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-31 05:47:41,530 - INFO - checkout function triggered!...
+2023-08-31 05:47:41,531 - INFO - checking if table exist!!...
+2023-08-31 05:47:42,327 - INFO - session closed
+2023-08-31 05:47:42,329 - INFO - found cart items
+2023-08-31 05:47:42,330 - INFO - checking if table exist!!...
+2023-08-31 05:47:42,740 - INFO - session closed
+2023-08-31 05:47:42,741 - INFO - checking if table exist!!...
+2023-08-31 05:47:42,747 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='DISCOUNT006' or is_active=1 and valid_upto>0;
+2023-08-31 05:47:42,758 - INFO - session closed
+2023-08-31 05:47:42,760 - INFO - checking if table exist!!...
+2023-08-31 05:47:42,771 - INFO - session closed
+2023-08-31 05:47:42,772 - INFO - here it comes
+2023-08-31 05:47:42,772 - INFO - checking if table exist!!...
+2023-08-31 05:47:42,782 - INFO - session closed
+2023-08-31 05:47:42,782 - INFO - checkout table updated..
+2023-08-31 05:47:42,782 - INFO - checking if table exist!!...
+2023-08-31 05:47:42,787 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2f00-f133d2729281-00", "order_id": "00000000-0000-0000-2f00-f133d2729281", "available": [{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}], "net_total": 595, "unavailable": [], "session_id": "ghsgdhsh7873673hwgikk", "vendor_discount_id": "DISCOUNT006", "vendor_discount_pctn": 5, "wt_discount_id": "DISCOUNT001", "wt_discount_prtn": 15, "net_cost": 565.25, "total": 480.4625}', ldts='1693486062760206100', full_order='[{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='ghsgdhsh7873673hwgikk' and status=0;
+2023-08-31 05:47:42,798 - INFO - row inserted!..
+2023-08-31 05:47:42,812 - INFO - session closed
+2023-08-31 05:47:42,812 - INFO - {'available_order_no': '00000000-0000-0000-2f00-f133d2729281-00', 'order_id': '00000000-0000-0000-2f00-f133d2729281', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}], 'net_total': 595, 'unavailable': [], 'session_id': 'ghsgdhsh7873673hwgikk', 'vendor_discount_id': 'DISCOUNT006', 'vendor_discount_pctn': 5, 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 565.25, 'total': 480.4625}
+2023-08-31 05:47:42,817 - INFO - Validation time: 2.223 seconds
+2023-08-31 05:47:42,817 - INFO - Execution time: 3.514 seconds
+2023-08-31 05:53:43,496 - INFO - Validation time: 2.854 seconds
+2023-08-31 05:54:39,592 - INFO - Validation time: 0.133 seconds
+2023-08-31 05:54:39,605 - INFO - add_to_cart method called
+2023-08-31 05:54:39,607 - INFO - checking if table exist!!...
+2023-08-31 05:54:39,694 - INFO - session closed
+2023-08-31 05:54:39,695 - INFO - item is already present in cart!! updating..
+2023-08-31 05:54:39,696 - INFO - checking if table exist!!...
+2023-08-31 05:54:39,707 - INFO - session closed
+2023-08-31 05:54:39,708 - INFO - checking if table exist!!...
+2023-08-31 05:54:39,716 - INFO - row inserted!..
+2023-08-31 05:54:39,723 - INFO - session closed
+2023-08-31 05:54:39,723 - INFO - Validation time: 0.140 seconds
+2023-08-31 05:54:39,723 - INFO - Execution time: 0.268 seconds
+2023-08-31 05:55:09,296 - INFO - {'exp': 1693487039, 'session_id': 'ghsgdhsh7873673hwgikk', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-31 05:55:09,299 - INFO - show cart  function triggered!...
+2023-08-31 05:55:09,300 - INFO - checking if table exist!!...
+2023-08-31 05:55:09,347 - INFO - session closed
+2023-08-31 05:55:09,350 - INFO - [{'session_id': 'ghsgdhsh7873673hwgikk', 'item_id': '201816_03_01', 'count': 2, 'cost': 595.0, 'net_cost': 1190.0, 'cart_id': 'ghsgdhsh7873673hwgikk'}]
+2023-08-31 05:55:09,354 - INFO - Validation time: 0.000 seconds
+2023-08-31 05:55:09,354 - INFO - Execution time: 0.059 seconds
+2023-08-31 06:41:29,619 - INFO - Validation time: 2.609 seconds
+2023-08-31 06:41:29,631 - INFO - {'exp': 1693489773, 'session_id': 'ghsgdhsh7873673hwgikk', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-08-31 06:41:29,639 - INFO - show cart  function triggered!...
+2023-08-31 06:41:29,642 - INFO - checking if table exist!!...
+2023-08-31 06:41:29,743 - INFO - session closed
+2023-08-31 06:41:29,744 - INFO - []
+2023-08-31 06:41:29,761 - INFO - Validation time: 2.626 seconds
+2023-08-31 06:41:29,761 - INFO - Execution time: 2.756 seconds
+2023-08-31 06:41:56,422 - INFO - add_to_cart method called
+2023-08-31 06:41:56,430 - INFO - checking if table exist!!...
+2023-08-31 06:41:56,503 - INFO - session closed
+2023-08-31 06:41:56,505 - INFO - item is already present in cart!! updating..
+2023-08-31 06:41:56,506 - INFO - checking if table exist!!...
+2023-08-31 06:41:56,521 - INFO - session closed
+2023-08-31 06:41:56,522 - INFO - checking if table exist!!...
+2023-08-31 06:41:56,541 - INFO - row inserted!..
+2023-08-31 06:41:56,558 - INFO - session closed
+2023-08-31 06:41:56,558 - INFO - Validation time: 0.004 seconds
+2023-08-31 06:41:56,559 - INFO - Execution time: 0.157 seconds
+2023-08-31 06:48:56,214 - INFO - Serving on http://0.0.0.0:5008
+2023-08-31 06:49:28,937 - INFO - Validation time: 2.505 seconds
+2023-08-31 06:49:28,952 - INFO - add_to_cart method called
+2023-08-31 06:49:28,953 - INFO - checking if table exist!!...
+2023-08-31 06:49:29,098 - INFO - session closed
+2023-08-31 06:49:29,099 - ERROR - key error list index out of range
+2023-08-31 06:49:29,099 - INFO - item not present in cart 
+2023-08-31 06:49:29,100 - INFO - checking if table exist!!...
+2023-08-31 06:49:29,137 - INFO - session closed
+2023-08-31 06:49:29,137 - INFO - checking if table exist!!...
+2023-08-31 06:49:29,148 - INFO - row inserted!..
+2023-08-31 06:49:29,162 - INFO - session closed
+2023-08-31 06:49:29,162 - INFO - Validation time: 2.517 seconds
+2023-08-31 06:49:29,162 - INFO - Execution time: 2.737 seconds
+2023-08-31 06:50:12,361 - INFO - add_to_cart method called
+2023-08-31 06:50:12,362 - INFO - checking if table exist!!...
+2023-08-31 06:50:12,385 - INFO - session closed
+2023-08-31 06:50:12,385 - INFO - item is already present in cart!! updating..
+2023-08-31 06:50:12,385 - INFO - checking if table exist!!...
+2023-08-31 06:50:12,433 - INFO - session closed
+2023-08-31 06:50:12,434 - INFO - checking if table exist!!...
+2023-08-31 06:50:12,511 - ERROR - issue with query:(pymysql.err.IntegrityError) (1062, "Duplicate entry 'ghsgdhsh7873673hwgikk-201816_03_01-1' for key 'tbl_cart.PRIMARY'")
+[SQL: Update external.tbl_cart SET count=2, is_active=1, net_cost=2*595 where item_id='201816_03_01'and session_id='ghsgdhsh7873673hwgikk';]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-08-31 06:50:12,512 - INFO - session closed
+2023-08-31 06:50:12,512 - ERROR - No response found. Internal Error.
+2023-08-31 06:50:12,512 - INFO - Validation time: 0.001 seconds
+2023-08-31 06:50:12,512 - INFO - Execution time: 0.157 seconds
+2023-08-31 06:50:12,516 - ERROR - Exception on /add_with_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'add_to_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-08-31 06:50:46,869 - INFO - Validation time: 0.256 seconds
+2023-08-31 06:51:54,093 - INFO - Validation time: 0.295 seconds
+2023-08-31 06:51:54,110 - INFO - add_to_cart method called
+2023-08-31 06:51:54,113 - INFO - checking if table exist!!...
+2023-08-31 06:51:54,198 - INFO - session closed
+2023-08-31 06:51:54,199 - INFO - item is already present in cart!! updating..
+2023-08-31 06:51:54,199 - INFO - checking if table exist!!...
+2023-08-31 06:51:54,213 - INFO - session closed
+2023-08-31 06:51:54,213 - INFO - checking if table exist!!...
+2023-08-31 06:51:54,232 - ERROR - issue with query:(pymysql.err.IntegrityError) (1062, "Duplicate entry 'ghsgdhsh7873673hwgikk-201816_03_01-1' for key 'tbl_cart.PRIMARY'")
+[SQL: Update external.tbl_cart SET count=2, is_active=1, net_cost=2*595 where item_id='201816_03_01'and session_id='ghsgdhsh7873673hwgikk';]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-08-31 06:51:54,234 - INFO - session closed
+2023-08-31 06:51:54,234 - ERROR - No response found. Internal Error.
+2023-08-31 06:51:54,234 - INFO - Validation time: 0.305 seconds
+2023-08-31 06:51:54,234 - INFO - Execution time: 0.439 seconds
+2023-08-31 06:51:54,235 - ERROR - Exception on /add_with_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'add_to_cart_with_login' did not return a valid response. The function either returned None or ended without a return statement.

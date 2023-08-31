@@ -186,8 +186,9 @@ def checkout_from_cart_with_login(response):
             item_id = request.json['item_id']
             count = request.json['count']
             is_active = request.json['is_active']
+            discount_code = request.json['discount_code']
             cart_model = asdict(SqlModel(response['session_id'],response['session_id'], item_id, count, is_active))
-            response=cart_controller.service.check_out_with_login(cart_model,response['user_id'])
+            response=cart_controller.service.check_out_with_login(cart_model,response['user_id'],discount_code)
             logging.info(response)
             if not response:
                 return jsonify("no cart item found")

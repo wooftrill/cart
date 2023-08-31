@@ -53,6 +53,22 @@ class HelperUtils:
 
         return result_list
 
+    @staticmethod
+    def find_wt_discount(net_cost,discount_list):
+        for element in discount_list:
+            if element["valid_from"] < net_cost < element["valid_upto"]:
+                return element["discount_id"],element["total_discount_in_prcnt"]
+
+    @staticmethod
+    def find_vendor_discount(discount_id,discount_list):
+        for element in discount_list:
+            if element["discount_id"] == discount_id:
+                return element["total_discount_in_prcnt"]
+        return False
+
+
+
+
 
 
 

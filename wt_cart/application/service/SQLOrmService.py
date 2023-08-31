@@ -16,6 +16,7 @@ class SQLOrmService(SQLClient):
         self.__link_table=TABLE["link"]
         self.__inventory_table= TABLE["inventory"]
         self.__checkout_table=TABLE["checkout"]
+        self.__discount_table = TABLE["discount"]
 
     def add_to_cart(self, data_model: dict, inventory_model: dict):
         logging.info("add_to_cart method called")
@@ -59,7 +60,7 @@ class SQLOrmService(SQLClient):
         logging.info("show cart  function triggered!...")
         return self.show_tbl_with_login(self.__cart_table, data_model,self.__link_table, uid)
 
-    def check_out_with_login(self, data_model: dict, uid: str):
+    def check_out_with_login(self, data_model: dict, uid: str,discount_id: str):
         logging.info("checkout function triggered!...")
         cart_total = self.show_tbl_with_login(self.__cart_table, data_model, self.__link_table, uid)
         cart = HelperUtils.create_combine_list(cart_total)
@@ -72,6 +73,7 @@ class SQLOrmService(SQLClient):
             available_list=[]
             non_available_list=[]
             net_cost_av,net_cost_nav= 0, 0
+            vendor_discount_pctn= 0
             final_output= {}
             logging.info("found cart items")
             order_id = HelperUtils.create_uuid()
@@ -112,7 +114,18 @@ class SQLOrmService(SQLClient):
             final_output["net_total"] = net_cost_av+ net_cost_nav
             final_output["unavailable"] = non_available_list
             final_output["session_id"] = data_model["session_id"]
-
+            list_offer= self.show_discount(self.__discount_table,discount_id)
+            if list_offer :
+                if discount_id:
+                    if HelperUtils.find_vendor_discount(discount_id,list_offer):
+                        final_output["vendor_discount_id"]=discount_id
+                        final_output["vendor_discount_pctn"]= HelperUtils.find_vendor_discount(discount_id,list_offer)
+                        vendor_discount_pctn = final_output["vendor_discount_pctn"]
+                wt_discount= HelperUtils.find_wt_discount(final_output["net_total"],list_offer)
+                final_output["wt_discount_id"] = wt_discount[0]
+                final_output["wt_discount_prtn"] = wt_discount[1]
+                final_output["net_cost"]= final_output["net_total"]-final_output["net_total"] * vendor_discount_pctn/100
+                final_output["total"]= final_output["net_cost"]-final_output["net_cost"] * final_output["wt_discount_prtn"]/100
             check_model= {"uid": uid,"session_id": data_model["session_id"],"checkout_value": json.dumps(final_output),
                           "full_order": json.dumps(cart),"time": HelperUtils.get_timestamp(),"status": 0}
             print(self.checkout_count(self.__checkout_table, check_model))

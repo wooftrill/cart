@@ -7,6 +7,7 @@ from wt_cart.utils.HelperUtils import HelperUtils
 from wt_cart.config.config import MYSQL
 from sqlalchemy.sql import text
 from sqlalchemy.exc import *
+from wt_cart.config.config import TIME
 import sqlalchemy as sa
 from sqlalchemy.exc import IntegrityError,SQLAlchemyError
 from sqlalchemy.orm import sessionmaker
@@ -31,7 +32,7 @@ class SQLClient:
             else:
                 curr_session = sessionmaker(bind=self.engine)
                 session = curr_session()
-                values = tuple(sql_model.values())+cost
+                values = tuple(sql_model.values())+cost+(TIME["updated_at"],)
                 query = SQLUtils.insert_query(table_name, values)
                 response = session.execute(text(query))
                 if response.__dict__['rowcount'] > 0:
@@ -433,10 +434,45 @@ class SQLClient:
 
         raise Exception("Could not perform database eration after {} retries".format(max_retries))
 
+    def show_pin(self, table_name: str, address_table: str,user_adress_key: int ):
+        __min_available = 1
+        max_retries = 3
+        retries = 0
+        logging.info("checking if table exist!!...")
+        while retries < max_retries:
+            try:
+                inspect_db = sa.inspect(self.engine)
+                is_exist = inspect_db.dialect.has_table(self.engine.connect(), table_name, schema="external")
+                if not is_exist:
+                    raise NoSuchTableError
+                else:
+                    curr_session = sessionmaker(bind=self.engine)
+                    session = curr_session()
+                    query = SQLUtils.show_verified_adress(table_name, address_table,user_adress_key)
+                    logging.info("query %s", query)
+                    cart_list = []
+                    response = session.execute(text(query))
+                    session.close()
+                    logging.info("session closed")
+                    for res in response:
+                        print(res)
+                        cart_list.append(res)
+                    return HelperUtils.tupple_to_dict(cart_list,
+                                                      ["ua_id", "pin_cost"])
+            except OperationalError as e:
+                logging.error("Error: connection issue {}".format(e))
+                retries += 1
+                print("in loop")
+                time.sleep(1)
+            except Exception as ex:
+                logging.error("An exception occurred:{}".format(ex))
+                raise ex
+
+        raise Exception("Could not perform database eration after {} retries".format(max_retries))
+
 
 sql_client = SQLClient()
 
 #
-#
-#print(sql_client.show_discount('tbl_discount','DISCOUNT008'))
+
 

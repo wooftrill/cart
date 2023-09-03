@@ -7,6 +7,7 @@ from wt_cart.application.model.SqlModel import SqlModel
 from wt_cart.application.model.InventoryModel import InventoryModel
 from wt_cart.application.service.SQLOrmService import SQLOrmService,sql_service
 from wt_cart.application.service.JWTClient import JWTClient,jwt_client
+from wt_cart.application.service.AddressVerification import address_verification
 from wt_cart.application.service.FirebaseJwtClient import firebase_jwt_client
 from wt_cart.application import app
 
@@ -176,7 +177,9 @@ def show_from_cart_with_login(response):
 
 @app.post('/checkout_with_login',endpoint='checkout_from_cart_with_login')
 @firebase_jwt_client.jwt_required
-def checkout_from_cart_with_login(response):
+
+@address_verification.get_address_verified
+def checkout_from_cart_with_login(cost_obj,response):
     if not response:
         logging.error("Could not generate session_id")
         return HTTPStatus.BAD_REQUEST, 401
@@ -187,8 +190,12 @@ def checkout_from_cart_with_login(response):
             count = request.json['count']
             is_active = request.json['is_active']
             discount_code = request.json['discount_code']
+            print(cost_obj)
+            if len(cost_obj) == 0:
+                logging.info("iiiii")
+                return jsonify("Address is not deliverable",HTTPStatus.NOT_FOUND)
             cart_model = asdict(SqlModel(response['session_id'],response['session_id'], item_id, count, is_active))
-            response=cart_controller.service.check_out_with_login(cart_model,response['user_id'],discount_code)
+            response=cart_controller.service.check_out_with_login(cart_model,response['user_id'],discount_code,cost_obj[0])
             logging.info(response)
             if not response:
                 return jsonify("no cart item found")

@@ -17,6 +17,8 @@ class SQLOrmService(SQLClient):
         self.__inventory_table= TABLE["inventory"]
         self.__checkout_table=TABLE["checkout"]
         self.__discount_table = TABLE["discount"]
+        self.__pin_table = TABLE["pin"]
+        self.__address_table=TABLE["user_address"]
 
     def add_to_cart(self, data_model: dict, inventory_model: dict):
         logging.info("add_to_cart method called")
@@ -60,14 +62,16 @@ class SQLOrmService(SQLClient):
         logging.info("show cart  function triggered!...")
         return self.show_tbl_with_login(self.__cart_table, data_model,self.__link_table, uid)
 
-    def check_out_with_login(self, data_model: dict, uid: str,discount_id: str):
+    def check_out_with_login(self, data_model: dict, uid: str,discount_id: str, delivery_details: dict):
         logging.info("checkout function triggered!...")
         cart_total = self.show_tbl_with_login(self.__cart_table, data_model, self.__link_table, uid)
+        print(cart_total)
         cart = HelperUtils.create_combine_list(cart_total)
         uid = HelperUtils.generate_hash(uid)
         print(cart)
         if len(cart) == 0:
             return False
+
         else:
             dict_av={}
             available_list=[]
@@ -78,6 +82,7 @@ class SQLOrmService(SQLClient):
             logging.info("found cart items")
             order_id = HelperUtils.create_uuid()
             for item in cart:
+                print("ii",item)
                 inventory_model = asdict(InventoryModel(item["item_id"]))
                 inventory_status = self.is_exist_in_inventory(self.__inventory_table, inventory_model)
                 available_item= inventory_status[2] - TABLE["HardLimit"]
@@ -114,6 +119,7 @@ class SQLOrmService(SQLClient):
             final_output["net_total"] = net_cost_av+ net_cost_nav
             final_output["unavailable"] = non_available_list
             final_output["session_id"] = data_model["session_id"]
+
             list_offer= self.show_discount(self.__discount_table,discount_id)
             if list_offer :
                 if discount_id:
@@ -126,6 +132,9 @@ class SQLOrmService(SQLClient):
                 final_output["wt_discount_prtn"] = wt_discount[1]
                 final_output["net_cost"]= final_output["net_total"]-final_output["net_total"] * vendor_discount_pctn/100
                 final_output["total"]= final_output["net_cost"]-final_output["net_cost"] * final_output["wt_discount_prtn"]/100
+                final_output["delvery_addrss_id"] = delivery_details["ua_id"]
+                final_output["delvery_cost"] = delivery_details["pin_cost"]
+                final_output["grand_total"] = final_output["total"] + final_output["delvery_cost"]
             check_model= {"uid": uid,"session_id": data_model["session_id"],"checkout_value": json.dumps(final_output),
                           "full_order": json.dumps(cart),"time": HelperUtils.get_timestamp(),"status": 0}
             print(self.checkout_count(self.__checkout_table, check_model))

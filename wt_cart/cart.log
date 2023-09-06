@@ -52,3 +52,379 @@
 2023-09-03 09:20:43,831 - INFO - {'available_order_no': '00000000-0000-0000-2f02-dfef00e3fc99-00', 'order_id': '00000000-0000-0000-2f02-dfef00e3fc99', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}], 'net_total': 595, 'unavailable': [], 'session_id': 'ghsgdhsh7873673hwgikk', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75, 'delvery_addrss_id': 2, 'delvery_cost': 65.67, 'grand_total': 571.42}
 2023-09-03 09:20:43,831 - INFO - Validation time: 2.062 seconds
 2023-09-03 09:20:43,831 - INFO - Execution time: 2.335 seconds
+2023-09-03 09:22:47,347 - INFO - Serving on http://0.0.0.0:5008
+2023-09-03 09:22:59,198 - INFO - Validation time: 2.083 seconds
+2023-09-03 09:22:59,199 - INFO - checking if table exist!!...
+2023-09-03 09:23:00,966 - INFO - query  select ua.id AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.id=2;
+2023-09-03 09:23:01,014 - INFO - session closed
+2023-09-03 09:23:01,015 - INFO - {'exp': 1693758485, 'session_id': 'ghsgdhsh7873673hwgikk', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-03 09:23:01,015 - INFO - checkout function triggered!...
+2023-09-03 09:23:01,016 - INFO - checking if table exist!!...
+2023-09-03 09:23:01,085 - INFO - session closed
+2023-09-03 09:23:01,085 - INFO - found cart items
+2023-09-03 09:23:01,086 - INFO - checking if table exist!!...
+2023-09-03 09:23:01,114 - INFO - session closed
+2023-09-03 09:23:01,114 - INFO - checking if table exist!!...
+2023-09-03 09:23:01,126 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-03 09:23:01,168 - INFO - session closed
+2023-09-03 09:23:01,169 - INFO - checking if table exist!!...
+2023-09-03 09:23:01,200 - INFO - session closed
+2023-09-03 09:23:01,200 - INFO - here it comes
+2023-09-03 09:23:01,200 - INFO - checking if table exist!!...
+2023-09-03 09:23:01,232 - INFO - session closed
+2023-09-03 09:23:01,232 - INFO - checkout table updated..
+2023-09-03 09:23:01,232 - INFO - checking if table exist!!...
+2023-09-03 09:23:01,240 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2f02-e02efe13cc26-00", "order_id": "00000000-0000-0000-2f02-e02efe13cc26", "available": [{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}], "net_total": 595, "unavailable": [], "session_id": "ghsgdhsh7873673hwgikk", "wt_discount_id": "DISCOUNT001", "wt_discount_prtn": 15, "net_cost": 595.0, "total": 505.75, "delvery_addrss_id": 2, "delvery_cost": 65.67, "grand_total": 571.42}', ldts='1693758181169342500', full_order='[{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='ghsgdhsh7873673hwgikk' and status=0;
+2023-09-03 09:23:01,256 - INFO - row inserted!..
+2023-09-03 09:23:01,270 - INFO - session closed
+2023-09-03 09:23:01,270 - INFO - {'available_order_no': '00000000-0000-0000-2f02-e02efe13cc26-00', 'order_id': '00000000-0000-0000-2f02-e02efe13cc26', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}], 'net_total': 595, 'unavailable': [], 'session_id': 'ghsgdhsh7873673hwgikk', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75, 'delvery_addrss_id': 2, 'delvery_cost': 65.67, 'grand_total': 571.42}
+2023-09-03 09:23:01,271 - INFO - Validation time: 2.084 seconds
+2023-09-03 09:23:01,271 - INFO - Execution time: 4.156 seconds
+2023-09-03 09:51:47,706 - INFO - Validation time: 2.367 seconds
+2023-09-03 09:52:37,965 - INFO - Validation time: 0.018 seconds
+2023-09-03 09:52:37,969 - INFO - checking if table exist!!...
+2023-09-03 09:52:38,114 - INFO - query  select ua.id AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.id=2;
+2023-09-03 09:52:38,132 - INFO - session closed
+2023-09-03 09:52:38,134 - INFO - {'exp': 1693760522, 'session_id': 'ghsgdhsh7873673hwgikk', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-03 09:52:38,134 - INFO - checkout function triggered!...
+2023-09-03 09:52:38,135 - INFO - checking if table exist!!...
+2023-09-03 09:52:38,160 - INFO - session closed
+2023-09-03 09:52:38,161 - INFO - found cart items
+2023-09-03 09:52:38,162 - INFO - checking if table exist!!...
+2023-09-03 09:52:38,177 - INFO - session closed
+2023-09-03 09:52:38,177 - INFO - checking if table exist!!...
+2023-09-03 09:52:38,183 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-03 09:52:38,188 - INFO - session closed
+2023-09-03 09:52:38,189 - INFO - checking if table exist!!...
+2023-09-03 09:52:38,202 - INFO - session closed
+2023-09-03 09:52:38,203 - INFO - here it comes
+2023-09-03 09:52:38,203 - INFO - checking if table exist!!...
+2023-09-03 09:52:38,213 - INFO - session closed
+2023-09-03 09:52:38,213 - INFO - checkout table updated..
+2023-09-03 09:52:38,213 - INFO - checking if table exist!!...
+2023-09-03 09:52:38,219 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2f02-e36a82059e46-00", "order_id": "00000000-0000-0000-2f02-e36a82059e46", "available": [{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}], "net_total": 595, "unavailable": [], "session_id": "ghsgdhsh7873673hwgikk", "wt_discount_id": "DISCOUNT001", "wt_discount_prtn": 15, "net_cost": 595.0, "total": 505.75, "delvery_addrss_id": 2, "delvery_cost": 65.67, "grand_total": 571.42}', ldts='1693759958189703400', full_order='[{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='ghsgdhsh7873673hwgikk' and status=0;
+2023-09-03 09:52:38,237 - INFO - row inserted!..
+2023-09-03 09:52:38,249 - INFO - session closed
+2023-09-03 09:52:38,249 - INFO - {'available_order_no': '00000000-0000-0000-2f02-e36a82059e46-00', 'order_id': '00000000-0000-0000-2f02-e36a82059e46', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}], 'net_total': 595, 'unavailable': [], 'session_id': 'ghsgdhsh7873673hwgikk', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75, 'delvery_addrss_id': 2, 'delvery_cost': 65.67, 'grand_total': 571.42}
+2023-09-03 09:52:38,250 - INFO - Validation time: 0.020 seconds
+2023-09-03 09:52:38,250 - INFO - Execution time: 0.304 seconds
+2023-09-06 07:34:35,285 - INFO - Validation time: 2.077 seconds
+2023-09-06 07:34:35,457 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\FirebaseJwtClient.py", line 30, in decorated_function
+    function_response= func(user_id, *args, **kwargs)
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\AddressVerification.py", line 22, in decorated_function
+    checkout_obj = func(cost_obj,*args, ** kwargs)
+ValueError: invalid literal for int() with base 10: '550e8400-e29b-41d4-a716-446655440000'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 760, in _write_bytes
+    self._sock.sendall(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
+    asyncio_safe=can_manipulate_connection,
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
+    dbapi_connection.rollback()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 481, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 818, in _execute_command
+    self._write_bytes(packet)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 764, in _write_bytes
+    CR.CR_SERVER_GONE_ERROR, "MySQL server has gone away (%r)" % (e,)
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))")
+2023-09-06 07:34:35,730 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\FirebaseJwtClient.py", line 30, in decorated_function
+    function_response= func(user_id, *args, **kwargs)
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\AddressVerification.py", line 22, in decorated_function
+    checkout_obj = func(cost_obj,*args, ** kwargs)
+ValueError: invalid literal for int() with base 10: '550e8400-e29b-41d4-a716-446655440000'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 760, in _write_bytes
+    self._sock.sendall(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
+    asyncio_safe=can_manipulate_connection,
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
+    dbapi_connection.rollback()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 481, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 818, in _execute_command
+    self._write_bytes(packet)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 764, in _write_bytes
+    CR.CR_SERVER_GONE_ERROR, "MySQL server has gone away (%r)" % (e,)
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))")
+2023-09-06 07:34:35,732 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\FirebaseJwtClient.py", line 30, in decorated_function
+    function_response= func(user_id, *args, **kwargs)
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\AddressVerification.py", line 22, in decorated_function
+    checkout_obj = func(cost_obj,*args, ** kwargs)
+ValueError: invalid literal for int() with base 10: '550e8400-e29b-41d4-a716-446655440000'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 760, in _write_bytes
+    self._sock.sendall(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
+    asyncio_safe=can_manipulate_connection,
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
+    dbapi_connection.rollback()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 481, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 818, in _execute_command
+    self._write_bytes(packet)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 764, in _write_bytes
+    CR.CR_SERVER_GONE_ERROR, "MySQL server has gone away (%r)" % (e,)
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))")
+2023-09-06 07:34:35,735 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\FirebaseJwtClient.py", line 30, in decorated_function
+    function_response= func(user_id, *args, **kwargs)
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\AddressVerification.py", line 22, in decorated_function
+    checkout_obj = func(cost_obj,*args, ** kwargs)
+ValueError: invalid literal for int() with base 10: '550e8400-e29b-41d4-a716-446655440000'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 760, in _write_bytes
+    self._sock.sendall(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
+    asyncio_safe=can_manipulate_connection,
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
+    dbapi_connection.rollback()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 481, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 818, in _execute_command
+    self._write_bytes(packet)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 764, in _write_bytes
+    CR.CR_SERVER_GONE_ERROR, "MySQL server has gone away (%r)" % (e,)
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))")
+2023-09-06 07:34:35,736 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\FirebaseJwtClient.py", line 30, in decorated_function
+    function_response= func(user_id, *args, **kwargs)
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\AddressVerification.py", line 22, in decorated_function
+    checkout_obj = func(cost_obj,*args, ** kwargs)
+ValueError: invalid literal for int() with base 10: '550e8400-e29b-41d4-a716-446655440000'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 760, in _write_bytes
+    self._sock.sendall(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 995, in _finalize_fairy
+    asyncio_safe=can_manipulate_connection,
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\pool\base.py", line 1440, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\sqlalchemy\engine\default.py", line 657, in do_rollback
+    dbapi_connection.rollback()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 481, in rollback
+    self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 818, in _execute_command
+    self._write_bytes(packet)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\pymysql\connections.py", line 764, in _write_bytes
+    CR.CR_SERVER_GONE_ERROR, "MySQL server has gone away (%r)" % (e,)
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))")
+2023-09-06 07:34:35,307 - ERROR - Exception on /checkout_with_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\FirebaseJwtClient.py", line 30, in decorated_function
+    function_response= func(user_id, *args, **kwargs)
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\AddressVerification.py", line 22, in decorated_function
+    checkout_obj = func(cost_obj,*args, ** kwargs)
+ValueError: invalid literal for int() with base 10: '550e8400-e29b-41d4-a716-446655440000'
+2023-09-06 07:42:43,316 - INFO - Serving on http://0.0.0.0:5008
+2023-09-06 07:42:56,121 - INFO - Validation time: 2.172 seconds
+2023-09-06 07:42:56,122 - ERROR - Exception on /checkout_with_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\FirebaseJwtClient.py", line 30, in decorated_function
+    function_response= func(user_id, *args, **kwargs)
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\AddressVerification.py", line 21, in decorated_function
+    cost_obj= sql_client.show_pin(self.__address_table,self.__pin_table,int(adress_code))
+ValueError: invalid literal for int() with base 10: '550e8400-e29b-41d4-a716-446655440000'
+2023-09-06 07:43:54,701 - INFO - Serving on http://0.0.0.0:5008
+2023-09-06 07:44:01,175 - INFO - Validation time: 2.058 seconds
+2023-09-06 07:45:02,193 - INFO - Validation time: 0.018 seconds
+2023-09-06 07:45:02,210 - ERROR - Exception on /checkout_with_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\FirebaseJwtClient.py", line 30, in decorated_function
+    function_response= func(user_id, *args, **kwargs)
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\AddressVerification.py", line 21, in decorated_function
+    cost_obj= sql_client.show_pin(self.__address_table,self.__pin_table,int(adress_code))
+ValueError: invalid literal for int() with base 10: '550e8400-e29b-41d4-a716-446655440000'
+2023-09-06 07:45:58,181 - INFO - Serving on http://0.0.0.0:5008
+2023-09-06 07:46:05,077 - INFO - Validation time: 2.186 seconds
+2023-09-06 07:46:05,077 - ERROR - Exception on /checkout_with_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\FirebaseJwtClient.py", line 30, in decorated_function
+    function_response= func(user_id, *args, **kwargs)
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\AddressVerification.py", line 21, in decorated_function
+    cost_obj= sql_client.show_pin(self.__address_table,self.__pin_table,int(adress_code))
+ValueError: invalid literal for int() with base 10: '550e8400-e29b-41d4-a716-446655440000'
+2023-09-06 07:47:24,745 - INFO - Serving on http://0.0.0.0:5008
+2023-09-06 07:47:36,318 - INFO - Validation time: 2.063 seconds
+2023-09-06 07:47:36,318 - ERROR - Exception on /checkout_with_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 447, in dispatch_request
+    return view_function(*req.view_args.values())  # type: ignore
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\FirebaseJwtClient.py", line 30, in decorated_function
+    function_response= func(user_id, *args, **kwargs)
+  File "C:\Users\Admin\wtgit\cart\wt_cart\application\service\AddressVerification.py", line 21, in decorated_function
+    cost_obj= sql_client.show_pin(self.__address_table,self.__pin_table,int(adress_code))
+ValueError: invalid literal for int() with base 10: '550e8400-e29b-41d4-a716-446655440000'

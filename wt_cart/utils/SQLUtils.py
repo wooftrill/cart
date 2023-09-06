@@ -52,8 +52,8 @@ class SQLUtils:
         return f"select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.{table_name} where discount_id='{discount_id}' or is_active=1 and valid_upto>0;"
 
     @staticmethod
-    def show_verified_adress(table_name: str, adress_table: str, unique_code: int):
-        return f" select ua.id AS ua_id ,p.cost AS pin_cost FROM {table_name} AS ua INNER JOIN {adress_table} AS p ON  ua.pin = p.pin WHERE ua.id={unique_code};"
+    def show_verified_adress(table_name: str, adress_table: str, unique_code: str):
+        return f" select ua.uuid AS ua_id ,p.cost AS pin_cost FROM {table_name} AS ua INNER JOIN {adress_table} AS p ON  ua.pin = p.pin WHERE ua.uuid='{unique_code}';"
 
 
 #print(SQLUtils.if_exist_checkout('tbl_checkout','c88b46f5be0eee347e50a72b0daa371b4cc8a857','debtest56mou78012testl'))

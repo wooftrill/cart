@@ -17,9 +17,8 @@ class AddressVerification:
     def get_address_verified(self,func):
         @wraps(func)
         def decorated_function(*args, **kwargs):
-            start_time = time.time()
             adress_code = request.json["address_code"]
-            cost_obj= sql_client.show_pin(self.__address_table,self.__pin_table,int(adress_code))
+            cost_obj= sql_client.show_pin(self.__address_table,self.__pin_table,adress_code)
             checkout_obj = func(cost_obj,*args, ** kwargs)
             return checkout_obj
         return decorated_function

@@ -434,7 +434,7 @@ class SQLClient:
 
         raise Exception("Could not perform database eration after {} retries".format(max_retries))
 
-    def show_pin(self, table_name: str, address_table: str,user_adress_key: int ):
+    def show_pin(self, table_name: str, address_table: str,user_adress_key: str ):
         __min_available = 1
         max_retries = 3
         retries = 0

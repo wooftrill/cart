@@ -22,7 +22,7 @@ class SQLClient:
 
         pass
 
-    def insert(self, table_name: str, sql_model: dict,cost: tuple):
+    def insert(self, table_name: str, sql_model: dict,cost: tuple,use_flag:bool):
         try:
             logging.info("checking if table exist!!...")
             inspect_db = sa.inspect(self.engine)
@@ -32,7 +32,39 @@ class SQLClient:
             else:
                 curr_session = sessionmaker(bind=self.engine)
                 session = curr_session()
-                values = tuple(sql_model.values())+cost+(TIME["updated_at"],)
+                if use_flag:
+                    values = tuple(sql_model.values())+cost+(TIME["updated_at"],)
+                else:
+                    values = tuple(sql_model.values()) + cost
+
+                query = SQLUtils.insert_query(table_name, values)
+                response = session.execute(text(query))
+                if response.__dict__['rowcount'] > 0:
+                    logging.info("row inserted!..")
+                    return True
+                raise SQLAlchemyError("Error!...no row affected")
+        except DataError as e:
+            session.rollback()
+            logging.error(f"Insert failed: {e}")
+        except Exception as ex:
+            session.rollback()
+            logging.error(f"issue with query:{ex}")
+        finally:
+            session.commit()
+            session.close()
+            logging.info("session closed")
+
+    def insert_checkout(self, table_name: str, sql_model):
+        try:
+            logging.info("checking if table exist!!...")
+            inspect_db = sa.inspect(self.engine)
+            is_exist = inspect_db.dialect.has_table(self.engine.connect(), table_name, schema="external")
+            if not is_exist:
+                raise NoSuchTableError
+            else:
+                curr_session = sessionmaker(bind=self.engine)
+                session = curr_session()
+                values = tuple(sql_model.values())
                 query = SQLUtils.insert_query(table_name, values)
                 response = session.execute(text(query))
                 if response.__dict__['rowcount'] > 0:
@@ -392,6 +424,7 @@ class SQLClient:
                 logging.error("Error: connection issue {}".format(e))
                 retries += 1
                 print("in loop")
+
                 time.sleep(1)
             except Exception as ex:
                 logging.error("An exception occurred:{}".format(ex))

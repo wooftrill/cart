@@ -36,7 +36,7 @@ class SQLOrmService(SQLClient):
             if "Key Error" in str(ex):
                 inventory_status = self.is_exist_in_inventory(self.__inventory_table, inventory_model)
                 if inventory_status[0]:
-                    if self.insert(self.__cart_table, data_model, (inventory_status[1], inventory_status[1])):
+                    if self.insert(self.__cart_table, data_model, (inventory_status[1], inventory_status[1]),True):
                         return True
 
     def update_to_cart(self, data_model: dict, inventory_model: dict):
@@ -146,7 +146,7 @@ class SQLOrmService(SQLClient):
             else:
 
                 logging.info("no record found with same uid & sessionid . Inserting...")
-                if self.insert(self.__checkout_table,check_model,()):
+                if self.insert(self.__checkout_table,check_model,(),False):
                     return final_output
 
 

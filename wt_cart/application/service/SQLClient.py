@@ -387,7 +387,7 @@ class SQLClient:
                     for res in response:
                         print(res)
                         cart_list.append(res)
-                    return HelperUtils.tupple_to_dict(cart_list,["session_id","cart_id", "item_id", "count","is_active","cost","net_cost"])
+                    return HelperUtils.tupple_to_dict(cart_list,["session_id","cart_id", "item_id", "count","is_active","cost","net_cost","ldts"])
             except OperationalError as e:
                 logging.error("Error: connection issue {}".format(e))
                 retries += 1

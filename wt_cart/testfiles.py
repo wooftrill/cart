@@ -3,9 +3,11 @@ import requests,time
 session = requests.Session()
 session.maxsize = 100
 start_time = time.time()
-url = 'http://34.125.89.30:5008/checkout_with_login'
+#url = 'http://34.125.89.30:5008/checkout_with_login'
+url= 'http://localhost:5008/checkout_with_login'
 
-jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoieWNtZGVmbWU5cWc4QlNSTVNQcVYxcEtaZkg5MyIsInNlc3Npb25faWQiOiJnaHNnZGhzaDc4NzM2NzNod2dpa2siLCJleHAiOjE2OTQwNzEzNTl9.tgeFqo6vgPbP5emYhIw2fY6QKBAUiB_Bi9D93gKbh-k"
+
+jwt_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoieWNtZGVmbWU5cWc4QlNSTVNQcVYxcEtaZkg5MyIsInNlc3Npb25faWQiOiJnaHNnZGhzaDc4NzM2NzNod2dpa2siLCJleHAiOjE2OTQwNzQ0NzJ9.k9QHs9zjz808XevKr9reBYnASrCfJ6Y7B91WvkRt63Y"
 
 item_id = '201819_03_01'
 

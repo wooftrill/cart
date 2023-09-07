@@ -180,6 +180,7 @@ def show_from_cart_with_login(response):
 
 @address_verification.get_address_verified
 def checkout_from_cart_with_login(cost_obj,response):
+    logging.info("checkout triggered")
     if not response:
         logging.error("Could not generate session_id")
         return HTTPStatus.BAD_REQUEST, 401
@@ -194,7 +195,9 @@ def checkout_from_cart_with_login(cost_obj,response):
             if len(cost_obj) == 0:
                 logging.info("iiiii")
                 return jsonify("Address is not deliverable",HTTPStatus.NOT_FOUND)
+            logging.info("response got")
             cart_model = asdict(SqlModel(response['session_id'],response['session_id'], item_id, count, is_active))
+            logging.info("cart model executed")
             response=cart_controller.service.check_out_with_login(cart_model,response['user_id'],discount_code,cost_obj[0])
             logging.info(response)
             if not response:

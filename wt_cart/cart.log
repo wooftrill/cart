@@ -485,3 +485,596 @@ ValueError: invalid literal for int() with base 10: '550e8400-e29b-41d4-a716-446
 2023-09-06 21:30:12,299 - INFO - Validation time: 2.218 seconds
 2023-09-06 21:30:12,299 - INFO - Execution time: 2.626 seconds
 2023-09-06 21:49:51,895 - INFO - Serving on http://0.0.0.0:5008
+2023-09-07 01:03:43,929 - INFO - Serving on http://0.0.0.0:5008
+2023-09-07 01:05:45,462 - INFO - Validation time: 2.339 seconds
+2023-09-07 01:05:45,470 - INFO - checking if table exist!!...
+2023-09-07 01:05:45,561 - INFO - query  select ua.uuid AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.uuid='550e8400-e29b-41d4-a716-446655440000';
+2023-09-07 01:05:45,589 - INFO - session closed
+2023-09-07 01:05:45,595 - INFO - checkout triggered
+2023-09-07 01:05:45,595 - INFO - {'exp': 1694074472, 'session_id': 'ghsgdhsh7873673hwgikk', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-07 01:05:45,595 - INFO - response got
+2023-09-07 01:05:45,595 - INFO - cart model executed
+2023-09-07 01:05:45,595 - INFO - checkout function triggered!...
+2023-09-07 01:05:45,595 - INFO - checking if table exist!!...
+2023-09-07 01:05:45,634 - INFO - session closed
+2023-09-07 01:05:45,634 - INFO - found cart items
+2023-09-07 01:05:45,636 - INFO - checking if table exist!!...
+2023-09-07 01:05:45,663 - INFO - session closed
+2023-09-07 01:05:45,663 - INFO - checking if table exist!!...
+2023-09-07 01:05:45,668 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-07 01:05:45,677 - INFO - session closed
+2023-09-07 01:05:45,678 - INFO - checking if table exist!!...
+2023-09-07 01:05:45,692 - INFO - session closed
+2023-09-07 01:05:45,693 - INFO - here it comes
+2023-09-07 01:05:45,693 - INFO - checking if table exist!!...
+2023-09-07 01:05:45,727 - INFO - session closed
+2023-09-07 01:05:45,727 - INFO - checkout table updated..
+2023-09-07 01:05:45,727 - INFO - checking if table exist!!...
+2023-09-07 01:05:45,732 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2f05-1e8e518a3ab5-00", "order_id": "00000000-0000-0000-2f05-1e8e518a3ab5", "available": [{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}], "net_total": 595, "unavailable": [], "session_id": "ghsgdhsh7873673hwgikk", "wt_discount_id": "DISCOUNT001", "wt_discount_prtn": 15, "net_cost": 595.0, "total": 505.75, "delvery_addrss_id": "550e8400-e29b-41d4-a716-446655440000", "delvery_cost": 65.67, "grand_total": 571.42}', ldts='1694073945678308100', full_order='[{"item_id": "201816_03_01", "count": 1, "cost": "595", "net_cost": 595}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='ghsgdhsh7873673hwgikk' and status=0;
+2023-09-07 01:05:45,741 - INFO - row inserted!..
+2023-09-07 01:05:45,750 - INFO - session closed
+2023-09-07 01:05:45,750 - INFO - {'available_order_no': '00000000-0000-0000-2f05-1e8e518a3ab5-00', 'order_id': '00000000-0000-0000-2f05-1e8e518a3ab5', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}], 'net_total': 595, 'unavailable': [], 'session_id': 'ghsgdhsh7873673hwgikk', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75, 'delvery_addrss_id': '550e8400-e29b-41d4-a716-446655440000', 'delvery_cost': 65.67, 'grand_total': 571.42}
+2023-09-07 01:05:45,751 - INFO - Validation time: 2.345 seconds
+2023-09-07 01:05:45,751 - INFO - Execution time: 2.632 seconds
+2023-09-07 01:08:48,849 - INFO - Validation time: 2.232 seconds
+2023-09-07 01:08:48,861 - INFO - checking if table exist!!...
+2023-09-07 01:08:48,900 - INFO - query  select ua.uuid AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.uuid='550e8400-e29b-41d4-a716-446655440000';
+2023-09-07 01:08:48,910 - INFO - session closed
+2023-09-07 01:08:48,912 - INFO - checkout triggered
+2023-09-07 01:08:48,912 - INFO - {'exp': 1694074472, 'session_id': 'ghsgdhsh7873673hwgikk', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-07 01:08:48,912 - INFO - response got
+2023-09-07 01:08:48,912 - INFO - cart model executed
+2023-09-07 01:08:48,912 - INFO - checkout function triggered!...
+2023-09-07 01:08:48,912 - INFO - checking if table exist!!...
+2023-09-07 01:08:48,921 - INFO - session closed
+2023-09-07 01:08:48,921 - INFO - found cart items
+2023-09-07 01:08:48,922 - INFO - checking if table exist!!...
+2023-09-07 01:08:48,931 - INFO - session closed
+2023-09-07 01:08:48,931 - INFO - checking if table exist!!...
+2023-09-07 01:08:48,936 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-07 01:08:48,970 - INFO - session closed
+2023-09-07 01:08:48,971 - INFO - checking if table exist!!...
+2023-09-07 01:08:49,103 - INFO - session closed
+2023-09-07 01:08:49,103 - INFO - here it comes
+2023-09-07 01:08:49,103 - INFO - checking if table exist!!...
+2023-09-07 01:08:49,114 - INFO - session closed
+2023-09-07 01:08:49,115 - INFO - no record found with same uid & sessionid . Inserting...
+2023-09-07 01:08:49,116 - INFO - checking if table exist!!...
+2023-09-07 01:08:49,130 - INFO - row inserted!..
+2023-09-07 01:08:49,235 - INFO - session closed
+2023-09-07 01:08:49,235 - INFO - {'available_order_no': '00000000-0000-0000-2f05-1ee3ab179ca2-00', 'order_id': '00000000-0000-0000-2f05-1ee3ab179ca2', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}], 'net_total': 595, 'unavailable': [], 'session_id': 'ghsgdhsh7873673hwgikk', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75, 'delvery_addrss_id': '550e8400-e29b-41d4-a716-446655440000', 'delvery_cost': 65.67, 'grand_total': 571.42}
+2023-09-07 01:08:49,236 - INFO - Validation time: 2.245 seconds
+2023-09-07 01:08:49,236 - INFO - Execution time: 2.624 seconds
+2023-09-11 03:06:00,075 - INFO - Serving on http://0.0.0.0:5008
+2023-09-11 03:08:27,924 - INFO - Validation time: 6.796 seconds
+2023-09-11 03:09:06,806 - INFO - Validation time: 0.014 seconds
+2023-09-11 03:09:06,806 - INFO - add_to_cart method called
+2023-09-11 03:09:06,806 - INFO - checking if table exist!!...
+2023-09-11 03:09:07,006 - INFO - session closed
+2023-09-11 03:09:07,006 - ERROR - key error list index out of range
+2023-09-11 03:09:07,006 - INFO - item not present in cart 
+2023-09-11 03:09:07,006 - INFO - checking if table exist!!...
+2023-09-11 03:09:07,032 - INFO - session closed
+2023-09-11 03:09:07,033 - ERROR - An exception occurred:list index out of range
+2023-09-11 03:09:07,033 - ERROR - list index out of range
+2023-09-11 03:09:07,033 - INFO - Validation time: 0.014 seconds
+2023-09-11 03:09:07,033 - INFO - Execution time: 0.241 seconds
+2023-09-11 03:09:07,033 - ERROR - Exception on /add_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'add_to_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-09-11 03:09:35,520 - INFO - add_to_cart method called
+2023-09-11 03:09:35,520 - INFO - checking if table exist!!...
+2023-09-11 03:09:35,562 - INFO - session closed
+2023-09-11 03:09:35,562 - ERROR - key error list index out of range
+2023-09-11 03:09:35,562 - INFO - item not present in cart 
+2023-09-11 03:09:35,562 - INFO - checking if table exist!!...
+2023-09-11 03:09:35,611 - INFO - session closed
+2023-09-11 03:09:35,611 - INFO - checking if table exist!!...
+2023-09-11 03:09:35,628 - INFO - row inserted!..
+2023-09-11 03:09:35,640 - INFO - session closed
+2023-09-11 03:09:35,640 - INFO - Validation time: 0.000 seconds
+2023-09-11 03:09:35,640 - INFO - Execution time: 0.120 seconds
+2023-09-11 03:09:43,130 - INFO - add_to_cart method called
+2023-09-11 03:09:43,130 - INFO - checking if table exist!!...
+2023-09-11 03:09:43,146 - INFO - session closed
+2023-09-11 03:09:43,146 - INFO - item is already present in cart!! updating..
+2023-09-11 03:09:43,146 - INFO - checking if table exist!!...
+2023-09-11 03:09:43,155 - INFO - session closed
+2023-09-11 03:09:43,155 - INFO - checking if table exist!!...
+2023-09-11 03:09:43,187 - INFO - row inserted!..
+2023-09-11 03:09:43,195 - INFO - session closed
+2023-09-11 03:09:43,195 - INFO - Validation time: 0.000 seconds
+2023-09-11 03:09:43,195 - INFO - Execution time: 0.064 seconds
+2023-09-11 03:12:09,031 - INFO - Validation time: 2.034 seconds
+2023-09-11 03:12:09,031 - INFO - show cart  function triggered!...
+2023-09-11 03:12:09,031 - INFO - checking if table exist!!...
+2023-09-11 03:12:09,048 - INFO - query select * from external.tbl_cart where session_id='KJhfgdfggdgf787re455' and is_active= true;
+2023-09-11 03:12:09,059 - INFO - session closed
+2023-09-11 03:12:09,059 - INFO - Validation time: 2.034 seconds
+2023-09-11 03:12:09,059 - INFO - Execution time: 2.063 seconds
+2023-09-11 03:12:40,567 - INFO - Validation time: 2.065 seconds
+2023-09-11 03:12:40,567 - INFO - add_to_cart method called
+2023-09-11 03:12:40,567 - INFO - checking if table exist!!...
+2023-09-11 03:12:40,577 - INFO - session closed
+2023-09-11 03:12:40,577 - INFO - item is already present in cart!! updating..
+2023-09-11 03:12:40,577 - INFO - checking if table exist!!...
+2023-09-11 03:12:40,821 - INFO - session closed
+2023-09-11 03:12:40,821 - INFO - checking if table exist!!...
+2023-09-11 03:12:40,828 - INFO - row inserted!..
+2023-09-11 03:12:40,835 - INFO - session closed
+2023-09-11 03:12:40,835 - INFO - Validation time: 2.065 seconds
+2023-09-11 03:12:40,835 - INFO - Execution time: 2.334 seconds
+2023-09-11 03:12:54,153 - INFO - {'exp': 1694427689, 'session_id': 'KJhfgdfggdgf787re455', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-11 03:12:54,154 - INFO - show cart  function triggered!...
+2023-09-11 03:12:54,154 - INFO - checking if table exist!!...
+2023-09-11 03:12:54,185 - INFO - session closed
+2023-09-11 03:12:54,185 - INFO - [{'session_id': 'KJhfgdfggdgf787re455', 'item_id': '201816_03_01', 'count': 3, 'cost': 595.0, 'net_cost': 1785.0, 'cart_id': 'KJhfgdfggdgf787re455'}]
+2023-09-11 03:12:54,186 - INFO - Validation time: 0.000 seconds
+2023-09-11 03:12:54,186 - INFO - Execution time: 0.032 seconds
+2023-09-11 03:16:32,786 - INFO - Validation time: 2.062 seconds
+2023-09-11 03:16:32,786 - INFO - checking if table exist!!...
+2023-09-11 03:16:32,815 - INFO - query  select ua.uuid AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.uuid='123e4567-e89b-12d3-a456-426655440010';
+2023-09-11 03:16:32,858 - INFO - session closed
+2023-09-11 03:16:32,858 - INFO - checkout triggered
+2023-09-11 03:16:32,859 - INFO - {'exp': 1694427942, 'session_id': 'KJhfgdfggdgf787re455', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-11 03:16:32,859 - INFO - response got
+2023-09-11 03:16:32,859 - INFO - cart model executed
+2023-09-11 03:16:32,859 - INFO - checkout function triggered!...
+2023-09-11 03:16:32,859 - INFO - checking if table exist!!...
+2023-09-11 03:16:32,869 - INFO - session closed
+2023-09-11 03:16:32,869 - INFO - found cart items
+2023-09-11 03:16:32,870 - INFO - checking if table exist!!...
+2023-09-11 03:16:32,878 - INFO - session closed
+2023-09-11 03:16:32,878 - INFO - checking if table exist!!...
+2023-09-11 03:16:32,883 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-11 03:16:32,892 - INFO - session closed
+2023-09-11 03:16:32,892 - INFO - checking if table exist!!...
+2023-09-11 03:16:32,911 - INFO - session closed
+2023-09-11 03:16:32,912 - INFO - here it comes
+2023-09-11 03:16:32,912 - INFO - checking if table exist!!...
+2023-09-11 03:16:32,919 - INFO - session closed
+2023-09-11 03:16:32,919 - INFO - no record found with same uid & sessionid . Inserting...
+2023-09-11 03:16:32,919 - INFO - checking if table exist!!...
+2023-09-11 03:16:32,927 - INFO - row inserted!..
+2023-09-11 03:16:32,935 - INFO - session closed
+2023-09-11 03:16:32,935 - INFO - {'available_order_no': '00000000-0000-0000-2f07-a17903664ea9-00', 'order_id': '00000000-0000-0000-2f07-a17903664ea9', 'available': [{'item_id': '201816_03_01', 'count': 3, 'cost': '595', 'net_cost': 1785}], 'net_total': 1785, 'unavailable': [], 'session_id': 'KJhfgdfggdgf787re455', 'wt_discount_id': 'DISCOUNT002', 'wt_discount_prtn': 20, 'net_cost': 1785.0, 'total': 1428.0, 'delvery_addrss_id': '123e4567-e89b-12d3-a456-426655440010', 'delvery_cost': 65.67, 'grand_total': 1493.67}
+2023-09-11 03:16:32,935 - INFO - Validation time: 2.062 seconds
+2023-09-11 03:16:32,935 - INFO - Execution time: 2.210 seconds
+2023-09-11 06:21:49,067 - INFO - Validation time: 2.162 seconds
+2023-09-11 06:21:49,085 - INFO - add_to_cart method called
+2023-09-11 06:21:49,086 - INFO - checking if table exist!!...
+2023-09-11 06:21:49,255 - INFO - session closed
+2023-09-11 06:21:49,258 - ERROR - key error list index out of range
+2023-09-11 06:21:49,258 - INFO - item not present in cart 
+2023-09-11 06:21:49,259 - INFO - checking if table exist!!...
+2023-09-11 06:21:49,311 - INFO - session closed
+2023-09-11 06:21:49,312 - INFO - checking if table exist!!...
+2023-09-11 06:21:49,385 - INFO - row inserted!..
+2023-09-11 06:21:49,405 - INFO - session closed
+2023-09-11 06:21:49,405 - INFO - Validation time: 2.179 seconds
+2023-09-11 06:21:49,405 - INFO - Execution time: 2.509 seconds
+2023-09-11 06:22:03,943 - INFO - checking if table exist!!...
+2023-09-11 06:22:04,006 - INFO - query  select ua.uuid AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.uuid='123e4567-e89b-12d3-a456-426655440010';
+2023-09-11 06:22:04,035 - INFO - session closed
+2023-09-11 06:22:04,037 - INFO - checkout triggered
+2023-09-11 06:22:04,038 - INFO - {'exp': 1694439055, 'session_id': 'KJhfgdfggdgf787re455', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-11 06:22:04,038 - INFO - response got
+2023-09-11 06:22:04,038 - INFO - cart model executed
+2023-09-11 06:22:04,039 - INFO - checkout function triggered!...
+2023-09-11 06:22:04,039 - INFO - checking if table exist!!...
+2023-09-11 06:22:04,069 - INFO - session closed
+2023-09-11 06:22:04,069 - INFO - found cart items
+2023-09-11 06:22:04,073 - INFO - checking if table exist!!...
+2023-09-11 06:22:04,125 - INFO - session closed
+2023-09-11 06:22:04,126 - INFO - checking if table exist!!...
+2023-09-11 06:22:04,136 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-11 06:22:04,157 - INFO - session closed
+2023-09-11 06:22:04,159 - INFO - checking if table exist!!...
+2023-09-11 06:22:04,193 - INFO - session closed
+2023-09-11 06:22:04,194 - INFO - here it comes
+2023-09-11 06:22:04,194 - INFO - checking if table exist!!...
+2023-09-11 06:22:04,250 - INFO - session closed
+2023-09-11 06:22:04,251 - INFO - no record found with same uid & sessionid . Inserting...
+2023-09-11 06:22:04,251 - INFO - checking if table exist!!...
+2023-09-11 06:22:04,274 - INFO - row inserted!..
+2023-09-11 06:22:04,288 - INFO - session closed
+2023-09-11 06:22:04,289 - INFO - {'available_order_no': '00000000-0000-0000-2f07-b5b861ebf26f-00', 'order_id': '00000000-0000-0000-2f07-b5b861ebf26f', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': '595', 'net_cost': 595}], 'net_total': 595, 'unavailable': [], 'session_id': 'KJhfgdfggdgf787re455', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75, 'delvery_addrss_id': '123e4567-e89b-12d3-a456-426655440010', 'delvery_cost': 65.67, 'grand_total': 571.42}
+2023-09-11 06:22:04,292 - INFO - Validation time: 0.000 seconds
+2023-09-11 06:22:04,292 - INFO - Execution time: 0.349 seconds
+2023-09-11 06:27:53,007 - INFO - Validation time: 2.077 seconds
+2023-09-11 06:27:53,008 - INFO - add_to_cart method called
+2023-09-11 06:27:53,008 - INFO - checking if table exist!!...
+2023-09-11 06:27:53,037 - INFO - session closed
+2023-09-11 06:27:53,037 - ERROR - key error list index out of range
+2023-09-11 06:27:53,038 - INFO - item not present in cart 
+2023-09-11 06:27:53,038 - INFO - checking if table exist!!...
+2023-09-11 06:27:53,070 - INFO - session closed
+2023-09-11 06:27:53,071 - INFO - checking if table exist!!...
+2023-09-11 06:27:53,095 - INFO - row inserted!..
+2023-09-11 06:27:53,116 - INFO - session closed
+2023-09-11 06:27:53,116 - INFO - Validation time: 2.078 seconds
+2023-09-11 06:27:53,116 - INFO - Execution time: 2.186 seconds
+2023-09-11 06:28:40,888 - INFO - Validation time: 0.017 seconds
+2023-09-11 06:28:40,889 - INFO - add_to_cart method called
+2023-09-11 06:28:40,889 - INFO - checking if table exist!!...
+2023-09-11 06:28:40,918 - INFO - session closed
+2023-09-11 06:28:40,919 - INFO - item is already present in cart!! updating..
+2023-09-11 06:28:40,919 - INFO - checking if table exist!!...
+2023-09-11 06:28:40,935 - INFO - session closed
+2023-09-11 06:28:40,936 - INFO - checking if table exist!!...
+2023-09-11 06:28:40,953 - INFO - row inserted!..
+2023-09-11 06:28:40,967 - INFO - session closed
+2023-09-11 06:28:40,968 - INFO - Validation time: 0.017 seconds
+2023-09-11 06:28:40,968 - INFO - Execution time: 0.097 seconds
+2023-09-11 06:30:35,950 - INFO - Validation time: 0.029 seconds
+2023-09-11 06:30:35,952 - INFO - checking if table exist!!...
+2023-09-11 06:30:36,737 - INFO - query  select ua.uuid AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.uuid='550e8400-e29b-41d4-a716-446655440000';
+2023-09-11 06:30:36,750 - INFO - session closed
+2023-09-11 06:30:36,751 - INFO - checkout triggered
+2023-09-11 06:30:36,751 - INFO - {'exp': 1694439055, 'session_id': 'KJhfgdfggdgf787re455', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-11 06:30:36,751 - INFO - response got
+2023-09-11 06:30:36,752 - INFO - cart model executed
+2023-09-11 06:30:36,752 - INFO - checkout function triggered!...
+2023-09-11 06:30:36,752 - INFO - checking if table exist!!...
+2023-09-11 06:30:36,775 - INFO - session closed
+2023-09-11 06:30:36,775 - INFO - found cart items
+2023-09-11 06:30:36,776 - INFO - checking if table exist!!...
+2023-09-11 06:30:36,795 - INFO - session closed
+2023-09-11 06:30:36,795 - INFO - checking if table exist!!...
+2023-09-11 06:30:36,805 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-11 06:30:36,851 - INFO - session closed
+2023-09-11 06:30:36,853 - INFO - checking if table exist!!...
+2023-09-11 06:30:36,872 - INFO - session closed
+2023-09-11 06:30:36,872 - INFO - here it comes
+2023-09-11 06:30:36,872 - INFO - checking if table exist!!...
+2023-09-11 06:30:36,890 - INFO - session closed
+2023-09-11 06:30:36,890 - INFO - no record found with same uid & sessionid . Inserting...
+2023-09-11 06:30:36,890 - INFO - checking if table exist!!...
+2023-09-11 06:30:36,906 - INFO - row inserted!..
+2023-09-11 06:30:36,919 - INFO - session closed
+2023-09-11 06:30:36,920 - INFO - {'available_order_no': '00000000-0000-0000-2f07-b6a721271e1c-00', 'order_id': '00000000-0000-0000-2f07-b6a721271e1c', 'available': [{'item_id': '201816_03_01', 'count': 2, 'cost': '595', 'net_cost': 1190}], 'net_total': 1190, 'unavailable': [], 'session_id': 'KJhfgdfggdgf787re455', 'wt_discount_id': 'DISCOUNT002', 'wt_discount_prtn': 20, 'net_cost': 1190.0, 'total': 952.0, 'delvery_addrss_id': '550e8400-e29b-41d4-a716-446655440000', 'delvery_cost': 65.67, 'grand_total': 1017.67}
+2023-09-11 06:30:36,921 - INFO - Validation time: 0.031 seconds
+2023-09-11 06:30:36,921 - INFO - Execution time: 1.000 seconds
+2023-09-11 06:30:51,890 - INFO - checking if table exist!!...
+2023-09-11 06:30:51,907 - INFO - query  select ua.uuid AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.uuid='550e8400-e29b-41d4-a716-446655440000';
+2023-09-11 06:30:51,918 - INFO - session closed
+2023-09-11 06:30:51,918 - INFO - checkout triggered
+2023-09-11 06:30:51,919 - INFO - {'exp': 1694439055, 'session_id': 'KJhfgdfggdgf787re455', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-11 06:30:51,919 - INFO - response got
+2023-09-11 06:30:51,919 - INFO - cart model executed
+2023-09-11 06:30:51,919 - INFO - checkout function triggered!...
+2023-09-11 06:30:51,919 - INFO - checking if table exist!!...
+2023-09-11 06:30:51,941 - INFO - session closed
+2023-09-11 06:30:51,942 - INFO - found cart items
+2023-09-11 06:30:51,942 - INFO - checking if table exist!!...
+2023-09-11 06:30:51,981 - INFO - session closed
+2023-09-11 06:30:51,981 - INFO - checking if table exist!!...
+2023-09-11 06:30:51,992 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-11 06:30:52,017 - INFO - session closed
+2023-09-11 06:30:52,018 - INFO - checking if table exist!!...
+2023-09-11 06:30:52,033 - INFO - session closed
+2023-09-11 06:30:52,034 - INFO - here it comes
+2023-09-11 06:30:52,034 - INFO - checking if table exist!!...
+2023-09-11 06:30:52,053 - INFO - session closed
+2023-09-11 06:30:52,054 - INFO - checkout table updated..
+2023-09-11 06:30:52,054 - INFO - checking if table exist!!...
+2023-09-11 06:30:52,063 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2f07-b6ae312191da-00", "order_id": "00000000-0000-0000-2f07-b6ae312191da", "available": [{"item_id": "201816_03_01", "count": 2, "cost": "595", "net_cost": 1190}], "net_total": 1190, "unavailable": [], "session_id": "KJhfgdfggdgf787re455", "wt_discount_id": "DISCOUNT002", "wt_discount_prtn": 20, "net_cost": 1190.0, "total": 952.0, "delvery_addrss_id": "550e8400-e29b-41d4-a716-446655440000", "delvery_cost": 65.67, "grand_total": 1017.67}', ldts='1694439052018767000', full_order='[{"item_id": "201816_03_01", "count": 2, "cost": "595", "net_cost": 1190}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='KJhfgdfggdgf787re455' and status=0;
+2023-09-11 06:30:52,076 - INFO - row inserted!..
+2023-09-11 06:30:52,089 - INFO - session closed
+2023-09-11 06:30:52,090 - INFO - {'available_order_no': '00000000-0000-0000-2f07-b6ae312191da-00', 'order_id': '00000000-0000-0000-2f07-b6ae312191da', 'available': [{'item_id': '201816_03_01', 'count': 2, 'cost': '595', 'net_cost': 1190}], 'net_total': 1190, 'unavailable': [], 'session_id': 'KJhfgdfggdgf787re455', 'wt_discount_id': 'DISCOUNT002', 'wt_discount_prtn': 20, 'net_cost': 1190.0, 'total': 952.0, 'delvery_addrss_id': '550e8400-e29b-41d4-a716-446655440000', 'delvery_cost': 65.67, 'grand_total': 1017.67}
+2023-09-11 06:30:52,090 - INFO - Validation time: 0.000 seconds
+2023-09-11 06:30:52,090 - INFO - Execution time: 0.201 seconds
+2023-09-11 07:06:00,562 - INFO - Validation time: 2.076 seconds
+2023-09-11 07:06:00,563 - INFO - add_to_cart method called
+2023-09-11 07:06:00,564 - INFO - checking if table exist!!...
+2023-09-11 07:06:00,621 - INFO - session closed
+2023-09-11 07:06:00,622 - ERROR - key error list index out of range
+2023-09-11 07:06:00,622 - INFO - item not present in cart 
+2023-09-11 07:06:00,622 - INFO - checking if table exist!!...
+2023-09-11 07:06:00,671 - INFO - session closed
+2023-09-11 07:06:00,671 - INFO - checking if table exist!!...
+2023-09-11 07:06:00,691 - INFO - row inserted!..
+2023-09-11 07:06:00,706 - INFO - session closed
+2023-09-11 07:06:00,706 - INFO - Validation time: 2.077 seconds
+2023-09-11 07:06:00,706 - INFO - Execution time: 2.220 seconds
+2023-09-11 07:07:38,148 - INFO - Validation time: 0.027 seconds
+2023-09-11 07:07:38,148 - INFO - checking if table exist!!...
+2023-09-11 07:07:38,181 - INFO - query  select ua.uuid AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.uuid='550e8400-e29b-41d4-a716-446655440000';
+2023-09-11 07:07:38,206 - INFO - session closed
+2023-09-11 07:07:38,207 - INFO - checkout triggered
+2023-09-11 07:07:38,207 - INFO - {'exp': 1694441813, 'session_id': 'KJhfgdfggdgf787re455', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-11 07:07:38,207 - INFO - response got
+2023-09-11 07:07:38,207 - INFO - cart model executed
+2023-09-11 07:07:38,207 - INFO - checkout function triggered!...
+2023-09-11 07:07:38,207 - INFO - checking if table exist!!...
+2023-09-11 07:07:38,253 - INFO - session closed
+2023-09-11 07:07:38,253 - INFO - found cart items
+2023-09-11 07:07:38,254 - INFO - checking if table exist!!...
+2023-09-11 07:07:38,287 - INFO - session closed
+2023-09-11 07:07:38,287 - INFO - checking if table exist!!...
+2023-09-11 07:07:38,305 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-11 07:07:38,320 - INFO - session closed
+2023-09-11 07:07:38,321 - INFO - checking if table exist!!...
+2023-09-11 07:07:38,373 - INFO - session closed
+2023-09-11 07:07:38,373 - INFO - here it comes
+2023-09-11 07:07:38,373 - INFO - checking if table exist!!...
+2023-09-11 07:07:38,452 - INFO - session closed
+2023-09-11 07:07:38,453 - INFO - no record found with same uid & sessionid . Inserting...
+2023-09-11 07:07:38,454 - INFO - checking if table exist!!...
+2023-09-11 07:07:38,474 - INFO - row inserted!..
+2023-09-11 07:07:38,492 - INFO - session closed
+2023-09-11 07:07:38,492 - INFO - {'available_order_no': '00000000-0000-0000-2f07-bab195e5bd5c-00', 'non_available_order_no': '00000000-0000-0000-2f07-bab195e5bd5c-01', 'order_id': '00000000-0000-0000-2f07-bab195e5bd5c', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': 595, 'net_cost': 595}], 'net_total': 595, 'unavailable': [{'item_id': '201816_03_01', 'count': 0, 'cost': 595, 'net_cost': 0}], 'session_id': 'KJhfgdfggdgf787re455', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75, 'delvery_addrss_id': '550e8400-e29b-41d4-a716-446655440000', 'delvery_cost': 65.67, 'grand_total': 571.42}
+2023-09-11 07:07:38,493 - INFO - Validation time: 0.027 seconds
+2023-09-11 07:07:38,494 - INFO - Execution time: 0.372 seconds
+2023-09-12 19:44:33,947 - INFO - Serving on http://0.0.0.0:5008
+2023-09-12 19:45:08,791 - INFO - Validation time: 2.076 seconds
+2023-09-12 19:45:08,792 - INFO - add_to_cart method called
+2023-09-12 19:45:08,793 - INFO - checking if table exist!!...
+2023-09-12 19:45:09,197 - INFO - session closed
+2023-09-12 19:45:09,197 - ERROR - key error list index out of range
+2023-09-12 19:45:09,197 - INFO - item not present in cart 
+2023-09-12 19:45:09,198 - INFO - checking if table exist!!...
+2023-09-12 19:45:09,301 - INFO - session closed
+2023-09-12 19:45:09,301 - ERROR - An exception occurred:list index out of range
+2023-09-12 19:45:09,301 - ERROR - list index out of range
+2023-09-12 19:45:09,301 - INFO - Validation time: 2.077 seconds
+2023-09-12 19:45:09,301 - INFO - Execution time: 2.587 seconds
+2023-09-12 19:45:09,302 - ERROR - Exception on /add_wo_login [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\apiflask\app.py", line 460, in make_response
+    return super().make_response(rv)
+  File "C:\Users\Admin\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\flask\app.py", line 2138, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'add_to_cart_wo_login' did not return a valid response. The function either returned None or ended without a return statement.
+2023-09-12 19:45:38,875 - INFO - add_to_cart method called
+2023-09-12 19:45:38,876 - INFO - checking if table exist!!...
+2023-09-12 19:45:38,917 - INFO - session closed
+2023-09-12 19:45:38,917 - ERROR - key error list index out of range
+2023-09-12 19:45:38,917 - INFO - item not present in cart 
+2023-09-12 19:45:38,917 - INFO - checking if table exist!!...
+2023-09-12 19:45:38,974 - INFO - session closed
+2023-09-12 19:45:38,974 - INFO - checking if table exist!!...
+2023-09-12 19:45:39,158 - INFO - row inserted!..
+2023-09-12 19:45:39,194 - INFO - session closed
+2023-09-12 19:45:39,194 - INFO - Validation time: 0.000 seconds
+2023-09-12 19:45:39,194 - INFO - Execution time: 0.320 seconds
+2023-09-12 19:47:24,090 - INFO - Validation time: 2.057 seconds
+2023-09-12 19:47:24,090 - INFO - {'exp': 1694573799, 'session_id': 'KJhfgdfgdddddddddddd', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-12 19:47:24,090 - INFO - show cart  function triggered!...
+2023-09-12 19:47:24,090 - INFO - checking if table exist!!...
+2023-09-12 19:47:24,125 - INFO - session closed
+2023-09-12 19:47:24,126 - INFO - [{'session_id': 'KJhfgdfgdddddddddddd', 'item_id': '201816_03_01', 'count': 1, 'cost': 595.0, 'net_cost': 595.0, 'cart_id': 'KJhfgdfgdddddddddddd'}]
+2023-09-12 19:47:24,126 - INFO - Validation time: 2.058 seconds
+2023-09-12 19:47:24,126 - INFO - Execution time: 2.094 seconds
+2023-09-12 19:47:57,195 - INFO - checking if table exist!!...
+2023-09-12 19:47:57,382 - INFO - query  select ua.uuid AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.uuid='550e8400-e29b-41d4-a716-446655440000';
+2023-09-12 19:47:57,443 - INFO - session closed
+2023-09-12 19:47:57,444 - INFO - checkout triggered
+2023-09-12 19:47:57,444 - INFO - {'exp': 1694573799, 'session_id': 'KJhfgdfgdddddddddddd', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-12 19:47:57,444 - INFO - response got
+2023-09-12 19:47:57,444 - INFO - cart model executed
+2023-09-12 19:47:57,445 - INFO - checkout function triggered!...
+2023-09-12 19:47:57,445 - INFO - checking if table exist!!...
+2023-09-12 19:47:57,462 - INFO - session closed
+2023-09-12 19:47:57,462 - INFO - found cart items
+2023-09-12 19:47:57,463 - INFO - checking if table exist!!...
+2023-09-12 19:47:57,509 - INFO - session closed
+2023-09-12 19:47:57,509 - INFO - checking if table exist!!...
+2023-09-12 19:47:57,523 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-12 19:47:57,541 - INFO - session closed
+2023-09-12 19:47:57,542 - INFO - checking if table exist!!...
+2023-09-12 19:47:57,612 - INFO - session closed
+2023-09-12 19:47:57,612 - INFO - here it comes
+2023-09-12 19:47:57,613 - INFO - checking if table exist!!...
+2023-09-12 19:47:57,654 - INFO - session closed
+2023-09-12 19:47:57,654 - INFO - no record found with same uid & sessionid . Inserting...
+2023-09-12 19:47:57,654 - INFO - checking if table exist!!...
+2023-09-12 19:47:57,692 - INFO - row inserted!..
+2023-09-12 19:47:57,708 - INFO - session closed
+2023-09-12 19:47:57,709 - INFO - {'available_order_no': '00000000-0000-0000-2f08-aad5d22a98d3-00', 'non_available_order_no': '00000000-0000-0000-2f08-aad5d22a98d3-01', 'order_id': '00000000-0000-0000-2f08-aad5d22a98d3', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': 595, 'net_cost': 595}], 'net_total': 595, 'unavailable': [{'item_id': '201816_03_01', 'count': 0, 'cost': 595, 'net_cost': 0}], 'session_id': 'KJhfgdfgdddddddddddd', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75, 'delvery_addrss_id': '550e8400-e29b-41d4-a716-446655440000', 'delvery_cost': 65.67, 'grand_total': 571.42}
+2023-09-12 19:47:57,709 - INFO - Validation time: 0.000 seconds
+2023-09-12 19:47:57,710 - INFO - Execution time: 0.514 seconds
+2023-09-12 19:52:28,616 - INFO - Serving on http://0.0.0.0:5008
+2023-09-12 19:52:34,544 - INFO - Validation time: 2.071 seconds
+2023-09-12 19:52:34,545 - INFO - checking if table exist!!...
+2023-09-12 19:52:34,656 - INFO - query  select ua.uuid AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.uuid='550e8400-e29b-41d4-a716-446655440000';
+2023-09-12 19:52:34,717 - INFO - session closed
+2023-09-12 19:52:34,718 - INFO - checkout triggered
+2023-09-12 19:52:34,718 - INFO - {'exp': 1694573799, 'session_id': 'KJhfgdfgdddddddddddd', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-12 19:52:34,718 - INFO - response got
+2023-09-12 19:52:34,718 - INFO - cart model executed
+2023-09-12 19:52:34,718 - INFO - checkout function triggered!...
+2023-09-12 19:52:34,719 - INFO - checking if table exist!!...
+2023-09-12 19:52:34,806 - INFO - session closed
+2023-09-12 19:52:34,807 - INFO - found cart items
+2023-09-12 19:52:34,807 - INFO - checking if table exist!!...
+2023-09-12 19:52:34,847 - INFO - session closed
+2023-09-12 19:52:34,847 - INFO - checking if table exist!!...
+2023-09-12 19:52:34,867 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-12 19:52:34,897 - INFO - session closed
+2023-09-12 19:52:34,898 - INFO - checking if table exist!!...
+2023-09-12 19:52:34,950 - INFO - session closed
+2023-09-12 19:52:34,950 - INFO - here it comes
+2023-09-12 19:52:34,951 - INFO - checking if table exist!!...
+2023-09-12 19:52:34,987 - INFO - session closed
+2023-09-12 19:52:34,988 - INFO - checkout table updated..
+2023-09-12 19:52:34,988 - INFO - checking if table exist!!...
+2023-09-12 19:52:34,997 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2f08-ab56f8214b84-00", "non_available_order_no": "00000000-0000-0000-2f08-ab56f8214b84-01", "order_id": "00000000-0000-0000-2f08-ab56f8214b84", "available": [{"item_id": "201816_03_01", "count": 1, "cost": 595, "net_cost": 595}], "net_total": 595, "unavailable": [{"item_id": "201816_03_01", "count": 0, "cost": 595, "net_cost": 0}], "session_id": "KJhfgdfgdddddddddddd", "wt_discount_id": "DISCOUNT001", "wt_discount_prtn": 15, "net_cost": 595.0, "total": 505.75, "delvery_addrss_id": "550e8400-e29b-41d4-a716-446655440000", "delvery_cost": 65.67, "grand_total": 571.42}', ldts='1694573554898437500', full_order='[{"item_id": "201816_03_01", "count": 0, "cost": 595, "net_cost": 0}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='KJhfgdfgdddddddddddd' and status=0;
+2023-09-12 19:52:35,021 - INFO - row inserted!..
+2023-09-12 19:52:35,038 - INFO - session closed
+2023-09-12 19:52:35,038 - INFO - {'available_order_no': '00000000-0000-0000-2f08-ab56f8214b84-00', 'non_available_order_no': '00000000-0000-0000-2f08-ab56f8214b84-01', 'order_id': '00000000-0000-0000-2f08-ab56f8214b84', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': 595, 'net_cost': 595}], 'net_total': 595, 'unavailable': [{'item_id': '201816_03_01', 'count': 0, 'cost': 595, 'net_cost': 0}], 'session_id': 'KJhfgdfgdddddddddddd', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75, 'delvery_addrss_id': '550e8400-e29b-41d4-a716-446655440000', 'delvery_cost': 65.67, 'grand_total': 571.42}
+2023-09-12 19:52:35,039 - INFO - Validation time: 2.072 seconds
+2023-09-12 19:52:35,039 - INFO - Execution time: 2.565 seconds
+2023-09-12 19:56:48,568 - INFO - Serving on http://0.0.0.0:5008
+2023-09-12 19:56:58,224 - INFO - Validation time: 2.088 seconds
+2023-09-12 19:59:24,122 - INFO - Validation time: 2.062 seconds
+2023-09-12 19:59:24,123 - INFO - checking if table exist!!...
+2023-09-12 19:59:24,176 - INFO - query  select ua.uuid AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.uuid='550e8400-e29b-41d4-a716-446655440000';
+2023-09-12 19:59:24,189 - INFO - session closed
+2023-09-12 19:59:24,190 - INFO - checkout triggered
+2023-09-12 19:59:24,190 - INFO - {'exp': 1694574515, 'session_id': 'KJhfgdfgdddddddddddd', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-12 19:59:24,190 - INFO - response got
+2023-09-12 19:59:24,191 - INFO - cart model executed
+2023-09-12 19:59:24,191 - INFO - checkout function triggered!...
+2023-09-12 19:59:24,191 - INFO - checking if table exist!!...
+2023-09-12 19:59:24,266 - INFO - session closed
+2023-09-12 19:59:24,267 - INFO - found cart items
+2023-09-12 19:59:24,267 - INFO - checking if table exist!!...
+2023-09-12 19:59:24,327 - INFO - session closed
+2023-09-12 19:59:24,327 - INFO - checking if table exist!!...
+2023-09-12 19:59:24,343 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-12 19:59:24,387 - INFO - session closed
+2023-09-12 19:59:24,388 - INFO - checking if table exist!!...
+2023-09-12 19:59:24,435 - INFO - session closed
+2023-09-12 19:59:24,436 - INFO - here it comes
+2023-09-12 19:59:24,436 - INFO - checking if table exist!!...
+2023-09-12 19:59:24,456 - INFO - session closed
+2023-09-12 19:59:24,456 - INFO - checkout table updated..
+2023-09-12 19:59:24,457 - INFO - checking if table exist!!...
+2023-09-12 19:59:24,465 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2f08-ac15a398a415-00", "non_available_order_no": "00000000-0000-0000-2f08-ac15a398a415-01", "order_id": "00000000-0000-0000-2f08-ac15a398a415", "available": [{"item_id": "201816_03_01", "count": 1, "cost": 595, "net_cost": 595}], "net_total": 595, "unavailable": [{"item_id": "201816_03_01", "count": 0, "cost": 595, "net_cost": 0}], "session_id": "KJhfgdfgdddddddddddd", "wt_discount_id": "DISCOUNT001", "wt_discount_prtn": 15, "net_cost": 595.0, "total": 505.75, "delvery_addrss_id": "550e8400-e29b-41d4-a716-446655440000", "delvery_cost": 65.67, "grand_total": 571.42}', ldts='1694573964388386600', full_order='[{"item_id": "201816_03_01", "count": 0, "cost": 595, "net_cost": 0}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='KJhfgdfgdddddddddddd' and status=0;
+2023-09-12 19:59:24,474 - INFO - row inserted!..
+2023-09-12 19:59:24,550 - INFO - session closed
+2023-09-12 19:59:24,550 - INFO - {'available_order_no': '00000000-0000-0000-2f08-ac15a398a415-00', 'non_available_order_no': '00000000-0000-0000-2f08-ac15a398a415-01', 'order_id': '00000000-0000-0000-2f08-ac15a398a415', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': 595, 'net_cost': 595}], 'net_total': 595, 'unavailable': [{'item_id': '201816_03_01', 'count': 0, 'cost': 595, 'net_cost': 0}], 'session_id': 'KJhfgdfgdddddddddddd', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75, 'delvery_addrss_id': '550e8400-e29b-41d4-a716-446655440000', 'delvery_cost': 65.67, 'grand_total': 571.42}
+2023-09-12 19:59:24,551 - INFO - Validation time: 2.063 seconds
+2023-09-12 19:59:24,551 - INFO - Execution time: 2.492 seconds
+2023-09-12 20:11:12,292 - INFO - Serving on http://0.0.0.0:5008
+2023-09-12 20:11:19,362 - INFO - Validation time: 2.057 seconds
+2023-09-12 20:12:17,111 - INFO - Validation time: 0.010 seconds
+2023-09-12 20:12:17,112 - INFO - checking if table exist!!...
+2023-09-12 20:12:17,167 - INFO - query  select ua.uuid AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.uuid='550e8400-e29b-41d4-a716-446655440000';
+2023-09-12 20:12:17,193 - INFO - session closed
+2023-09-12 20:12:17,194 - INFO - checkout triggered
+2023-09-12 20:12:17,194 - INFO - {'exp': 1694575296, 'session_id': 'KJhfgdfgdddddddddddd', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-12 20:12:17,194 - INFO - response got
+2023-09-12 20:12:17,194 - INFO - cart model executed
+2023-09-12 20:12:17,195 - INFO - checkout function triggered!...
+2023-09-12 20:12:17,195 - INFO - checking if table exist!!...
+2023-09-12 20:12:17,261 - INFO - session closed
+2023-09-12 20:12:17,261 - INFO - found cart items
+2023-09-12 20:12:17,261 - INFO - checking if table exist!!...
+2023-09-12 20:12:17,284 - INFO - session closed
+2023-09-12 20:12:17,284 - INFO - checking if table exist!!...
+2023-09-12 20:12:17,291 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-12 20:12:17,307 - INFO - session closed
+2023-09-12 20:12:17,307 - INFO - checking if table exist!!...
+2023-09-12 20:12:17,341 - INFO - session closed
+2023-09-12 20:12:17,341 - INFO - here it comes
+2023-09-12 20:12:17,341 - INFO - checking if table exist!!...
+2023-09-12 20:12:17,354 - INFO - session closed
+2023-09-12 20:12:17,354 - INFO - checkout table updated..
+2023-09-12 20:12:17,354 - INFO - checking if table exist!!...
+2023-09-12 20:12:17,365 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2f08-ad7d979b0c67-00", "non_available_order_no": "00000000-0000-0000-2f08-ad7d979b0c67-01", "order_id": "00000000-0000-0000-2f08-ad7d979b0c67", "available": [{"item_id": "201816_03_01", "count": 1, "cost": 595, "net_cost": 595}], "net_total": 595, "unavailable": [{"item_id": "201816_03_01", "count": 0, "cost": 595, "net_cost": 0}], "session_id": "KJhfgdfgdddddddddddd", "wt_discount_id": "DISCOUNT001", "wt_discount_prtn": 15, "net_cost": 595.0, "total": 505.75, "delvery_addrss_id": "550e8400-e29b-41d4-a716-446655440000", "delvery_cost": 65.67, "grand_total": 571.42}', ldts='1694574737307660800', full_order='[{"item_id": "201816_03_01", "count": 0, "cost": 595, "net_cost": 0}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='KJhfgdfgdddddddddddd' and status=0;
+2023-09-12 20:12:17,374 - INFO - row inserted!..
+2023-09-12 20:12:17,388 - INFO - session closed
+2023-09-12 20:12:17,389 - INFO - {'available_order_no': '00000000-0000-0000-2f08-ad7d979b0c67-00', 'non_available_order_no': '00000000-0000-0000-2f08-ad7d979b0c67-01', 'order_id': '00000000-0000-0000-2f08-ad7d979b0c67', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': 595, 'net_cost': 595}], 'net_total': 595, 'unavailable': [{'item_id': '201816_03_01', 'count': 0, 'cost': 595, 'net_cost': 0}], 'session_id': 'KJhfgdfgdddddddddddd', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75, 'delvery_addrss_id': '550e8400-e29b-41d4-a716-446655440000', 'delvery_cost': 65.67, 'grand_total': 571.42}
+2023-09-12 20:12:17,390 - INFO - Validation time: 0.011 seconds
+2023-09-12 20:12:17,390 - INFO - Execution time: 0.289 seconds
+2023-09-12 20:13:39,607 - INFO - Serving on http://0.0.0.0:5008
+2023-09-12 20:13:45,318 - INFO - Validation time: 2.061 seconds
+2023-09-12 20:13:45,318 - INFO - checking if table exist!!...
+2023-09-12 20:13:45,386 - INFO - query  select ua.uuid AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.uuid='550e8400-e29b-41d4-a716-446655440000';
+2023-09-12 20:13:45,436 - INFO - session closed
+2023-09-12 20:13:45,436 - INFO - checkout triggered
+2023-09-12 20:13:45,436 - INFO - {'exp': 1694575296, 'session_id': 'KJhfgdfgdddddddddddd', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-12 20:13:45,437 - INFO - response got
+2023-09-12 20:13:45,437 - INFO - cart model executed
+2023-09-12 20:13:45,437 - INFO - checkout function triggered!...
+2023-09-12 20:13:45,437 - INFO - checking if table exist!!...
+2023-09-12 20:13:45,501 - INFO - session closed
+2023-09-12 20:13:45,502 - INFO - found cart items
+2023-09-12 20:13:45,502 - INFO - checking if table exist!!...
+2023-09-12 20:13:45,540 - INFO - session closed
+2023-09-12 20:13:45,541 - INFO - checking if table exist!!...
+2023-09-12 20:13:45,556 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-12 20:13:45,589 - INFO - session closed
+2023-09-12 20:13:45,589 - INFO - checking if table exist!!...
+2023-09-12 20:13:45,636 - INFO - session closed
+2023-09-12 20:13:45,636 - INFO - here it comes
+2023-09-12 20:13:45,636 - INFO - checking if table exist!!...
+2023-09-12 20:13:45,688 - INFO - session closed
+2023-09-12 20:13:45,688 - INFO - checkout table updated..
+2023-09-12 20:13:45,688 - INFO - checking if table exist!!...
+2023-09-12 20:13:45,697 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2f08-ada6aecba7c0-00", "non_available_order_no": "00000000-0000-0000-2f08-ada6aecba7c0-01", "order_id": "00000000-0000-0000-2f08-ada6aecba7c0", "available": [{"item_id": "201816_03_01", "count": 1, "cost": 595, "net_cost": 595}], "net_total": 595, "unavailable": [{"item_id": "201816_03_01", "count": 0, "cost": 595, "net_cost": 0}], "session_id": "KJhfgdfgdddddddddddd", "wt_discount_id": "DISCOUNT001", "wt_discount_prtn": 15, "net_cost": 595.0, "total": 505.75, "delvery_addrss_id": "550e8400-e29b-41d4-a716-446655440000", "delvery_cost": 65.67, "grand_total": 571.42}', ldts='1694574825589850000', full_order='[{"item_id": "201816_03_01", "count": 0, "cost": 595, "net_cost": 0}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='KJhfgdfgdddddddddddd' and status=0;
+2023-09-12 20:13:45,717 - INFO - row inserted!..
+2023-09-12 20:13:45,736 - INFO - session closed
+2023-09-12 20:13:45,737 - INFO - {'available_order_no': '00000000-0000-0000-2f08-ada6aecba7c0-00', 'non_available_order_no': '00000000-0000-0000-2f08-ada6aecba7c0-01', 'order_id': '00000000-0000-0000-2f08-ada6aecba7c0', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': 595, 'net_cost': 595}], 'net_total': 595, 'unavailable': [{'item_id': '201816_03_01', 'count': 0, 'cost': 595, 'net_cost': 0}], 'session_id': 'KJhfgdfgdddddddddddd', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75, 'delvery_addrss_id': '550e8400-e29b-41d4-a716-446655440000', 'delvery_cost': 65.67, 'grand_total': 571.42}
+2023-09-12 20:13:45,737 - INFO - Validation time: 2.061 seconds
+2023-09-12 20:13:45,737 - INFO - Execution time: 2.480 seconds
+2023-09-12 20:15:46,227 - INFO - Serving on http://0.0.0.0:5008
+2023-09-12 20:15:54,812 - INFO - Validation time: 2.060 seconds
+2023-09-12 20:15:54,812 - INFO - checking if table exist!!...
+2023-09-12 20:15:54,859 - INFO - query  select ua.uuid AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.uuid='550e8400-e29b-41d4-a716-446655440000';
+2023-09-12 20:15:54,900 - INFO - session closed
+2023-09-12 20:15:54,901 - INFO - checkout triggered
+2023-09-12 20:15:54,901 - INFO - {'exp': 1694575296, 'session_id': 'KJhfgdfgdddddddddddd', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-12 20:15:54,901 - INFO - response got
+2023-09-12 20:15:54,901 - INFO - cart model executed
+2023-09-12 20:15:54,901 - INFO - checkout function triggered!...
+2023-09-12 20:15:54,901 - INFO - checking if table exist!!...
+2023-09-12 20:15:54,988 - INFO - session closed
+2023-09-12 20:15:54,989 - INFO - found cart items
+2023-09-12 20:15:54,989 - INFO - checking if table exist!!...
+2023-09-12 20:15:55,036 - INFO - session closed
+2023-09-12 20:15:55,037 - INFO - checking if table exist!!...
+2023-09-12 20:15:55,050 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-12 20:15:55,085 - INFO - session closed
+2023-09-12 20:15:55,085 - INFO - checking if table exist!!...
+2023-09-12 20:15:55,147 - INFO - session closed
+2023-09-12 20:15:55,147 - INFO - here it comes
+2023-09-12 20:15:55,147 - INFO - checking if table exist!!...
+2023-09-12 20:15:55,184 - INFO - session closed
+2023-09-12 20:15:55,185 - INFO - checkout table updated..
+2023-09-12 20:15:55,185 - INFO - checking if table exist!!...
+2023-09-12 20:15:55,199 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2f08-ade2fad8e5b3-00", "non_available_order_no": "00000000-0000-0000-2f08-ade2fad8e5b3-01", "order_id": "00000000-0000-0000-2f08-ade2fad8e5b3", "available": [{"item_id": "201816_03_01", "count": 1, "cost": 595, "net_cost": 595}], "net_total": 595, "unavailable": [{"item_id": "201816_03_01", "count": 0, "cost": 595, "net_cost": 0}], "session_id": "KJhfgdfgdddddddddddd", "wt_discount_id": "DISCOUNT001", "wt_discount_prtn": 15, "net_cost": 595.0, "total": 505.75, "delvery_addrss_id": "550e8400-e29b-41d4-a716-446655440000", "delvery_cost": 65.67, "grand_total": 571.42}', ldts='1694574955085745700', full_order='[{"item_id": "201816_03_01", "count": 0, "cost": 595, "net_cost": 0}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='KJhfgdfgdddddddddddd' and status=0;
+2023-09-12 20:15:55,218 - INFO - row inserted!..
+2023-09-12 20:15:55,235 - INFO - session closed
+2023-09-12 20:15:55,235 - INFO - {'available_order_no': '00000000-0000-0000-2f08-ade2fad8e5b3-00', 'non_available_order_no': '00000000-0000-0000-2f08-ade2fad8e5b3-01', 'order_id': '00000000-0000-0000-2f08-ade2fad8e5b3', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': 595, 'net_cost': 595}], 'net_total': 595, 'unavailable': [{'item_id': '201816_03_01', 'count': 0, 'cost': 595, 'net_cost': 0}], 'session_id': 'KJhfgdfgdddddddddddd', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75, 'delvery_addrss_id': '550e8400-e29b-41d4-a716-446655440000', 'delvery_cost': 65.67, 'grand_total': 571.42}
+2023-09-12 20:15:55,236 - INFO - Validation time: 2.061 seconds
+2023-09-12 20:15:55,236 - INFO - Execution time: 2.484 seconds
+2023-09-12 20:51:44,662 - INFO - Serving on http://0.0.0.0:5008
+2023-09-12 20:53:40,150 - INFO - Validation time: 2.099 seconds
+2023-09-12 20:53:40,151 - INFO - checking if table exist!!...
+2023-09-12 20:53:40,237 - INFO - query  select ua.uuid AS ua_id ,p.cost AS pin_cost FROM tbl_user_address AS ua INNER JOIN tbl_pin AS p ON  ua.pin = p.pin WHERE ua.uuid='550e8400-e29b-41d4-a716-446655440000';
+2023-09-12 20:53:40,285 - INFO - session closed
+2023-09-12 20:53:40,285 - INFO - checkout triggered
+2023-09-12 20:53:40,286 - INFO - {'exp': 1694577723, 'session_id': 'KJhfgdfgdddddddddddd', 'user_id': 'ycmdefme9qg8BSRMSPqV1pKZfH93'}
+2023-09-12 20:53:40,286 - INFO - response got
+2023-09-12 20:53:40,286 - INFO - cart model executed
+2023-09-12 20:53:40,286 - INFO - checkout function triggered!...
+2023-09-12 20:53:40,287 - INFO - checking if table exist!!...
+2023-09-12 20:53:40,383 - INFO - session closed
+2023-09-12 20:53:40,384 - INFO - found cart items
+2023-09-12 20:53:40,384 - INFO - checking if table exist!!...
+2023-09-12 20:53:40,443 - INFO - session closed
+2023-09-12 20:53:40,443 - INFO - checking if table exist!!...
+2023-09-12 20:53:40,466 - INFO - query select discount_id,total_discount_in_prcnt,valid_from,valid_upto from external.tbl_discount where discount_id='' or is_active=1 and valid_upto>0;
+2023-09-12 20:53:40,502 - INFO - session closed
+2023-09-12 20:53:40,503 - INFO - checking if table exist!!...
+2023-09-12 20:53:40,566 - INFO - session closed
+2023-09-12 20:53:40,566 - INFO - here it comes
+2023-09-12 20:53:40,566 - INFO - checking if table exist!!...
+2023-09-12 20:53:40,615 - INFO - session closed
+2023-09-12 20:53:40,615 - INFO - checkout table updated..
+2023-09-12 20:53:40,615 - INFO - checking if table exist!!...
+2023-09-12 20:53:40,637 - INFO - Update external.tbl_checkout SET checkout_details='{"available_order_no": "00000000-0000-0000-2f08-b201e2f8f509-00", "non_available_order_no": "00000000-0000-0000-2f08-b201e2f8f509-01", "order_id": "00000000-0000-0000-2f08-b201e2f8f509", "available": [{"item_id": "201816_03_01", "count": 1, "cost": 595, "net_cost": 595}], "net_total": 595, "unavailable": [{"item_id": "201816_03_01", "count": 0, "cost": 595, "net_cost": 0}], "session_id": "KJhfgdfgdddddddddddd", "wt_discount_id": "DISCOUNT001", "wt_discount_prtn": 15, "net_cost": 595.0, "total": 505.75, "delvery_addrss_id": "550e8400-e29b-41d4-a716-446655440000", "delvery_cost": 65.67, "grand_total": 571.42}', ldts='1694577220503818300', full_order='[{"item_id": "201816_03_01", "count": 1}]' where uid='36141bb3a7ccccb7c733e7bff6b697abe84da8c6'and session_id='KJhfgdfgdddddddddddd' and status=0;
+2023-09-12 20:53:40,657 - INFO - row inserted!..
+2023-09-12 20:53:40,673 - INFO - session closed
+2023-09-12 20:53:40,673 - INFO - {'available_order_no': '00000000-0000-0000-2f08-b201e2f8f509-00', 'non_available_order_no': '00000000-0000-0000-2f08-b201e2f8f509-01', 'order_id': '00000000-0000-0000-2f08-b201e2f8f509', 'available': [{'item_id': '201816_03_01', 'count': 1, 'cost': 595, 'net_cost': 595}], 'net_total': 595, 'unavailable': [{'item_id': '201816_03_01', 'count': 0, 'cost': 595, 'net_cost': 0}], 'session_id': 'KJhfgdfgdddddddddddd', 'wt_discount_id': 'DISCOUNT001', 'wt_discount_prtn': 15, 'net_cost': 595.0, 'total': 505.75, 'delvery_addrss_id': '550e8400-e29b-41d4-a716-446655440000', 'delvery_cost': 65.67, 'grand_total': 571.42}
+2023-09-12 20:53:40,674 - INFO - Validation time: 2.100 seconds
+2023-09-12 20:53:40,674 - INFO - Execution time: 2.623 seconds

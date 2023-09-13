@@ -102,13 +102,12 @@ class SQLOrmService(SQLClient):
                         dict_av["cost"] = int(inventory_status[1])
                         dict_av["net_cost"] = dict_av["cost"] * dict_av["count"]
                         available_list.append(dict_av)
-                    else:
-                        item["item_id"] = items["item_id"]
-                        item["count"] = items["count"] - available_item
-                        item["cost"] = int(inventory_status[1])
-                        item["net_cost"] = item["cost"] * item["count"]
-                        non_available_list.append(item)
-            print("jjjj",cart)
+                    item["item_id"] = items["item_id"]
+                    item["count"] = items["count"] - available_item
+                    item["cost"] = int(inventory_status[1])
+                    item["net_cost"] = item["cost"] * item["count"]
+                    non_available_list.append(item)
+            logging.info("cart is ",cart)
             if len(available_list)>0:
                 final_output["available_order_no"]= order_id+"-00"
 
@@ -125,7 +124,6 @@ class SQLOrmService(SQLClient):
             final_output["net_total"] = net_cost_av+ net_cost_nav
             final_output["unavailable"] = non_available_list
             final_output["session_id"] = data_model["session_id"]
-            print("ttt",cart)
 
             list_offer= self.show_discount(self.__discount_table,discount_id)
             if list_offer :
@@ -145,7 +143,7 @@ class SQLOrmService(SQLClient):
             check_model= {"uid": uid,"session_id": data_model["session_id"],"checkout_value": json.dumps(final_output),
                           "full_order": json.dumps(cart),"time": HelperUtils.get_timestamp(),"status": 0}
 
-            print(check_model["full_order"])
+            logging.info("full order is",check_model["full_order"])
             print(self.checkout_count(self.__checkout_table, check_model))
             logging.info("here it comes")
             if self.checkout_count(self.__checkout_table,check_model)> 0:

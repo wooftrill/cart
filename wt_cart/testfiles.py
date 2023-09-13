@@ -7,8 +7,7 @@ start_time = time.time()
 url= 'http://localhost:5008/checkout_with_login'
 
 
-jwt_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoieWNtZGVmbWU5cWc4QlNSTVNQcVYxcEtaZkg5MyIsInNlc3Npb25faWQiOiJLSmhmZ2RmZ2RkZGRkZGRkZGRkZCIsImV4cCI6MTY5NDU3NzcyM30.cD1bHv1RpXBB3zZqTZW6WBwKmSPVCn6BKd7pbFL1S8I"
-
+jwt_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoieWNtZGVmbWU5cWc4QlNSTVNQcVYxcEtaZkg5MyIsInNlc3Npb25faWQiOiJrbGtqbGdqZmdoZmhnaGo4OThrbWpraiIsImV4cCI6MTY5NDU5NzkwM30.VOiR0vyYcfsaCtDbmjqkoQQYcMI_OsSzDre6cS1jaSE"
 
 
 item_id = '201816_03_01'

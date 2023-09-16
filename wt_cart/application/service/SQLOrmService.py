@@ -80,19 +80,19 @@ class SQLOrmService(SQLClient):
             net_cost_av,net_cost_nav= 0, 0
             vendor_discount_pctn= 0
             final_output= {}
-            print("fffffff",cart)
             logging.info("found cart items")
             order_id = HelperUtils.create_uuid()
             for items in cart:
-                print("ii",item)
+                logging.info(items)
                 inventory_model = asdict(InventoryModel(items["item_id"]))
                 inventory_status = self.is_exist_in_inventory(self.__inventory_table, inventory_model)
                 available_item= inventory_status[2] - TABLE["HardLimit"]
-
+                logging.info(available_item)
+    
                 if available_item > items["count"]:
                     item["item_id"] = items["item_id"]
                     item["cost"]= inventory_status[1]
-                    item["net_cost"] = int(item["cost"])*item["count"]
+                    item["net_cost"] = int(item["cost"])*items["count"]
                     available_list.append(item)
 
                 else:
@@ -102,12 +102,14 @@ class SQLOrmService(SQLClient):
                         dict_av["cost"] = int(inventory_status[1])
                         dict_av["net_cost"] = dict_av["cost"] * dict_av["count"]
                         available_list.append(dict_av)
+                        logging.info("got available ")
                     item["item_id"] = items["item_id"]
                     item["count"] = items["count"] - available_item
                     item["cost"] = int(inventory_status[1])
                     item["net_cost"] = item["cost"] * item["count"]
                     non_available_list.append(item)
-            logging.info("cart is ",cart)
+            print("all fine")
+            
             if len(available_list)>0:
                 final_output["available_order_no"]= order_id+"-00"
 
